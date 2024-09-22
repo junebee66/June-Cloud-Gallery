@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://apossible.com/?utm_source=extension&utm_medium=click&utm_campaign=muzli -->
+<html lang="en" class="external-refer"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+	
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Junes' Cloud</title>
+	<meta name="description" content="As a non-profit we bring psychologists, technologists, artists and creatives together to work on applied experiments and prototypes that uplift the human spirit.">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" type="image/png" href="https://apossible.com/assets/img/favicon.png">
+	<link rel="stylesheet" href="./APOSSIBLE_files/app.css">
+
+	<meta property="og:title" content="APOSSIBLE">
+	<meta name="twitter:title" content="APOSSIBLE">
+	<meta property="og:type" content="website">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:url" content="https://apossible.com">
+	<meta name="twitter:description" content="As a non-profit we bring psychologists, technologists, artists and creatives together to work on applied experiments and prototypes that uplift the human spirit.">
+	<meta property="og:description" content="As a non-profit we bring psychologists, technologists, artists and creatives together to work on applied experiments and prototypes that uplift the human spirit.">
+	<meta name="twitter:image" content="https://apossible.com/media/site/1a97c283b3-1701189498/meta.png">
+	<meta property="og:image" content="https://apossible.com/media/site/1a97c283b3-1701189498/meta.png">
+
+	<link rel="preload" href="https://apossible.com/assets/fonts/Stardust-VF.ttf" as="font" crossorigin="">
+	<script>
+		async function fetchGifData() {
+	try {
+		const response = await fetch('https://junesbee.com/_functions-dev/allProjectsGif');
+		const data = await response.json();
+		
+		// Parse the gif URLs and display them
+		if (data && data.items) {
+			const itemsWithGif = data.items.filter(item => item.gif);
+			displayGifs(itemsWithGif);
+		} else {
+			console.error("No items found in the response.");
+		}
+	} catch (error) {
+		console.error("Error fetching GIF data:", error);
+	}
+}
+
+// Function to convert the GIF URL based on your format
+function convertGifUrl(wixGifUrl) {
+	if (typeof wixGifUrl !== 'string') {
+		console.warn("Invalid URL:", wixGifUrl);
+		return null;
+	}
+	
+	const wixStaticUrlBase = "https://static.wixstatic.com/media/";
+	const prefixToRemove = "wix:image://v1/";
+
+	if (wixGifUrl.startsWith(prefixToRemove)) {
+		let cleanedUrl = wixGifUrl.slice(prefixToRemove.length);
+		
+		// Remove everything after ".gif"
+		const gifIndex = cleanedUrl.indexOf('.gif');
+		if (gifIndex !== -1) {
+			cleanedUrl = cleanedUrl.slice(0, gifIndex + 4); // "+4" to include ".gif"
+		}
+
+		return wixStaticUrlBase + cleanedUrl;
+	} else {
+		return null; // Return null if the URL format is unexpected
+	}
+}
+
+function displayGifs(items) {
+    const fragmentsInnerContainer = document.querySelector('.fragments-inner-container');
+    fragmentsInnerContainer.innerHTML = ''; // Clear existing content
+
+    if (!items || items.length === 0) {
+        console.log("No items to display.");
+        return; // Early return if no items
+    }
+
+    items.forEach((item, index) => {
+        console.log("Item:", item); // Log the item to check its structure
+
+        const gifUrl = convertGifUrl(item.gif);
+
+        const article = document.createElement('article');
+        article.className = 'fragment fragment-image fragment-state-input transition-stack';
+        article.dataset.id = `page://gif${index}`;
+        article.dataset.colour = '#FFFFFF';
+        article.dataset.zIndex = index + 1;
+        article.style.zIndex = index + 1;
+        article.style.transform = `translate(-50%, -50%) rotate(${Math.random() * 2 - 1}deg)`;
+        article.style.marginLeft = `${Math.random() * 40 - 20}%`;
+        article.style.marginTop = `${Math.random() * 20 - 10}%`;
+
+        article.innerHTML = `
+            <div class="fragment-container" style="background: rgb(255, 255, 255); width: 373.181px; height: 209.915px;" data-aspect-ratio="1.7777777777777777">
+                <figure>
+                    <img src="${gifUrl}" alt="Figure ${index + 1}" width="1200" height="675">
+                    <input type="checkbox" id="toggleCaption${index}" class="fragment-toggle-checkbox">
+                    <label class="fragment-toggle-label" for="toggleCaption${index}">Toggle Caption</label>
+                    <figcaption>
+                        <p>Figure ${index + 1}: ${item.title || 'Description for GIF'}</p>
+                    </figcaption>
+                </figure>
+            </div>
+        `;
+
+        fragmentsInnerContainer.appendChild(article);
+    });
+
+    // After adding all items, start checking if images are loaded
+    checkImagesLoaded();
+}
+
+function checkImagesLoaded() {
+    const images = document.querySelectorAll('.fragment-image img');
+    let loadedCount = 0;
+
+    function imageLoaded() {
+        loadedCount++;
+        if (loadedCount === images.length) {
+            startFlyInAnimation();
+        }
+    }
+
+    images.forEach(img => {
+        if (img.complete) {
+            imageLoaded();
+        } else {
+            img.addEventListener('load', imageLoaded);
+            img.addEventListener('error', imageLoaded); // Count errors as loaded to avoid waiting indefinitely
+        }
+    });
+}
+
+function startFlyInAnimation() {
+    const fragments = document.querySelectorAll('.fragment');
+    fragments.forEach((fragment, index) => {
+        setTimeout(() => {
+            fragment.classList.add('fly-in', 'visible');
+        }, index * 100); // Stagger the animation
+    });
+}
+
+// Call fetchGifData when the page loads
+document.addEventListener('DOMContentLoaded', fetchGifData);
+</script>
+
+<style>
+  @keyframes flyIn {
+    from {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .fly-in {
+    animation: flyIn 0.5s ease-out forwards;
+  }
+
+  .fragment {
+    opacity: 0; /* Start with all fragments hidden */
+  }
+
+  @keyframes logoAnimation {
+    0% {
+        font-variation-settings: "wdth" 120, "wght" 460;
+    }
+    50% {
+        font-variation-settings: "wdth" 80, "wght" 560;
+    }
+    100% {
+        font-variation-settings: "wdth" 120, "wght" 460;
+    }
+  }
+
+  .logo-type .visible-logo-letter {
+    display: inline-block;
+    animation: logoAnimation 2s ease-in-out infinite;
+    animation-play-state: paused;
+  }
+
+  @keyframes flyInTop {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+
+  @keyframes flyInBottom {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+
+  .view-controls-container {
+    transform: translateY(-100%);
+    animation: flyInTop 0.5s ease-out forwards;
+    animation-delay: 1s;
+  }
+
+  .browser-controls-container {
+    transform: translateY(100%);
+    animation: flyInBottom 0.5s ease-out forwards;
+    animation-delay: 1s;
+  }
+</style>
+
+</head>
+
+<body data-timestamp="1694350697" class="type-home external-refer view-stack logo-shown show-controls" data-url="https://apossible.com" data-collectionurl="https://apossible.com/collections/welcome ">
+
+	
+	<nav class="views-container">
+
+			
+<div class="fragments-container collection current-collection fragments-spread" data-collectionid="936075699" data-prompts="[&quot;Collection \u2014 Welcome&quot;]" data-title="Collection — Welcome" data-link="https://apossible.com" data-prevtitle="Rhizome&#39;s 7×7 2024" data-prevlink="https://apossible.com/collections/rhizome-7-7" data-nexttitle="Blueprint" data-nextlink="https://apossible.com/collections/blueprint">
+
+	<div class="fragments-inner-container" >
+	
+	
+		
+
+	<article class="fragment fragment-note fragment-state-input transition-stack visible" data-id="page://4qd4NlagDWZ9WsJl" data-colour="#C9C9C0" data-z-index="131" style="z-index: 131; transform: translate(-50%, -50%) rotate(-1.2334deg); margin-left: 10.1522%; margin-top: -6.43814%;"><div class="fragment-container" style="background:#C9C9C0">
+
+	<aside>
+		input [ JYD-1 ] 23 07 01</aside>
+	<h2><p>Flourishing is the centerpiece of positive psychology, and Robert Nozick's "experience machine" shows that positive experiences alone are not sufficient for flourishing.</p></h2>
+
+	<a href="https://apossible.com/collections/welcome/positive-psychology-faqs" class="readmore">Read more</a>
+</div>
+</article>
+<article class="fragment fragment-note fragment-state-input transition-stack visible" data-id="page://2EeUFXMH7Zxx8uUN" data-colour="#B8C8BF" data-z-index="2" style="z-index: 2; transform: translate(-50%, -50%) rotate(-1.47157deg); margin-left: 12.5652%; margin-top: 11.4147%;"><div class="fragment-container" style="background:#B8C8BF">
+
+	<aside>
+		input [ TKV-6 ] 23 07 14</aside>
+	<h2><p>technology / noun<br>
+—<br>
+The application of scientific knowledge to the practical aims of human life.</p></h2>
+
+	
+</div>
+</article>
+
+	</div>
+
+	
+<div class="list-container">
+
+	<div class="list-container-inner">
+
+		<div class="list-description">
+			<span class="small-type">[ C-1 ] Introduction</span>
+
+			<p>Swipe or drag to start exploring the origins of who we are.</p>			
+		</div>
+
+
+		<div class="list-fragments-titles">
+			<div class="list-fragments-titles-column">
+				<div class="list-fragment-title sort-type"><button>Type</button></div>
+				<div class="list-fragment-title sort-title"><button>Title</button></div>
+				<div class="list-fragment-title sort-connections"><button>→</button></div>
+			</div>
+
+			<div class="list-fragments-titles-column">
+				<div class="list-fragment-title sort-connections"><button>←</button></div>
+				<div class="list-fragment-title sort-title"><button>Title</button></div>
+				<div class="list-fragment-title sort-type"><button>Type</button></div>
+			</div>
+		</div>
+
+
+		<div class="list-columns-container">
+			
+			
+			<div class="list-column list-column-0" data-column="0">
+				<article class="list-fragment list-fragment-input list-fragment-note list-fragment-has-article fragment-state-input" data-id="page://4qd4NlagDWZ9WsJl" data-url="https://apossible.com/collections/welcome/positive-psychology-faqs" data-themes="">						<div class="list-fragment-type" data-type="note" data-code="23 07 01">note</div>
+						<div class="list-fragment-title">
+							Positive Psychology: FAQs													</div>
+						<div class="list-fragment-dot"></div>
+					</article>
+
+			<article class="list-fragment list-fragment-input list-fragment-note fragment-state-input" data-id="page://2EeUFXMH7Zxx8uUN" data-url="" data-themes="Humans, Technology">						<div class="list-fragment-type" data-type="note" data-code="23 07 14">note</div>
+						<div class="list-fragment-title">
+							technology /tɛkˈnɒlədʒi/													</div>
+						<div class="list-fragment-dot"></div>
+					</article>
+
+						</div>
+
+			
+			<div class="list-column list-column-1" data-column="1">
+				<article class="list-fragment list-fragment-input list-fragment-note list-fragment-has-article fragment-state-input" data-id="page://4qd4NlagDWZ9WsJl" data-url="https://apossible.com/collections/welcome/positive-psychology-faqs" data-themes="">						<div class="list-fragment-type" data-type="note" data-code="23 07 01">note</div>
+						<div class="list-fragment-title">
+							Positive Psychology: FAQs													</div>
+						<div class="list-fragment-dot"></div>
+					</article>
+
+			<article class="list-fragment list-fragment-input list-fragment-note fragment-state-input" data-id="page://2EeUFXMH7Zxx8uUN" data-url="" data-themes="Humans, Technology">						<div class="list-fragment-type" data-type="note" data-code="23 07 14">note</div>
+						<div class="list-fragment-title">
+							technology /tɛkˈnɒlədʒi/													</div>
+						<div class="list-fragment-dot"></div>
+					</article>
+
+						</div>
+
+			
+			<div class="list-lines-container"></div>
+
+		</div>
+
+	
+
+	</div>
+
+</div>
+	
+</div>
+		
+	</nav>
+
+	
+	<nav class="view-controls-container state-2">
+
+	<button data-title="Rhizome&#39;s 7×7 2024" class="browser-arrow browser-arrow-l" href="https://apossible.com/collections/rhizome-7-7">Previous</button>
+
+	<div class="view-controls-options controls-options">
+		<div class="view-marker" style="left: 60px;"></div>
+		<button class="view-button view-button-index" data-view="index">Index</button>
+		<button class="view-button view-button-stack active-view-button" data-view="stack">Stack</button>
+		<button class="view-button view-button-scatter" data-view="scatter">Scatter</button>
+	</div>
+
+	<div class="filter-controls-options controls-options">
+		<div class="view-marker"></div>
+		<button class="filter-button filter-button-i">I</button>
+		<button class="filter-button filter-button-io active-filter-button">I/O</button>
+		<button class="filter-button filter-button-o">O</button>
+	</div>
+
+	<button data-title="Blueprint" class="browser-arrow browser-arrow-r" href="https://apossible.com/collections/blueprint">Next</button>
+
+</nav>
+	<nav class="browser-controls-container">
+
+	<div class="browser-controls-inner">
+
+		<div class="browser-title-container">
+			<!-- <button data-title="" class="browser-arrow browser-arrow-l"></button> -->
+			<button data-title="Open Menu" class="browser-menu-button">Open Menu</button>
+
+			<div class="browser-title">Collection — Welcome</div>
+
+			<div class="browser-title-preview"></div>
+			
+			<h1 class="browser-title-site logo-type">
+				<span class="visible-logo-letter" style="font-variation-settings: &quot;wdth&quot; 120, &quot;wght&quot; 460;">J</span><span class="visible-logo-letter" style="font-variation-settings: &quot;wdth&quot; 120, &quot;wght&quot; 460;">U</span><span class="visible-logo-letter" style="font-variation-settings: &quot;wdth&quot; 99.3028, &quot;wght&quot; 494.09;">N</span><span class="visible-logo-letter" style="font-variation-settings: &quot;wdth&quot; 90.5746, &quot;wght&quot; 508.465;">E</span><span class="visible-logo-letter" style="font-variation-settings: &quot;wdth&quot; 93.7527, &quot;wght&quot; 503.231;"> </span><span class="visible-logo-letter" style="font-variation-settings: &quot;wdth&quot; 83.4296, &quot;wght&quot; 520.234;">B</span><span class="visible-logo-letter" style="font-variation-settings: &quot;wdth&quot; 81.4233, &quot;wght&quot; 523.538;">E</span><span class="visible-logo-letter" style="font-variation-settings: &quot;wdth&quot; 81.4233, &quot;wght&quot; 523.538;">E</span>
+			</h1>
+
+			<!-- <button data-title="" class="browser-arrow browser-arrow-r">Next</button> -->
+			<a href="https://apossible.com/pages/about" data-title="About Us" class="browser-about"><span>About Us</span></a>
+			<button data-title="Close" class="browser-close"><span>Close</span></button>
+		</div>
+
+		
+		<div class="browser-contents-container" style="">
+
+			<div class="browser-text">
+
+				
+				<!-- <h2>Information</h2> -->
+				<p class="site-tagline">How can technology better support creativity and human fulfillment?</p>
+				<a href="https://apossible.com/pages/about" class="open-about">Read more</a>
+
+			</div>
+
+			<div class="collections-list-container">
+				<h2>Collections</h2>
+				<ul class="collections-list">
+
+																	<li>
+							<a href="https://apossible.com/" data-title="Welcome" data-collectionid="936075699">Welcome</a>
+						</li>
+																	<li>
+							<a href="https://apossible.com/collections/blueprint" data-title="Blueprint" data-collectionid="642114150">Blueprint</a>
+						</li>
+																	<li>
+							<a href="https://apossible.com/collections/reference-index" data-title="Reference Index" data-collectionid="272149467">Reference Index</a>
+						</li>
+									</ul>
+			</div>
+						
+						<div class="pages-list-container">
+				<h2>Information</h2>
+				<ul class="pages-list">
+
+											<li><a href="https://apossible.com/pages/about" data-title="About Us">About Us</a></li>
+											<li><a href="https://apossible.com/pages/contact-us" data-title="Contact Us">Contact Us</a></li>
+									</ul>
+			</div>
+			
+			<div class="browser-time-container">
+				<span class="browser-alive"></span>
+								<span class="browser-time">24 09 20 18:59</span>
+				<span class="browser-mood">[ Mood MM-4 ]</span>
+			</div>
+			
+
+			
+
+		</div>
+
+		
+
+	</div>
+
+	
+
+		
+</nav>
+
+	
+	
+
+	
+
+	<div class="logo logo-type">
+		<span class="visible-logo-letter">J</span>
+		<span class="visible-logo-letter">U</span>
+		<span class="visible-logo-letter">N</span>
+		<span class="visible-logo-letter">E</span>
+		<span class="visible-logo-letter"> </span>
+		<span class="visible-logo-letter">B</span>
+		<span class="visible-logo-letter">E</span>
+		<span class="visible-logo-letter">E</span>
+	</div>
+
+	<div class="page-cover page-cover-menu"></div>
+	<div class="page-cover page-cover-article"></div>
+	<div class="page-cover page-cover-all"></div>
+
+
+
+
+
+<script src="./APOSSIBLE_files/hammer.min.js"></script>
+<script src="./APOSSIBLE_files/packery.min.js"></script>
+<script src="./APOSSIBLE_files/app.min.js"></script>
+<script defer="" data-domain="apossible.com" src="./APOSSIBLE_files/script.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const logoLetters = document.querySelectorAll('.logo-type .visible-logo-letter');
+        
+        function animateLogo() {
+            logoLetters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.style.animation = 'logoAnimation 0.5s ease-out forwards';
+                }, index * 100);
+            });
+        }
+
+        // Initial animation
+        animateLogo();
+
+        // Repeat animation every 10 seconds
+        setInterval(animateLogo, 10000);
+    });
+</script>
+
+</body></html>

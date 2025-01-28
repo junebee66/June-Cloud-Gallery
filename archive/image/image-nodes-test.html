@@ -10,8 +10,20 @@
         body {
           margin: 0;
           background:#F8F7F1;
+          font-family: 'Oswald', sans-serif;
+          font-weight: 500;
           /* font-family: "FK Roman", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; */
         }
+
+        /* Default to Oswald */
+/* Apply BlinkMacSystemFont with specific font-variation settings for macOS */
+        @supports (font-variation-settings: 'wdth' 50, 'wght' 581) {
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-variation-settings: 'wdth' 50, 'wght' 581;
+        }
+        }
+
     
         /* .tab-container {
   position: relative;
@@ -413,7 +425,7 @@
             font-size: 2vw;
             /* height: 2vh; */
             right:2vw;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, Oswald;
             position: fixed; 
             background: rgba(255, 255, 255, 0); 
             display: flex; 

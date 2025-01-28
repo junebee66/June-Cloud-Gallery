@@ -1,0 +1,1875 @@
+{
+    "nodes": [
+      {
+        "quality": "⭐️⭐️⭐️",
+        "_publishDate": "2024-09-26T10:09:08.767Z",
+        "_id": "fb55e0a3-9c4f-49d3-8826-2290b1559808",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-09-26T10:09:11.961Z",
+        "link-all-projects-3-title": "/all-projects-3/architecture-work-at-baf",
+        "year": "2020",
+        "_updatedDate": "2025-01-22T00:39:26.964Z",
+        "technology": [
+          "After Effects",
+          "Adobe Premiere",
+          "Autodesk Revit",
+          "SketchUp",
+          "AutoCAD",
+          "Illustrator"
+        ],
+        "_publishStatus": "PUBLISHED",
+        "title": "Architecture Work At Baf",
+        "type": [
+          "Animation & VFX",
+          "Architecture & Urban Design"
+        ]
+      },
+      {
+        "quality": "⭐️",
+        "question": "A clock that captures and represents individual moments?",
+        "_publishDate": "2024-09-16T21:42:54.129Z",
+        "_id": "b5d5645f-34cb-40dd-ac6b-0146304d03f6",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://june-bee-crit-comp.glitch.me/cclab/p3.html",
+        "_createdDate": "2024-09-16T23:29:37.309Z",
+        "shortDescription": "The Experimental Clock visualizes time through falling balls and arc-shaped containers. Every second, a new ball drops, with colored arcs representing hours, minutes, and seconds as baskets. This design allows viewers to observe time's accumulation and release, offering a fresh perspective on time perception.",
+        "link-all-projects-3-title": "/all-projects-3/experimental-clock",
+        "year": "2021",
+        "_updatedDate": "2024-09-20T04:11:37.708Z",
+        "technology": [
+          "Object-Oriented Programming",
+          "P5.js"
+        ],
+        "gif": "wix:image://v1/565ac9_6da648aced87410b9125f0cb0a689710~mv2.gif/Experimental%20Clockmov.gif#originWidth=1068&originHeight=960",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Recording and capturing time - every second, a new ball will drop into the space",
+        "title": "Experimental Clock",
+        "type": [
+          "Code Sketch",
+          "Computation"
+        ],
+        "mainImage": "wix:image://v1/565ac9_75b0a14b6e164b52973f3224be38c32a~mv2.png/Screenshot%202024-09-16%20at%207.40.18%20PM.png#originWidth=780&originHeight=692",
+        "playgroundStar": "⭐️⭐️"
+      },
+      {
+        "quality": "⭐️",
+        "question": "When deriving, which direction is right? Past or future?",
+        "_publishDate": "2024-09-16T21:42:54.129Z",
+        "_id": "91bd7752-04f2-4a4a-b538-1e647a6f0fb4",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://youtu.be/97uYNtmVfMc",
+        "_createdDate": "2024-09-16T22:14:44.440Z",
+        "shortDescription": "This is the Minsheng Community in Taipei's Songshan District, where I grew up. This quick 2.5D animation sketch whispers of time’s passage, as developments slowly reshape the landscape, stirring a sense of dérive.",
+        "link-all-projects-3-title": "/all-projects-3/derive",
+        "year": "2020",
+        "_updatedDate": "2024-09-16T22:23:43.459Z",
+        "technology": [
+          "2.5 Animation",
+          "Map",
+          "Time",
+          "Illustration"
+        ],
+        "gif": "wix:image://v1/565ac9_af68e852506d42ef9e1acfa115756031~mv2.gif/Derive%20v.3.gif#originWidth=734&originHeight=412",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Things are different. But it all depends on what pair of glasses did you choose to wear today.",
+        "title": "Derive",
+        "type": [
+          "Animation & VFX"
+        ],
+        "mainImage": "wix:image://v1/565ac9_7c5ef82d388d4e20a70cb7b3e8dce8d2~mv2.png/Derive_Feature.png#originWidth=3072&originHeight=1658"
+      },
+      {
+        "quality": "⭐️",
+        "question": "What is the microsystem within my sustainable systems research site?",
+        "_publishDate": "2024-09-16T21:42:54.129Z",
+        "_id": "ec23ed78-a59d-4ccc-833e-f90c209ebbdc",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/navigate-a-sustainable-systems-site-as-an-once-inch-mouse-d9e7cec1e09c",
+        "_createdDate": "2024-09-16T21:50:59.603Z",
+        "shortDescription": "This project offers a one-inch-tall perspective tour of a microsystem in a Taipei City park. It features a street cat's shelter, where mice steal food at night. The tour, narrated by a mother mouse teaching her child to navigate and steal food, provides unique insights into this miniature ecosystem's hidden spaces.",
+        "link-all-projects-3-title": "/all-projects-3/one-inch-tour-%E2%80%93-microsystem",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T22:11:34.616Z",
+        "technology": [
+          "Sustainable",
+          "Illustration",
+          "Storytelling"
+        ],
+        "gif": "wix:image://v1/565ac9_485cab46fa394de6892f8faa44c0f7d3~mv2.gif/One-inch-tour_mockup.gif#originWidth=604&originHeight=352",
+        "_publishStatus": "PUBLISHED",
+        "hook": "A mother mouse guides her child through a miniature ecosystem, stealing food from a cat's site.",
+        "title": "One Inch Tour – Microsystem",
+        "type": [
+          "Illustration & Storytelling",
+          "Research"
+        ],
+        "mainImage": "wix:image://v1/565ac9_2bc5eee5dce74df6b6557dd66fad5c23~mv2.jpg/One-inch-tour_mockup.jpg#originWidth=4500&originHeight=3000"
+      },
+      {
+        "quality": "⭐️",
+        "question": "Portfolios are boring because they are limiting beyond sight?",
+        "_publishDate": "2024-09-16T21:42:54.129Z",
+        "_id": "33d047fb-3610-47fd-afeb-5c9dcb5c5be8",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/portfolios-are-boring-because-they-are-limiting-beyond-sight-8f56b4b09efb",
+        "_createdDate": "2024-09-16T21:42:55.668Z",
+        "shortDescription": "This is an experimental interdisciplinary matrix that showcases overlapping qualities of different projects. Users can drag project boxes onto four themed areas (themes, presentation, focus, strategy/tools) to remix ideas and generate new project possibilities. The result is displayed in a vertical grey box on the left.\n",
+        "link-all-projects-3-title": "/all-projects-3/interdisciplinary-project-matrix",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T21:48:11.216Z",
+        "technology": [
+          "Javascript",
+          "Code Experiment",
+          "Content Strategy",
+          "Json Div Managment"
+        ],
+        "gif": "wix:image://v1/565ac9_310bc3739b55420db3ebd6e458c484a9~mv2.gif/draggable%20website%20quick.gif#originWidth=678&originHeight=388",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Draggable website remixing projects from user POV and existing sources outside to generate new ideas and visions!",
+        "title": "Interdisciplinary Project Matrix",
+        "type": [
+          "Computation",
+          "UI UX Design",
+          "Web Tool Development"
+        ],
+        "mainImage": "wix:image://v1/565ac9_a88823d19e784e3ca53929e23d20c111~mv2.png/Screenshot%202024-08-27%20at%201.00.12%20AM.png#originWidth=1534&originHeight=884"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "What is the reality that we see? Accurate?",
+        "_publishDate": "2024-09-16T19:57:29.544Z",
+        "_id": "90910f07-9698-4699-9e5f-0cae6fee6101",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/p/718890a60463",
+        "_createdDate": "2024-09-16T19:57:31.159Z",
+        "shortDescription": "The camera are your eyes that helps you see multidimensional reality = real world + virtual world from the external api . The camera detects what is captured and paints out the same object found from web api.",
+        "link-all-projects-3-title": "/all-projects-3/multidimensional-reality-camera",
+        "year": "2022",
+        "_updatedDate": "2024-09-16T20:28:40.206Z",
+        "technology": [
+          "Giphy Api",
+          "Web AR",
+          "Pixel Overlay"
+        ],
+        "gif": "wix:image://v1/565ac9_e890979f7abd4609a1617111848dc921~mv2.gif/multi-dimensional_camera_demo_small.gif#originWidth=196&originHeight=348",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Reality is a continuous constant. Overlaying every possible reality real time in your current space",
+        "title": "Multidimensional Reality Camera",
+        "type": [
+          "VR AR XR Design",
+          "Computation",
+          "Web Tool Development"
+        ],
+        "mainImage": "wix:image://v1/565ac9_d6d08b2d0ed740dca5a59024c2d39325~mv2.gif/Multi-dimensional%20Camera%20Real%20Life%20Final.gif#originWidth=492&originHeight=296",
+        "mediagallery": [
+          {
+            "description": "",
+            "slug": "565ac9_e890979f7abd4609a1617111848dc921~mv2.gif",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_e890979f7abd4609a1617111848dc921~mv2.gif/_.gif#originWidth=196&originHeight=348",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 196,
+              "height": 348,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_d6d08b2d0ed740dca5a59024c2d39325~mv2.gif",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_d6d08b2d0ed740dca5a59024c2d39325~mv2.gif/_.gif#originWidth=492&originHeight=296",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 492,
+              "height": 296,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_e7d43984530c457ca2b2b60b025ce9a3~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_e7d43984530c457ca2b2b60b025ce9a3~mv2.png/_.png#originWidth=2558&originHeight=1162",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 2558,
+              "height": 1162,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_d600bb76754e457d88efc6b5da2419cf~mv2.gif",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_d600bb76754e457d88efc6b5da2419cf~mv2.gif/_.gif#originWidth=702&originHeight=1248",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 702,
+              "height": 1248,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_5497378e4d2441b5a5f720db7e2921dd~mv2.gif",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_5497378e4d2441b5a5f720db7e2921dd~mv2.gif/_.gif#originWidth=560&originHeight=996",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 560,
+              "height": 996,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_5df4399fe4ac4c058a020fb7698382ee~mv2.gif",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_5df4399fe4ac4c058a020fb7698382ee~mv2.gif/_.gif#originWidth=726&originHeight=1290",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 726,
+              "height": 1290,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_c61f41428d97426183b839a09442ab05~mv2.gif",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_c61f41428d97426183b839a09442ab05~mv2.gif/_.gif#originWidth=930&originHeight=1654",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 930,
+              "height": 1654,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_0631631161ec4da1acfc0b340857378c~mv2.gif",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_0631631161ec4da1acfc0b340857378c~mv2.gif/_.gif#originWidth=762&originHeight=1354",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 762,
+              "height": 1354,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "quality": "⭐️",
+        "question": "Do Dreams Swim?",
+        "_publishDate": "2024-09-16T08:55:01.112Z",
+        "_id": "47c9fd56-bbd4-4f8c-b166-6d79c156aa35",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/infinite-graphics-p5-js-code-exercise-3b4a9eb80dad",
+        "_createdDate": "2024-09-16T09:16:30.663Z",
+        "shortDescription": "This Looping & Logic coding assignment for Digital Craft class uses P5.js to create a web animation. Looping generates dreamy water ripples, while logic and randomization control their colors.",
+        "link-all-projects-3-title": "/all-projects-3/dreams-swim",
+        "year": "2021",
+        "_updatedDate": "2024-09-20T04:11:41.165Z",
+        "technology": [
+          "Mouse Interaction",
+          "Processing",
+          "P5.js"
+        ],
+        "gif": "wix:image://v1/565ac9_a237fda2678b4359ab481a9263e72b21~mv2.gif/Dreams_Swiming_NO_Frame_Line.gif#originWidth=1262&originHeight=628",
+        "_publishStatus": "PUBLISHED",
+        "hook": "In a world bathed in hues of yellow and orange, where dreams flow like water, you hold the power to reshape the ripples and transform the landscape with every stroke.",
+        "title": "Dreams Swim",
+        "type": [
+          "Code Sketch",
+          "Computation",
+          "Illustration & Storytelling"
+        ],
+        "mainImage": "wix:image://v1/565ac9_2a31c120d3dd4506ac6b1a83931065fa~mv2.jpg/Screenshot%202024-08-22%20at%205.46_edited.jpg#originWidth=3000&originHeight=1385",
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️",
+        "question": "How to raise awareness of COVID?",
+        "_publishDate": "2024-09-16T08:55:01.112Z",
+        "_id": "60b6434c-5cee-4ea7-ac16-bf0ecc16d2dc",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/207709437/-Web-VR-Covid-Data-2021",
+        "_createdDate": "2024-09-16T08:55:02.628Z",
+        "shortDescription": "This is WebXR assignment from Immersive Experiences Class Sophomore year at Parsons School of Design. It aims to raise awareness and encourage people to take precautions to protect themselves and others.",
+        "link-all-projects-3-title": "/all-projects-3/covid-data-vr",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T08:59:46.912Z",
+        "technology": [
+          "Data Visualization",
+          "Web VR",
+          "Social Impact"
+        ],
+        "gif": "wix:image://v1/565ac9_cda9a6e5874d483c9b0bdfbbbea524f1~mv2.gif/Covid_Data_VR_final.gif#originWidth=1130&originHeight=640",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Using real-time COVID-19 data from NYC.gov, I developed a WebVR experience that immerses users in the severity of the pandemic.",
+        "title": "Covid Data VR",
+        "type": [
+          "VR AR XR Design",
+          "Computation"
+        ],
+        "mainImage": "wix:image://v1/565ac9_d2ad95439ed84921b1b4d2f2e534a334~mv2.png/Screenshot%202024-09-11%20at%204.38.39%20PM%201.png#originWidth=2606&originHeight=1480"
+      },
+      {
+        "quality": "⭐️",
+        "question": "Are materials storytellers?",
+        "_publishDate": "2024-09-16T08:05:57.711Z",
+        "_id": "0d2eba08-5889-467a-9d21-b0cbabed3748",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/207711837/Texture-Story",
+        "_createdDate": "2024-09-16T08:05:59.234Z",
+        "shortDescription": "This is a charcoal texture drawing practice from Drawing & Imagining class Freshman year at Parsons School of Design",
+        "link-all-projects-3-title": "/all-projects-3/texture-story",
+        "year": "2022",
+        "_updatedDate": "2024-09-16T08:10:30.150Z",
+        "technology": [
+          "Charcoal",
+          "Texture"
+        ],
+        "gif": "wix:image://v1/565ac9_647427375dfe4ac0bedaa965f749da0e~mv2.jpg/texture%20story%20Mockup%20copy.jpg#originWidth=4362&originHeight=3024",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Looking into the Edges - Mono texture to all nature substances",
+        "title": "Texture Story",
+        "type": [
+          "Illustration & Storytelling"
+        ],
+        "mainImage": "wix:image://v1/565ac9_647427375dfe4ac0bedaa965f749da0e~mv2.jpg/texture%20story%20Mockup%20copy.jpg#originWidth=4362&originHeight=3024"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "What is Empirical Perspective?",
+        "_publishDate": "2024-09-16T03:09:34.878Z",
+        "_id": "50bb9f87-6c32-4890-8f73-992b484cb9ae",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/207714041/-Empirical-Perspective-2020",
+        "_createdDate": "2024-09-16T03:09:36.358Z",
+        "shortDescription": "Through that breach, an ancient boat, weathered by forgotten eons, slowly emerged from the cosmic depths—its origins unknown, its purpose buried in the stardust of forgotten legends.",
+        "link-all-projects-3-title": "/all-projects-3/empirical-perspective",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T22:49:16.256Z",
+        "technology": [
+          "Digital Art",
+          "Photoshop",
+          "Illustration"
+        ],
+        "gif": "wix:image://v1/565ac9_b1c457425ef54fe48d7246d9e7d1b6ca~mv2.gif/Empirical_Perspective.gif#originWidth=960&originHeight=540",
+        "_publishStatus": "PUBLISHED",
+        "hook": "The gateway only reveals itself when two galaxies collide, dripping with the molten flow of time itself. ",
+        "title": "Empirical Perspective",
+        "type": [
+          "Illustration & Storytelling"
+        ],
+        "mainImage": "wix:image://v1/565ac9_60518ddc04a945e091b46735404c9b10~mv2.jpg/Empirical_Perspectivefinal%20.jpg#originWidth=6273&originHeight=3527",
+        "mediagallery": [
+          {
+            "description": "",
+            "slug": "565ac9_b1c457425ef54fe48d7246d9e7d1b6ca~mv2.gif",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_b1c457425ef54fe48d7246d9e7d1b6ca~mv2.gif/_.gif#originWidth=960&originHeight=540",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 960,
+              "height": 540,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "What is the relationship between the human body and maps?",
+        "_publishDate": "2024-09-16T03:00:21.532Z",
+        "_id": "c4c327de-3ecf-43e0-9178-f1bf0c37f3c7",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/207714645/-Gods-Manuscript-Imagining-2021",
+        "_createdDate": "2024-09-16T03:00:23.195Z",
+        "shortDescription": "This is Body/Map assignment from Drawing Class Freshman year at Parsons School of Design. I imagined stealing God's manuscript detailing human creation. This multi-dimensional manuscript represents the space between divine creation and human existence.",
+        "link-all-projects-3-title": "/all-projects-3/god's-manuscript",
+        "year": "2020",
+        "_updatedDate": "2024-09-16T22:35:10.471Z",
+        "technology": [
+          "Illustration",
+          "Digital Art"
+        ],
+        "gif": "wix:image://v1/565ac9_26fc220871b540c480923d5481261458~mv2.gif/God's%20Manuscript.gif#originWidth=168&originHeight=230",
+        "_publishStatus": "PUBLISHED",
+        "hook": "God's point of view- Stealing God's manuscript from heaven: the exact procedure for sculpting humans.",
+        "title": "God's Manuscript",
+        "type": [
+          "Illustration & Storytelling"
+        ],
+        "mainImage": "wix:image://v1/565ac9_26fc220871b540c480923d5481261458~mv2.gif/God's%20Manuscript.gif#originWidth=168&originHeight=230"
+      },
+      {
+        "quality": "⭐️",
+        "_publishDate": "2024-09-15T00:18:52.169Z",
+        "_id": "362be61c-5cd9-4fd4-b8be-30776e453c26",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://june-bee-crit-comp.glitch.me/cclab/p3.html",
+        "_createdDate": "2024-09-15T00:19:32.503Z",
+        "documentation": "https://quixotic-mandible-495.notion.site/NOC-3-Forces-Pixie-Dust-at-Midnight-Experimental-Ocean-89c31c1a4d2d4390845c6bc6912b9821?pvs=4",
+        "link-all-projects-3-title": "/all-projects-3/experimental-ocean",
+        "liveDemo": "https://junebee66.github.io/nature-of-code-2023spring/03_forces/Force-Ocean/",
+        "year": "2023",
+        "_updatedDate": "2024-09-20T04:17:34.100Z",
+        "gif": "wix:image://v1/565ac9_abb455bd57e7468a8a7355cd46535b74~mv2.gif/Experimental%20Ocean%20End.gif#originWidth=610&originHeight=618",
+        "_publishStatus": "PUBLISHED",
+        "creationDate": "February 11th 2023",
+        "title": "Experimental Ocean",
+        "type": [
+          "Code Sketch",
+          "Computation"
+        ],
+        "mainImage": "wix:image://v1/565ac9_abb455bd57e7468a8a7355cd46535b74~mv2.gif/Experimental%20Ocean%20End.gif#originWidth=610&originHeight=618",
+        "playgroundStar": "⭐️⭐️"
+      },
+      {
+        "quality": "⭐️",
+        "_publishDate": "2024-09-15T00:18:52.169Z",
+        "_id": "bd826a89-7f20-45b8-bba6-1521c466bfbf",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-09-15T00:18:54.939Z",
+        "documentation": "https://quixotic-mandible-495.notion.site/NOC-3-Forces-Pixie-Dust-at-Midnight-Experimental-Ocean-89c31c1a4d2d4390845c6bc6912b9821?pvs=4",
+        "link-all-projects-3-title": "/all-projects-3/pixie-dust-at-midnight",
+        "liveDemo": "https://junebee66.github.io/nature-of-code-2023spring/03_forces/Force-Forest%20Points/index.html",
+        "year": "2023",
+        "_updatedDate": "2024-09-20T04:17:44.421Z",
+        "gif": "wix:image://v1/565ac9_8d7db63d849f4ff4b80dbe76120c48b5~mv2.gif/Pixel%20Dust%20DEmo.gif#originWidth=574&originHeight=582",
+        "_publishStatus": "PUBLISHED",
+        "creationDate": "February 11th 2023",
+        "title": "Pixie Dust at Midnight",
+        "type": [
+          "Code Sketch",
+          "Computation"
+        ],
+        "mainImage": "wix:image://v1/565ac9_8d7db63d849f4ff4b80dbe76120c48b5~mv2.gif/Pixel%20Dust%20DEmo.gif#originWidth=574&originHeight=582",
+        "playgroundStar": "⭐️⭐️"
+      },
+      {
+        "quality": "⭐️",
+        "question": "Do you like America?",
+        "_publishDate": "2024-08-31T23:05:15.192Z",
+        "_id": "81201d8e-27a6-40cf-b572-0fcf8a0af22e",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.youtube.com/watch?v=cFS738Tbkw0",
+        "_createdDate": "2024-09-01T00:20:49.001Z",
+        "shortDescription": "Each boxes here represent the different people I met in America.\n\nEveryone has a story And telling these stories to you is my story. This project is done during my second year in the USA when I was 16.",
+        "link-all-projects-3-title": "/all-projects-3/i-have-a-dream",
+        "year": "2017",
+        "_updatedDate": "2024-09-01T02:13:54.401Z",
+        "technology": [
+          "Recycled Materials",
+          "Poems"
+        ],
+        "_publishStatus": "PUBLISHED",
+        "hook": "Coming to America is like a dream, for me. It’s a really long dream. It doesn’t feel real, good and bad.",
+        "title": "I Have A Dream",
+        "type": [
+          "Sculpture",
+          "Illustration & Storytelling",
+          "Animation & VFX"
+        ]
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "When our phone is co-living with us, what more is it then just a device?",
+        "_publishDate": "2024-08-31T23:05:15.192Z",
+        "_id": "100facdd-c3ec-44e9-b3f0-ef6b295cfb55",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/gamify-ios-notification-yuchis-journey-app-fd429d005d0c",
+        "_createdDate": "2024-08-31T23:05:17.121Z",
+        "shortDescription": "Real-time game app where users receive hourly notifications updating them about their virtual pet living in their phone, allowing them to co-live together through daily life",
+        "link-all-projects-3-title": "/all-projects-3/yuchi's-journey-app",
+        "year": "2022",
+        "_updatedDate": "2024-09-20T04:11:27.232Z",
+        "technology": [
+          "Mobile App",
+          "Real Time Interactions",
+          "Storytelling",
+          "Node.js",
+          "npm"
+        ],
+        "gif": "wix:image://v1/565ac9_2c7bd6e8db7f4056a3062a81ab2c30de~mv2.gif/Yuchi's%20Journey.gif#originWidth=912&originHeight=550",
+        "_publishStatus": "PUBLISHED",
+        "hook": "IOS Notification pet  - Real-time presences as company through your daily life ",
+        "title": "Yuchi's Journey App",
+        "type": [
+          "UI UX Design",
+          "Code Sketch",
+          "Computation"
+        ],
+        "mainImage": "wix:image://v1/565ac9_c44e2e1b89ab47fc89a054f3e18ecebd~mv2.jpg/mockup_sand_crop.jpg#originWidth=5038&originHeight=3063",
+        "mediagallery": [
+          {
+            "description": "",
+            "slug": "565ac9_c44e2e1b89ab47fc89a054f3e18ecebd~mv2.jpg",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_c44e2e1b89ab47fc89a054f3e18ecebd~mv2.jpg/_.jpg#originWidth=5038&originHeight=3063",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 5038,
+              "height": 3063,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          }
+        ],
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "Is learning about history always isolating and irrelevant? How to preserve culture? ",
+        "_publishDate": "2024-08-31T22:57:13.892Z",
+        "_id": "10505d24-f6e0-4102-bec9-ea1d4a927270",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-08-31T22:57:15.687Z",
+        "shortDescription": "An AR-powered Google Maps plugin for playful, casual, and immersive cultural learning",
+        "link-all-projects-3-title": "/all-projects-3/qiang-garden",
+        "year": "2024",
+        "_updatedDate": "2024-09-16T06:09:32.825Z",
+        "technology": [
+          "Geo-location",
+          "AR App",
+          "Cultural Education",
+          "AI Conversation",
+          "Google Map Extension"
+        ],
+        "gif": "wix:image://v1/565ac9_46a51454d9c84da98c0a9db17e331366~mv2.gif/QiangGarden_edited.gif#originWidth=210&originHeight=454",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Engage learners across time and space: Blend historical insights with modern perspectives for an immersive cultural experience",
+        "title": "Qiang Garden",
+        "type": [
+          "VR AR XR Design",
+          "Game",
+          "UI UX Design",
+          "Web Tool Development",
+          "Computation"
+        ],
+        "mainImage": "wix:image://v1/565ac9_5db0327b31b244e8b52a6804cdf0cd3f~mv2.jpg/Slide%2016_9%20-%2014.jpg#originWidth=7680&originHeight=4320"
+      },
+      {
+        "quality": "⭐️",
+        "question": "What is material in this era?",
+        "_publishDate": "2024-08-31T21:49:03.896Z",
+        "_id": "38d14ea8-f9f9-4862-a65e-ad6e465aeb87",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://youtu.be/6SMUT8akQfM",
+        "_createdDate": "2024-08-31T22:30:51.892Z",
+        "shortDescription": "This is Material Keyword assignment from Integrative Studio class Freshman year at Parsons School of Design",
+        "link-all-projects-3-title": "/all-projects-3/material-v3.-database",
+        "year": "2020",
+        "_updatedDate": "2024-09-16T22:29:46.613Z",
+        "technology": [
+          "Computer Sounds",
+          "Data Visualization",
+          "Motion Graphics",
+          "Material Study"
+        ],
+        "gif": "wix:image://v1/565ac9_cf9baf34446c4047b857e1876609330f~mv2.gif/Imperial%20Eyes%20(with%20sounds).gif#originWidth=356&originHeight=200",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Data as Material",
+        "title": "Material v3. Database",
+        "type": [
+          "Animation & VFX"
+        ],
+        "mainImage": "wix:image://v1/565ac9_ba9dba55e81e474f8e9821cbbd852eea~mv2.png/Screenshot%202024-09-16%20at%206.26.53%20PM.png#originWidth=1616&originHeight=910"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "_publishDate": "2024-08-31T21:49:03.896Z",
+        "_id": "fc4efb1d-891e-4767-aa60-6feca73ddef7",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-08-31T22:08:52.782Z",
+        "link-all-projects-3-title": "/all-projects-3/sustainable-system-website",
+        "year": "2021",
+        "_updatedDate": "2024-09-20T04:11:16.751Z",
+        "_publishStatus": "PUBLISHED",
+        "title": "Sustainable System Website",
+        "type": [
+          "Code Sketch",
+          "Research",
+          "Web Tool Development",
+          "Illustration & Storytelling"
+        ],
+        "playgroundStar": "⭐️⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️",
+        "question": "What does the GUI look like for remixing ideas?",
+        "_publishDate": "2024-08-31T21:49:03.896Z",
+        "_id": "dd72d0fe-07f1-4e0e-af1b-db02bbab0f72",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/206566873/Objects-Relation-Experimental-Website",
+        "_createdDate": "2024-08-31T22:02:08.207Z",
+        "shortDescription": "This experimental website explores relationships between projects. 3D icons on the canvas represent projects or themes. Users create connections by moving the cursor, with connected themes displayed in the title. This approach remixes themes to reveal new possibilities from past ideas.",
+        "link-all-projects-3-title": "/all-projects-3/objects-relations",
+        "year": "2023",
+        "_updatedDate": "2024-09-20T04:11:34.333Z",
+        "technology": [
+          "uiux",
+          "three.js",
+          "GUI"
+        ],
+        "gif": "wix:image://v1/565ac9_07e2e68345344d67b21555683e079cb8~mv2.gif/control_tubes_w_music.gif#originWidth=690&originHeight=392",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Control panel -make project into idea balls and user can manipulate tubes allow balls to collide and create new possibility",
+        "title": "Objects Relations",
+        "type": [
+          "Code Sketch",
+          "Illustration & Storytelling",
+          "UI UX Design"
+        ],
+        "mainImage": "wix:image://v1/565ac9_bec4d9e365224fc4a9891588b20411cc~mv2.png/Screenshot%202024-08-27%20at%2012.40.25%20PM.png#originWidth=2032&originHeight=1322",
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "Hey plant, how are you doing?",
+        "_publishDate": "2024-08-31T21:49:03.896Z",
+        "_id": "8ca1bd04-0da5-4131-9448-92d57460aff4",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/206192749/Mental-Color-of-Plants-2020",
+        "_createdDate": "2024-08-31T22:00:33.746Z",
+        "shortDescription": "Mental Color of Plants is a device that collects the behavioral datas (sun level, soil temperature, soil moisture, and ph value) of a plant and convert the data into a color code that shows \"a plant's mental state/being.\" The result will be presented as a color.",
+        "link-all-projects-3-title": "/all-projects-3/mental-colors-of-plants",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T08:51:47.747Z",
+        "technology": [
+          "Sustainable",
+          "Environmental Science",
+          "Web Tool"
+        ],
+        "gif": "wix:image://v1/565ac9_7f03e3122b7f4570b973d0e5fdba757b~mv2.gif/mental_colors.gif#originWidth=744&originHeight=426",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Observational/analytical tool for a sustainable system, mapping plants' pH levels with colors to indicate their mental state",
+        "title": "Mental Colors of Plants",
+        "type": [
+          "UI UX Design",
+          "Illustration & Storytelling",
+          "Research",
+          "Web Tool Development",
+          "Sculpture"
+        ],
+        "mainImage": "wix:image://v1/565ac9_8a89a812e2744270a93dedad3548d8bc~mv2.png/Screenshot%202024-09-16%20at%204.46.07%20AM.png#originWidth=2608&originHeight=1482"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "What is a confined space?",
+        "_publishDate": "2024-08-31T21:49:03.896Z",
+        "_id": "bb924be9-7cbd-4cc5-bd60-b31511201569",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/206180677/Spatial-Structure-2020",
+        "_createdDate": "2024-08-31T21:57:04.047Z",
+        "shortDescription": "In the final piece the spatial depth was defined by the consistence color of black, white, and grey. The stairs in the center introduced a guide of one perspective on\nunderstanding the space.",
+        "link-all-projects-3-title": "/all-projects-3/spatial-structures-review",
+        "year": "2020",
+        "_updatedDate": "2024-09-16T22:55:37.843Z",
+        "technology": [
+          "Illustration",
+          "Optical Illusion"
+        ],
+        "gif": "wix:image://v1/565ac9_9ce7551cfd644465b2c606e7160ef30b~mv2.png/Spatial%20Structures%20Review.png#originWidth=3072&originHeight=1730",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Redesigning the relationships between the boundary lines.",
+        "title": "Spatial Structures Review",
+        "type": [
+          "Research",
+          "Illustration & Storytelling"
+        ],
+        "mainImage": "wix:image://v1/565ac9_9ce7551cfd644465b2c606e7160ef30b~mv2.png/Spatial%20Structures%20Review.png#originWidth=3072&originHeight=1730"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "What is the most accurate way to make a self-portrait?",
+        "_publishDate": "2024-08-31T21:49:03.896Z",
+        "_id": "c750bac2-d8f5-495e-b718-bf3470622fb9",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/205790899/Sankofa-Self-Portrait-2021-by-June-Bee",
+        "_createdDate": "2024-08-31T21:55:56.393Z",
+        "shortDescription": "This is Self Portrait assignment from Integrative Studio class Freshman year at Parsons School of Design. This project explores self-portraiture through data visualization and neuroscience. It combines sculpture and computational art, using threads to represent neural networks and data pathways.",
+        "link-all-projects-3-title": "/all-projects-3/sankofa-self-portrait",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T22:53:49.369Z",
+        "technology": [
+          "Sculpture",
+          "Artwork",
+          "Wire"
+        ],
+        "gif": "wix:image://v1/565ac9_d9b7ac29a7284a1b8bb1d2ee4f0463bb~mv2.gif/Sankofa%20Self%20Portrait.gif#originWidth=720&originHeight=405",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Collective Data Sets Interweave Experiences Into An Image of Self",
+        "title": "Sankofa Self Portrait",
+        "type": [
+          "Sculpture",
+          "Research"
+        ],
+        "mainImage": "wix:image://v1/565ac9_c2b01919434b4c8194e9ae5ab9baa67e~mv2.jpg/Sankofa%20Self%20Portrait%202021_Page_22.jpg#originWidth=2442&originHeight=1372"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "_publishDate": "2024-08-31T21:49:03.896Z",
+        "_id": "8a57019e-46b0-405c-a3a1-18bf020cbbe0",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/the-creatives-artistic-freedom-reimagined-f6bfc9ab4732",
+        "_createdDate": "2024-08-31T21:52:40.418Z",
+        "link-all-projects-3-title": "/all-projects-3/the-creatives",
+        "year": "2022",
+        "_updatedDate": "2024-09-01T00:27:17.265Z",
+        "_publishStatus": "PUBLISHED",
+        "title": "The Creatives",
+        "type": [
+          "UI UX Design",
+          "Research",
+          "Web Tool Development"
+        ]
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "Any direct relationships between time and value?",
+        "_publishDate": "2024-08-31T21:49:03.896Z",
+        "_id": "a0d713ca-667e-45a1-8a2a-4c0ad35f234f",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/the-investigation-of-existence-aging-in-the-aspect-of-time-and-value-900507312612",
+        "_createdDate": "2024-08-31T21:51:58.129Z",
+        "shortDescription": "This is a performance art project conducted in 2021 - the year after COVID-19. I came up with this prompt \"\", researched, and composed a series of experiment to test my different  hypothesis.\n\n",
+        "link-all-projects-3-title": "/all-projects-3/the-investigation-of-existence-aging-in-the-aspect-of-time-and-value",
+        "year": "2020",
+        "_updatedDate": "2024-09-16T20:55:23.136Z",
+        "technology": [
+          "Street Interviews",
+          "Research",
+          "Performance Art"
+        ],
+        "gif": "wix:image://v1/565ac9_7b899072892d4718a71e6bd31b223458~mv2.gif/Value%20Age%20Time.gif#originWidth=430&originHeight=234",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Performance art engaging strangers to conduct a value exchange in the passage of time, witnessing aging in the process",
+        "title": "The Investigation of Existence Aging in The Aspect of Time and Value",
+        "type": [
+          "Research",
+          "Animation & VFX"
+        ],
+        "mainImage": "wix:image://v1/565ac9_e3a32f7f59a249c29b5b35465a129b97~mv2.png/Screen%20Shot%202020-11-01%20at%204.30.36%20PM.png#originWidth=2856&originHeight=1594"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "How to record space and time as memory?",
+        "youTubeUrl": "https://youtube.com/shorts/awX-pTmB3Vo",
+        "_publishDate": "2024-08-31T21:49:03.896Z",
+        "_id": "83a1b251-1a14-43e1-8c9c-aaa4079d218e",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/memory-map-recording-space-time-with-fluids-b3d313fb64cc",
+        "_createdDate": "2024-08-31T21:49:06.099Z",
+        "shortDescription": "This project delves into the relationship between experiences and memories, exploring how memories are fluid and ever-changing compared to the fixed nature of past events. By creating a \"memory map\" using dry glue pieces injected with colored water, I visually represents the dynamic and reflective nature of memory. The process allowed the artist to revisit and reconcile past experiences, ultimately leading to personal growth and self-forgiveness.",
+        "link-all-projects-3-title": "/all-projects-3/memory-map",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T19:23:02.780Z",
+        "technology": [
+          "Sculpture",
+          "Psychology Research",
+          "Art Statement"
+        ],
+        "gif": "wix:image://v1/565ac9_eaa494cca1dc49d0be175101fcb3257e~mv2.gif/Memory%20Map.gif#originWidth=566&originHeight=318",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Solidify water - Inventing/Reinventing Boundaries. The Map is not the territory but a blur of time",
+        "url1": "https://www.behance.net/gallery/205794149/Memory-Map",
+        "title": "Memory Map",
+        "type": [
+          "Sculpture",
+          "Research"
+        ],
+        "mainImage": "wix:image://v1/565ac9_8aa8c853e2244b6ea5dd3afe06430816~mv2.jpg/Memory%20Map_Feature.jpg#originWidth=2488&originHeight=1873"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "How to visualize a month?",
+        "_publishDate": "2024-08-30T16:07:53.475Z",
+        "_id": "de5bfd18-f375-4dc5-8b6a-1c4bbae5a8f0",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/206180431/Looping-Calendar",
+        "_createdDate": "2024-08-30T16:07:59.828Z",
+        "shortDescription": "\"Time is the coin of your life. It is the only coin you have, and only you can determine how it will be spent. Be careful lest you let other people spend it for you.”\n\n– Carl Sandburg",
+        "link-all-projects-3-title": "/all-projects-3/looping-calendar",
+        "year": "2020",
+        "_updatedDate": "2024-09-16T07:46:21.406Z",
+        "technology": [
+          "Poster",
+          "Graphic Design",
+          "Time"
+        ],
+        "gif": "wix:image://v1/565ac9_28c0609fdd3844afadf88320c4a37d0c~mv2.png/Looping%20Calendar.png#originWidth=2492&originHeight=1404",
+        "_publishStatus": "PUBLISHED",
+        "hook": "A circular routine design that highlights important events throughout the month",
+        "title": "Looping Calendar",
+        "type": [
+          "Illustration & Storytelling"
+        ],
+        "mainImage": "wix:image://v1/565ac9_28c0609fdd3844afadf88320c4a37d0c~mv2.png/Looping%20Calendar.png#originWidth=2492&originHeight=1404"
+      },
+      {
+        "quality": "⭐️⭐️⭐️",
+        "question": "Power as an individual?",
+        "_publishDate": "2024-08-30T15:17:30.733Z",
+        "_id": "5f37b25e-9921-4936-b642-8140f55a9934",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-08-30T15:17:32.859Z",
+        "shortDescription": "A new social media that connects high school students around the world, accompanying them through the teenage years that might produce the feel of lost in directions. We help them to learn about themselves through looking at the world from a broader lens. We partnered with 11 schools across nine countries: Taiwan, Malaysia, China, Australia, Canada, Germany, Korea, Japan, and the United Kingdom.",
+        "link-all-projects-3-title": "/all-projects-3/your-preferences-makes-differences-international-program",
+        "year": "2018",
+        "_updatedDate": "2024-08-31T23:57:42.352Z",
+        "technology": [
+          "Mobile App",
+          "Networking",
+          "Research",
+          "Social Media"
+        ],
+        "_publishStatus": "PUBLISHED",
+        "hook": "Dynamic community forming across the world based on people's strengths aim to grow from weaknesses",
+        "title": "Your Preferences Makes Differences International Program",
+        "type": [
+          "Animation & VFX",
+          "Computation",
+          "Research",
+          "UI UX Design"
+        ]
+      },
+      {
+        "quality": "⭐️",
+        "question": "Is the randomness generated by computers truly random?",
+        "_publishDate": "2024-08-20T01:50:49.486Z",
+        "_id": "7036c644-3c31-4d27-b306-d6244cf17749",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/are-computers-capable-of-making-emotional-decisions-in-life-0151c3965730",
+        "_createdDate": "2024-08-20T01:50:50.533Z",
+        "shortDescription": "a computational logic that generates inspirational/suggestive drawings\nbased on the user’s mental state concerning a certain decision topic.",
+        "link-all-projects-3-title": "/all-projects-3/your-decision-consultant",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T21:49:47.371Z",
+        "technology": [
+          "generative code",
+          "computational randomness",
+          "Psychology Research"
+        ],
+        "gif": "wix:image://v1/565ac9_1db3a00b414741a28956b46ee3492da8~mv2.gif/Your%20Decision%20Consultant.gif#originWidth=720&originHeight=405",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Experimenting computer capturing abstract concepts - as relations between emotions and decisions.",
+        "title": "Your Decision Consultant",
+        "type": [
+          "Code Sketch",
+          "Computation",
+          "Web Tool Development"
+        ],
+        "mainImage": "wix:image://v1/565ac9_29bc78973c184a6ba2d45651f4b645b5~mv2.png/Screen-Shot-2021-05-10-at-7.16.19-PM.png#originWidth=1920&originHeight=1200",
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "_publishDate": "2024-08-04T03:38:17.171Z",
+        "_id": "c19240bb-cfd9-41be-8561-5c7a26926db0",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-08-04T03:39:02.030Z",
+        "documentation": "https://quixotic-mandible-495.notion.site/NOC-1-A-Walk-in-Glitch-City-POV-computer-d2080bb5fd864ce7af71ba5afb0c4fdb?pvs=4",
+        "link-all-projects-3-title": "/all-projects-3/walk-in-glitch-city",
+        "liveDemo": "https://junebee66.github.io/nature-of-code-2023spring/01_random_walker/index.html",
+        "year": "2022",
+        "_updatedDate": "2024-09-15T00:45:48.002Z",
+        "_publishStatus": "PUBLISHED",
+        "creationDate": "January 31th 2023",
+        "title": "Walk in Glitch City",
+        "type": [
+          "Code Sketch"
+        ],
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "_publishDate": "2024-08-04T03:38:17.171Z",
+        "_id": "6f5d3f6a-9dcd-4eff-86da-3af95aa52fdf",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-08-04T03:38:47.992Z",
+        "documentation": "https://quixotic-mandible-495.notion.site/NOC-2-Vector-Interactive-PointCloud-Garden-d77ba47c234a4b1bba2c0bbee46bc66c?pvs=4",
+        "link-all-projects-3-title": "/all-projects-3/interactive-point-cloud-garden",
+        "liveDemo": "https://junebee66.github.io/nature-of-code-2023spring/02_vectors/index.html",
+        "year": "2023",
+        "_updatedDate": "2024-09-15T00:43:37.257Z",
+        "_publishStatus": "PUBLISHED",
+        "creationDate": "February 7th 2023",
+        "title": "Interactive Point Cloud Garden",
+        "type": [
+          "Code Sketch"
+        ],
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️⭐️",
+        "github": "https://github.com/junebee66/Point-cloud-Webcam",
+        "question": "How to make a 3D camera?",
+        "youTubeUrl": "https://youtu.be/A3lxTnGGiL8",
+        "_publishDate": "2024-08-04T03:38:17.171Z",
+        "_id": "b41d01f3-09e3-4133-bbe1-2cbdca25247c",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://github.com/junebee66/Point-cloud-Webcam",
+        "_createdDate": "2024-08-04T03:38:19.693Z",
+        "shortDescription": "This coding sketch creates point cloud from user's webcam image data.",
+        "link-all-projects-3-title": "/all-projects-3/pointcloud-webcam",
+        "year": "2022",
+        "littleRedBook": "http://72 【实时3D编程：用Three.js打造你的摄像头点云 - 六月雲端 | 小红书 - 你的生活指南】 😆 OnmONzaj5KZSvK6 😆 https://www.xiaohongshu.com/discovery/item/66ef8ce1000000000c018065?source=webshare&xhsshare=pc_web&xsec_token=ABiwDeZoNw-3G3HfjrPE2hwTcML2PX8Eq7MmB8w0xpfgM=&xsec_source=pc_share",
+        "_updatedDate": "2025-01-26T07:03:57.007Z",
+        "technology": [
+          "Code Experiment",
+          "generative code",
+          "Web Camera"
+        ],
+        "gif": "wix:image://v1/565ac9_059d15ae799d46a6bb4057b48689c2d3~mv2.gif/point-cloud-webcam.gif#originWidth=854&originHeight=480",
+        "_publishStatus": "PUBLISHED",
+        "hook": "The point cloud is mapped with the brightness of the pixels to create real-time depth.",
+        "title": "Pointcloud Webcam",
+        "type": [
+          "Code Sketch",
+          "Web Tool Development"
+        ],
+        "instagram": "https://www.instagram.com/p/C-wlDDFJxe3/",
+        "mainImage": "wix:image://v1/565ac9_059d15ae799d46a6bb4057b48689c2d3~mv2.gif/point-cloud-webcam.gif#originWidth=854&originHeight=480",
+        "playgroundStar": "⭐️"
+      },
+      {
+        "quality": "⭐️⭐️⭐️",
+        "_publishDate": "2024-08-04T03:29:49.336Z",
+        "_id": "0d5b45bf-e2fc-46dd-aa60-959610a518a7",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-08-04T03:29:51.543Z",
+        "documentation": "https://quixotic-mandible-495.notion.site/NOC-7-Fractals-and-Cellular-Automata-Water-Lily-Pond-Timelapse-ddbebefc721d4973970cdc675dbccd69?pvs=4",
+        "link-all-projects-3-title": "/all-projects-3/water-lily-pond-timelapse",
+        "liveDemo": "https://junebee66.github.io/nature-of-code-2023spring/07_fractals-cellular-automata/index.html",
+        "year": "2023",
+        "_updatedDate": "2024-09-20T04:12:32.448Z",
+        "_publishStatus": "PUBLISHED",
+        "creationDate": "April 2nd 2023",
+        "title": "Water Lily Pond Timelapse",
+        "type": [
+          "Code Sketch"
+        ],
+        "mainImage": "wix:image://v1/565ac9_744a9a9ae1e540268c7e054e7393a758~mv2.gif/waterlily.gif#originWidth=720&originHeight=480",
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️⭐️⭐️",
+        "question": "What is virtual environments composed of?",
+        "_publishDate": "2024-08-04T03:25:59.485Z",
+        "_id": "fbac8c86-3fe1-4098-88c7-24eebf5fe53a",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-08-04T03:27:14.962Z",
+        "documentation": "https://quixotic-mandible-495.notion.site/NOC-5-Simulation-Project-Soft-Environment-Dynamic-Desire-Conscious-Points-98e0acc386bd4fc2ac4da2165512d409?pvs=4",
+        "shortDescription": "This project explores a \"Soft Environment\" where object boundaries dissolve. It simulates conscious points, once part of distinct objects, now freely interacting and blending \"desires\" upon collision.",
+        "link-all-projects-3-title": "/all-projects-3/soft-environment",
+        "liveDemo": "https://junebee66.github.io/nature-of-code-2023spring/05_simulation_project/Simulation%20Project%20-%20Final%20Garden/index.html",
+        "year": "2023",
+        "_updatedDate": "2024-09-16T04:36:44.082Z",
+        "technology": [
+          "Code Simulation",
+          "Bio Data",
+          "Run on Web"
+        ],
+        "gif": "wix:image://v1/565ac9_8bec4d328b094504816220a531ac4c80~mv2.gif/envirnment-mix.gif#originWidth=720&originHeight=480",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Deconstructing an environment into a dynamic desire - conscious points",
+        "creationDate": "March 28th 2023",
+        "title": "Soft Environment",
+        "type": [
+          "Code Sketch"
+        ],
+        "mainImage": "wix:image://v1/565ac9_8bec4d328b094504816220a531ac4c80~mv2.gif/envirnment-mix.gif#originWidth=720&originHeight=480",
+        "playgroundStar": "⭐️"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "_publishDate": "2024-08-04T03:25:59.485Z",
+        "_id": "e982613f-9164-410c-b190-e44a9e26ad44",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-08-04T03:26:22.094Z",
+        "link-all-projects-3-title": "/all-projects-3/logo-particle",
+        "year": "2024",
+        "_updatedDate": "2024-08-31T23:26:08.967Z",
+        "_publishStatus": "PUBLISHED",
+        "title": "Logo Particle",
+        "type": [
+          "Code Sketch"
+        ],
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "github": "https://github.com/junebee66/Web-Widget/tree/main/anaglyph_scroll",
+        "_publishDate": "2024-08-04T03:25:59.485Z",
+        "_id": "949f3f7b-9f24-4868-9017-2bb398a0d4ec",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-08-04T03:26:01.994Z",
+        "link-all-projects-3-title": "/all-projects-3/anaglyph-scroll",
+        "year": "2024",
+        "_updatedDate": "2024-09-15T00:51:46.879Z",
+        "_publishStatus": "PUBLISHED",
+        "creationDate": "February  2023",
+        "title": "Anaglyph Scroll",
+        "type": [
+          "Code Sketch"
+        ],
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️⭐️",
+        "github": "https://github.com/junebee66/3D-Web",
+        "question": "How to bridge current 2D internet to 3D?",
+        "youTubeUrl": "https://youtu.be/U1oq7YcANqI",
+        "_publishDate": "2024-07-30T05:11:44.189Z",
+        "_id": "0ac1fc3b-9195-472d-876e-9b7723a0a97b",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://github.com/junebee66/3D-Web",
+        "_createdDate": "2024-07-30T05:11:47.091Z",
+        "shortDescription": "This study aims to adapt the AVR filter for web use and segment website elements into 3D for anaglyph glasses. Created by June Bee, the AVR filter converts web visuals to 3D formats for anaglyph glasses. This technology improves XR accessibility and introduces new digital interactions, allowing users to engage with internet content in physical space more complexly.",
+        "link-all-projects-3-title": "/all-projects-3/3d-web-translator",
+        "year": "2024",
+        "littleRedBook": "https://www.xiaohongshu.com/discovery/item/671f27040000000021003617?source=webshare&xhsshare=pc_web&xsec_token=ABbe265PDA9IWZ6WOwgC2_Us7glWkB3AIJYtHDFl4nETo=&xsec_source=pc_share",
+        "_updatedDate": "2025-01-26T06:30:02.024Z",
+        "medium": "https://medium.com/@junesthoughts/3d-web-translator-turning-your-2d-internet-to-3d-reality-c9a5bf91b4ef",
+        "technology": [
+          "Node.js",
+          "three.js",
+          "backend"
+        ],
+        "gif": "wix:image://v1/565ac9_9574954ee83c4f04ac79e76daa1cf4f3~mv2.gif/web-translator.gif#originWidth=1024&originHeight=396",
+        "_publishStatus": "PUBLISHED",
+        "hook": "converting traditional websites into 3D user interfaces. and my anaglyph algorithm to have 3d effect  ",
+        "title": "3D Web Translator",
+        "type": [
+          "Code Sketch",
+          "Computation",
+          "Web Tool Development"
+        ],
+        "urlMatrix": [
+          {
+            "Name": "Turning Your 2D Internet to 3D Reality",
+            "url": "https://medium.com/@junesthoughts/3d-web-translator-turning-your-2d-internet-to-3d-reality-c9a5bf91b4ef"
+          },
+          {
+            "Name": "Tutorial",
+            "url": "https://youtu.be/U1oq7YcANqI"
+          }
+        ],
+        "instagram": "https://www.instagram.com/reel/DBqAkI3J6Sd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        "gif1": "wix:video://v1/565ac9_0bfa90b8fd6b4fa5ba9db22909fa79ae/3dWeb.mov#posterUri=565ac9_0bfa90b8fd6b4fa5ba9db22909fa79aef000.jpg&posterWidth=2846&posterHeight=1130",
+        "mainImage": "wix:image://v1/565ac9_9574954ee83c4f04ac79e76daa1cf4f3~mv2.gif/web-translator.gif#originWidth=1024&originHeight=396",
+        "playgroundStar": "⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️⭐️⭐️",
+        "question": "Placeholder Question?",
+        "_publishDate": "2024-07-29T23:35:25.009Z",
+        "_id": "b6393982-92c8-4304-ad77-7c610a27a0a0",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2024-07-29T23:35:27.365Z",
+        "link-all-projects-3-title": "/all-projects-3/if-city",
+        "year": "2024",
+        "_updatedDate": "2025-01-22T08:46:12.967Z",
+        "technology": [
+          "Simulation",
+          "Urban Design"
+        ],
+        "typeIcon": "wix:vector://v1/11062b_899259d6388341529acd02e07f127f74.svg/Home.svg",
+        "video": "wix:video://v1/565ac9_ebdefd70ff0e46ae88257d7d1caefe6f/If%20City%20Trailer%20(No%20Margin%20Space)%20.mp4#posterUri=565ac9_ebdefd70ff0e46ae88257d7d1caefe6ff000.jpg&posterWidth=1920&posterHeight=720",
+        "_publishStatus": "PUBLISHED",
+        "typeIcon1": "wix:vector://v1/11062b_e5b381a1f71842499098ed3bdd5350aa.svg/People.svg",
+        "title": "If City",
+        "typeIcon11": "wix:vector://v1/11062b_83f63d922c5f40caafba07bf591932e9.svg/Universal.svg",
+        "type": [
+          "Animation & VFX",
+          "VR AR XR Design",
+          "Computation",
+          "Architecture & Urban Design",
+          "Game",
+          "Research"
+        ],
+        "urlMatrix": [
+          {
+            "Name": "Documentation",
+            "url": "https://www.behance.net/gallery/205794149/Memory-Map"
+          },
+          {
+            "Name": "Medium",
+            "url": "https://www.behance.net/gallery/205794149/Memory-Map"
+          }
+        ],
+        "gif1": "wix:video://v1/565ac9_ebdefd70ff0e46ae88257d7d1caefe6f/If%20City%20Trailer%20(No%20Margin%20Space)%20.mp4#posterUri=565ac9_ebdefd70ff0e46ae88257d7d1caefe6ff000.jpg&posterWidth=1920&posterHeight=720",
+        "mainImage": "wix:image://v1/565ac9_f3f13a6073b24118b56d605edae02f66~mv2.jpg/ScreenShot00269_edited.jpg#originWidth=1850&originHeight=566"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "How do we learn in the era of digitalization? ",
+        "_publishDate": "2024-07-12T20:04:22.377Z",
+        "_id": "a21ede31-6c94-49dd-a26a-5b8dfc4dde13",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/higher-education-adaptation-to-digitalization-era-with-virtual-reality-5a89b6705444",
+        "_createdDate": "2024-07-12T20:04:23.678Z",
+        "shortDescription": "This project stems from my Integrative Seminar research, exploring Dewey's Experiential learning theory to reimagine 21st-century digitalized higher education using virtual reality (VR). The research paper served as the foundation for an animation visualizing key points.",
+        "link-all-projects-3-title": "/all-projects-3/transforming-higher-education-adapting-to-the-era-of-digitalization-with-the-use-of-virtual-reality",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T19:56:16.089Z",
+        "technology": [
+          "Education",
+          "Research"
+        ],
+        "gif": "wix:image://v1/565ac9_bd3e6bb78eec4cf88d932a1273276b45~mv2.gif/VR%20Education_begininign.gif#originWidth=606&originHeight=306",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Learning beyond 2D: Experiential Learning - Virtual Reality",
+        "title": "Transforming Higher Education Adapting to the Era of Digitalization with The Use of Virtual Reality",
+        "type": [
+          "Research"
+        ],
+        "mainImage": "wix:image://v1/565ac9_7ffd4d6a5cab4334999f5abd1edd8e66~mv2.png/Screen%20Shot%202022-03-16%20at%205.28.00%20PM.png#originWidth=3072&originHeight=1920"
+      },
+      {
+        "quality": "⭐️⭐️⭐️",
+        "_publishDate": "2024-02-27T03:55:33.250Z",
+        "_id": "71d31751-a736-4ddb-902b-18df6fc5b919",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://github.com/junebee66/DepthMap-To-3DModel",
+        "_createdDate": "2024-02-27T03:55:34.798Z",
+        "link-all-projects-3-title": "/all-projects-3/depth-map-to-3d-model",
+        "year": "2023",
+        "_updatedDate": "2024-09-18T04:11:14.331Z",
+        "gif": "wix:image://v1/565ac9_2c92086f7b954d289c32dcb0ce410925~mv2.gif/popcorn.gif#originWidth=800&originHeight=533",
+        "_publishStatus": "PUBLISHED",
+        "title": "Depth Map to 3D Model",
+        "type": [
+          "Code Sketch",
+          "Web Tool Development"
+        ],
+        "mainImage": "wix:image://v1/565ac9_2c92086f7b954d289c32dcb0ce410925~mv2.gif/popcorn.gif#originWidth=800&originHeight=533",
+        "playgroundStar": "⭐️⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️⭐️",
+        "question": "Placeholder Question?",
+        "_publishDate": "2024-02-09T22:59:08.979Z",
+        "_id": "fc2c807e-d6af-488d-9c84-1feaa73bb1fe",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/language-of-icons-byzantine-icon-of-crucifixion-explained-00f55e059f77",
+        "_createdDate": "2024-02-09T22:59:10.878Z",
+        "link-all-projects-3-title": "/all-projects-3/bi%3A-the-origin-of-architectural-creativity-",
+        "year": "2020",
+        "_updatedDate": "2024-09-18T08:24:01.025Z",
+        "typeIcon": "wix:vector://v1/11062b_899259d6388341529acd02e07f127f74.svg/Home.svg",
+        "gif": "wix:image://v1/565ac9_d44b881a6aa446f8aaeb65b21b357282~mv2.gif/unit-lvwlnKFaSfUvTbu8NiSD_2020_BIbook.gif#originWidth=1200&originHeight=900",
+        "_publishStatus": "PUBLISHED",
+        "typeIcon1": "wix:vector://v1/11062b_e5b381a1f71842499098ed3bdd5350aa.svg/People.svg",
+        "title": "BI: The Origin of Architectural Creativity ",
+        "type": [
+          "Research",
+          "Architecture & Urban Design",
+          "Illustration & Storytelling"
+        ],
+        "mainImage": "wix:image://v1/565ac9_d44b881a6aa446f8aaeb65b21b357282~mv2.gif/unit-lvwlnKFaSfUvTbu8NiSD_2020_BIbook.gif#originWidth=1200&originHeight=900"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "What is the parallel dimension of water?",
+        "_publishDate": "2023-11-29T00:02:48.484Z",
+        "_id": "4f78908d-27a0-4908-87a7-cff9c76f8c74",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/205834453/Wheres-Water-Where-Water-is-Fluid-Environment",
+        "_createdDate": "2023-11-29T00:02:50.595Z",
+        "shortDescription": "Poster design for \"Where's the water & where water is\" exhibition at NYU Tisch Photography & Imagining Department.",
+        "link-all-projects-3-title": "/all-projects-3/where's-the-water-%26-where-water-is",
+        "year": "2022",
+        "_updatedDate": "2024-09-16T05:52:59.958Z",
+        "technology": [
+          "Graphic Design",
+          "Digital Art",
+          "Poster"
+        ],
+        "gif": "wix:image://v1/565ac9_9c53a19bd6fc4468ba61c5c5dc0e2063~mv2.jpg/poster-vertical.jpg#originWidth=3300&originHeight=5100",
+        "_publishStatus": "PUBLISHED",
+        "hook": "A split poster where it can be viewed as the source of water or the result of flowing water",
+        "title": "Where's the Water & Where Water is",
+        "type": [
+          "Illustration & Storytelling"
+        ],
+        "mainImage": "wix:image://v1/565ac9_96343b5ca89045d486fe2a9bd1d42585~mv2.jpg/mockfull%20vertical.jpg#originWidth=1567&originHeight=2987"
+      },
+      {
+        "quality": "⭐️",
+        "question": "How to make virtual meetings more engaging and collaborative?",
+        "_publishDate": "2023-11-27T17:59:40.925Z",
+        "_id": "1ae3e284-e7aa-4622-aa64-2b71885878df",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2023-11-27T17:59:42.349Z",
+        "shortDescription": "This Mozilla Hub Rooms project was part of the Core Environments Class during my sophomore year at Parsons School of Design.\n\nIt features three rooms based on my 2022 story \"Enclosed,\" set in 2200 during a data war. \n\n1. 2200 Future Room (all data accessed corrupted)\n\n2. Within Time (building new home)\n\n3. The Stream (found the core of enclosed)",
+        "link-all-projects-3-title": "/all-projects-3/mozilla-shared-space",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T08:04:23.515Z",
+        "technology": [
+          "Web VR",
+          "Storytelling",
+          "Writing"
+        ],
+        "gif": "wix:image://v1/565ac9_519e6e78dc574c5da8cb806e779caede~mv2.gif/mozilla-hub_opening_pretty_small.gif#originWidth=626&originHeight=392",
+        "_publishStatus": "PUBLISHED",
+        "hook": "An narration based real-time social space on the internet where people can gather, co-create, and explore stories together. ",
+        "title": "Mozilla Shared Space",
+        "type": [
+          "VR AR XR Design",
+          "Game",
+          "Web Tool Development"
+        ],
+        "mainImage": "wix:image://v1/565ac9_c52573a21de249b0a0474864b5cdcf75~mv2.png/Screenshot%202024-09-11%20at%205.11.34%20PM.png#originWidth=2368&originHeight=1470"
+      },
+      {
+        "quality": "⭐️⭐️⭐️",
+        "_publishDate": "2023-09-29T20:24:23.214Z",
+        "_id": "f3e7164e-fc1d-4648-8706-0685438c2642",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://practicegallery.org/meta-eternity/",
+        "_createdDate": "2023-09-29T20:24:28.939Z",
+        "link-all-projects-3-title": "/all-projects-3/metaeternity",
+        "year": "2022",
+        "_updatedDate": "2024-10-03T11:02:55.178Z",
+        "gif": "wix:image://v1/565ac9_72f10aed7f1e40f996ecc1c2797324a7~mv2.gif/MetaEternity_Short.gif#originWidth=488&originHeight=240",
+        "_publishStatus": "PUBLISHED",
+        "title": "MetaEternity",
+        "type": [
+          "VR AR XR Design",
+          "Research"
+        ],
+        "mainImage": "wix:image://v1/565ac9_15d143d8c37748319f880c976d5bfae4~mv2.png/Screen%20Shot%202022-12-29%20at%202.15.32%20PM.png#originWidth=1552&originHeight=1166",
+        "mediagallery": [
+          {
+            "description": "",
+            "slug": "565ac9_08e2dded11ca40d481f1d429e22e711f~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_08e2dded11ca40d481f1d429e22e711f~mv2.png/Screen%2520Shot%25202022-12-29%2520at%25202.15.15%2520PM.png#originWidth=1146&originHeight=1436",
+            "title": "Screen Shot 2022-12-29 at 2.15.15 PM.png",
+            "type": "image",
+            "settings": {
+              "width": 1146,
+              "height": 1436,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_e5301c2b72d94d40af2a4310c5d3226b~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_e5301c2b72d94d40af2a4310c5d3226b~mv2.png/Screen%2520Shot%25202022-12-29%2520at%25202.15.44%2520PM.png#originWidth=1409&originHeight=1160",
+            "title": "Screen Shot 2022-12-29 at 2.15.44 PM.png",
+            "type": "image",
+            "settings": {
+              "width": 1409,
+              "height": 1160,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_15d143d8c37748319f880c976d5bfae4~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_15d143d8c37748319f880c976d5bfae4~mv2.png/Screen%2520Shot%25202022-12-29%2520at%25202.15.32%2520PM.png#originWidth=1552&originHeight=1166",
+            "title": "Screen Shot 2022-12-29 at 2.15.32 PM.png",
+            "type": "image",
+            "settings": {
+              "width": 1552,
+              "height": 1166,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_116cb4424c3543cab6dcff48ae51cf79~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_116cb4424c3543cab6dcff48ae51cf79~mv2.png/Screen%2520Shot%25202022-12-29%2520at%25202.15.04%2520PM.png#originWidth=1150&originHeight=1442",
+            "title": "Screen Shot 2022-12-29 at 2.15.04 PM.png",
+            "type": "image",
+            "settings": {
+              "width": 1150,
+              "height": 1442,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_bf731dceba7a46d2a015204e96dffca1~mv2.jpg",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_bf731dceba7a46d2a015204e96dffca1~mv2.jpg/Metasensorica.jpg#originWidth=2904&originHeight=2244",
+            "title": "Metasensorica.jpg",
+            "type": "image",
+            "settings": {
+              "width": 2904,
+              "height": 2244,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "quality": "⭐️",
+        "_publishDate": "2023-09-29T04:46:52.794Z",
+        "_id": "ff9f751f-f963-421b-b867-d1b7ad8c5e72",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "_createdDate": "2023-09-29T04:49:07.873Z",
+        "link-all-projects-3-title": "/all-projects-3/vorld",
+        "_updatedDate": "2024-08-04T03:36:27.582Z",
+        "_publishStatus": "PUBLISHED",
+        "title": "Vorld",
+        "type": [
+          "UI UX Design",
+          "VR AR XR Design",
+          "Code Sketch",
+          "Computation"
+        ],
+        "playgroundStar": "⭐️⭐️⭐️⭐️"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "How can we free artists from institutional and societal structures to enable their creativity and success?",
+        "_publishDate": "2023-09-29T04:46:52.794Z",
+        "_id": "f07f509f-3b93-4f65-a01c-5a3bad5e10ff",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://medium.com/@junesthoughts/the-creatives-artistic-freedom-reimagined-f6bfc9ab4732",
+        "_createdDate": "2023-09-29T04:46:53.871Z",
+        "shortDescription": "The Creatives is a collaborative platform empowering artists and designers independent of social status or background. By emphasizing artistic talent, The Creatives aims to boost confidence in underrepresented artists and foster a diverse, interconnected creative community.",
+        "link-all-projects-3-title": "/all-projects-3/the-creatives",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T21:41:45.294Z",
+        "technology": [
+          "UIUX",
+          "Website",
+          "Social Justice",
+          "Research"
+        ],
+        "gif": "wix:image://v1/565ac9_aeacc8c2190e45649a6b447f98e3a597~mv2.gif/The_Creatives.gif#originWidth=568&originHeight=344",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Design a collaborative environment that focuses solely on talent and creativity",
+        "title": "The Creatives",
+        "type": [
+          "Research",
+          "UI UX Design"
+        ],
+        "mainImage": "wix:image://v1/565ac9_f11618b66b0943649c61d42e4b98cae2~mv2.jpg/The_Creatives_GreyB.jpg#originWidth=6500&originHeight=4336",
+        "mediagallery": [
+          {
+            "description": "",
+            "slug": "565ac9_aeacc8c2190e45649a6b447f98e3a597~mv2.gif",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_aeacc8c2190e45649a6b447f98e3a597~mv2.gif/_.gif#originWidth=568&originHeight=344",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 568,
+              "height": 344,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_f11618b66b0943649c61d42e4b98cae2~mv2.jpg",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_f11618b66b0943649c61d42e4b98cae2~mv2.jpg/_.jpg#originWidth=6500&originHeight=4336",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 6500,
+              "height": 4336,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_b166b4c5f05147db907d741efa9ec816~mv2.jpg",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_b166b4c5f05147db907d741efa9ec816~mv2.jpg/_.jpg#originWidth=4471&originHeight=2893",
+            "title": "",
+            "type": "image",
+            "settings": {
+              "width": 4471,
+              "height": 2893,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "quality": "⭐️⭐️⭐️⭐️",
+        "_publishDate": "2023-09-29T04:43:48.318Z",
+        "_id": "346fa2cf-c3f4-477e-b400-f6dad017621a",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.junesbee.com/answers",
+        "_createdDate": "2023-09-29T04:43:49.699Z",
+        "link-all-projects-3-title": "/all-projects-3/answers-at-the-end-of-the-world",
+        "year": "2022",
+        "_updatedDate": "2024-01-30T17:29:13.039Z",
+        "typeIcon": "wix:vector://v1/11062b_721e653663e94a4aadac41c3c4d58cb6.svg/Circuit%20Board.svg",
+        "_publishStatus": "PUBLISHED",
+        "hook": "A VR journey to find answers to your deepest questions with generative AI environment",
+        "typeIcon1": "wix:vector://v1/11062b_83f63d922c5f40caafba07bf591932e9.svg/Universal.svg",
+        "title": "Answers At The End of The World",
+        "typeIcon11": "wix:vector://v1/a89cad0f63be483495118f672c03035b.svg/Clapper%20Board.svg",
+        "type": [
+          "VR AR XR Design",
+          "Game"
+        ],
+        "mainImage": "wix:image://v1/565ac9_059cc3bf7b124dcb99fbcc5e9c4d083a~mv2.png/pause2.png#originWidth=1701&originHeight=1047"
+      },
+      {
+        "quality": "⭐️⭐️⭐️⭐️",
+        "question": "What to do at the intersection of life?",
+        "youTubeUrl": "https://www.youtube.com/watch?v=S2pIouihjuU&t=82s",
+        "_publishDate": "2023-09-29T04:24:14.481Z",
+        "_id": "f41cbb2e-97a3-405f-b940-1dcc4ee3ece1",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.youtube.com/watch?v=S2pIouihjuU",
+        "_createdDate": "2023-09-29T04:24:15.758Z",
+        "shortDescription": "This is my gap year exploration (during covid and before going to college) of what does next mean in life and how to make decisions that leads to the right “next”",
+        "link-all-projects-3-title": "/all-projects-3/what's-next%3F",
+        "year": "2020",
+        "_updatedDate": "2024-09-01T04:30:48.861Z",
+        "technology": [
+          "Networking",
+          "Research"
+        ],
+        "_publishStatus": "PUBLISHED",
+        "hook": "Exploring the next for people who are at their first intersection - college and reflect through hosting a program ",
+        "url1": "https://www.youtube.com/watch?v=Gt5wnBxsMrA",
+        "title": "What's Next?",
+        "type": [
+          "Research",
+          "Web Tool Development",
+          "UI UX Design"
+        ],
+        "mainImage": "wix:image://v1/565ac9_4de52cf2829947de87356e0ed27a72ba~mv2.png/What'sNext.png#originWidth=3068&originHeight=1382",
+        "mediagallery": [
+          {
+            "description": "",
+            "slug": "565ac9_54f935d6753643dfac3b5c15ae4d5623~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_54f935d6753643dfac3b5c15ae4d5623~mv2.png/YPMD.png#originWidth=3072&originHeight=1386",
+            "title": "YPMD.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1386,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_4de52cf2829947de87356e0ed27a72ba~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_4de52cf2829947de87356e0ed27a72ba~mv2.png/What'sNext.png#originWidth=3068&originHeight=1382",
+            "title": "What'sNext.png",
+            "type": "image",
+            "settings": {
+              "width": 3068,
+              "height": 1382,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_d3461e8b21be4bf0b7622f93bd24d139~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_d3461e8b21be4bf0b7622f93bd24d139~mv2.png/Speech.png#originWidth=3072&originHeight=1554",
+            "title": "Speech.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1554,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_3cbff79f373f4c1183a17458b19cff4e~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_3cbff79f373f4c1183a17458b19cff4e~mv2.png/Metro.png#originWidth=3072&originHeight=1376",
+            "title": "Metro.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1376,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_d7d938771e9e4542ad5a52a2cf8e408f~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_d7d938771e9e4542ad5a52a2cf8e408f~mv2.png/Kids.png#originWidth=3072&originHeight=1594",
+            "title": "Kids.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1594,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_c6ff5b051584410caefc468ca9aba5a6~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_c6ff5b051584410caefc468ca9aba5a6~mv2.png/Laughing.png#originWidth=3072&originHeight=1374",
+            "title": "Laughing.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1374,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_8571c951aa60420bb258cb7c553d2a5c~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_8571c951aa60420bb258cb7c553d2a5c~mv2.png/Participants.png#originWidth=3072&originHeight=1382",
+            "title": "Participants.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1382,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_a6e6bb5a594f4a79810ef74cee5fcd09~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_a6e6bb5a594f4a79810ef74cee5fcd09~mv2.png/Airplane.png#originWidth=3072&originHeight=1374",
+            "title": "Airplane.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1374,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_6a0ed629dd884950bca176d272182ade~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_6a0ed629dd884950bca176d272182ade~mv2.png/Fustrated.png#originWidth=3072&originHeight=1374",
+            "title": "Fustrated.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1374,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_b3263778a7c24a688504011399e624bf~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_b3263778a7c24a688504011399e624bf~mv2.png/Foriengers.png#originWidth=3072&originHeight=1372",
+            "title": "Foriengers.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1372,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_b6ba61c3cb5f4fff89c3c209b318c629~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_b6ba61c3cb5f4fff89c3c209b318c629~mv2.png/Amazon.png#originWidth=3072&originHeight=1612",
+            "title": "Amazon.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1612,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_abec7ef533ba4e9d9eb82ae7416e97f1~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_abec7ef533ba4e9d9eb82ae7416e97f1~mv2.png/Car_Closed_Up.png#originWidth=3072&originHeight=1382",
+            "title": "Car_Closed_Up.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1382,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_3a87856393a04184a8ce4af5b43ae35d~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_3a87856393a04184a8ce4af5b43ae35d~mv2.png/Car_Closed_Up.png#originWidth=3072&originHeight=1382",
+            "title": "Car_Closed_Up.png",
+            "type": "image",
+            "settings": {
+              "width": 3072,
+              "height": 1382,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          {
+            "description": "",
+            "slug": "565ac9_3ca3dd6f603146c5b476a2c8d52e6e4d~mv2.png",
+            "alt": "",
+            "src": "wix:image://v1/565ac9_3ca3dd6f603146c5b476a2c8d52e6e4d~mv2.png/What'sNext.png#originWidth=3068&originHeight=1382",
+            "title": "What'sNext.png",
+            "type": "image",
+            "settings": {
+              "width": 3068,
+              "height": 1382,
+              "focalPoint": [
+                0.5,
+                0.5
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "quality": "⭐️",
+        "question": "What are ideas for computers?",
+        "youTubeUrl": "https://www.youtube.com/watch?v=HwjrXY80Kds",
+        "_publishDate": "2023-09-29T04:14:01.179Z",
+        "_id": "53bd7882-ae9c-4ab1-b31d-9e58f462147e",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.youtube.com/watch?v=HwjrXY80Kds",
+        "_createdDate": "2023-09-29T04:21:02.358Z",
+        "shortDescription": "This animation is from Integrative Studio Class Freshmen year at Parsons School of Design",
+        "link-all-projects-3-title": "/all-projects-3/idea",
+        "year": "2023",
+        "_updatedDate": "2024-09-16T22:30:51.992Z",
+        "technology": "",
+        "typeIcon": "wix:vector://v1/a89cad0f63be483495118f672c03035b.svg/Clapper%20Board.svg",
+        "_publishStatus": "PUBLISHED",
+        "hook": "visualize the birth of an idea",
+        "title": "Idea",
+        "type": [
+          "Animation & VFX"
+        ],
+        "mainImage": "wix:image://v1/565ac9_0fe1941bfe9f4b7484be4892b07a507b~mv2.png/Idea.png#originWidth=3072&originHeight=1658"
+      },
+      {
+        "quality": "⭐️⭐️",
+        "question": "What is the language of icons?",
+        "youTubeUrl": "http://Byzantine, Icon of Crucifixion Explained 2020",
+        "_publishDate": "2023-09-29T04:14:01.179Z",
+        "_id": "4dc5c7b6-a0bd-4486-b865-ac57ebb63564",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://youtu.be/7g_-JLsb2K4?si=_QYmYrd56E_8k9oI",
+        "_createdDate": "2023-09-29T04:17:41.715Z",
+        "shortDescription": "This project explains how these religious artworks conveyed complex theological concepts to a largely illiterate audience during the Byzantine era. The analysis examines the composition, imagery, and symbolic elements used to depict Christ's crucifixion and its spiritual significance. Through this artwork, the project provides insights into the role of icons in Byzantine religious practice and their lasting impact on Christian art and spirituality.",
+        "link-all-projects-3-title": "/all-projects-3/byzantine%2C-icon-of-crucifixion-explained-2020",
+        "year": "2021",
+        "_updatedDate": "2024-09-16T09:09:28.591Z",
+        "technology": [
+          "Art History",
+          "Research",
+          "Explainer Video"
+        ],
+        "typeIcon": "wix:vector://v1/11062b_1247535668e349e08cbd13aeb20a3720.svg/Sign%20Here.svg",
+        "gif": "wix:image://v1/565ac9_808edb1092454746bd6bf290bb667293~mv2.gif/Byzantine,%20Icon%20of%20Crucifixion%20Explained%202020.gif#originWidth=760&originHeight=428",
+        "_publishStatus": "PUBLISHED",
+        "hook": "Visual Explanation of  the Byzantine time artwork- Icon of Crucifixion ",
+        "typeIcon1": "wix:vector://v1/11062b_899259d6388341529acd02e07f127f74.svg/Home.svg",
+        "title": "Byzantine, Icon of Crucifixion Explained 2020",
+        "type": [
+          "Research",
+          "Sculpture"
+        ],
+        "mainImage": "wix:image://v1/565ac9_42003a05077b4cf9b535c083b9762064~mv2.png/Byzantine,%20Icon%20of%20Crucifixion%20Explained%202020.png#originWidth=3072&originHeight=1664"
+      },
+      {
+        "quality": "⭐️⭐️⭐️",
+        "question": "What is left out in frozen frames?",
+        "youTubeUrl": "https://www.youtube.com/watch?v=YyRL9G1GJVo",
+        "_publishDate": "2023-09-29T04:14:01.179Z",
+        "_id": "36b86050-98c7-4fd5-9c81-9f1b58d68e83",
+        "_draftDate": null,
+        "_owner": "565ac991-f9af-401e-b8d2-edd975c2627a",
+        "pageUrl": "https://www.behance.net/gallery/207718679/Gifts-Stop-Motion-2020",
+        "_createdDate": "2023-09-29T04:16:27.044Z",
+        "shortDescription": "The short film \"Gifts\" tells the story of a young girl who chances upon a goose ensnared within a mysterious container. Determined to free the creature, she embarks on a rescue mission. But as her resolve begins to falter, the story takes an unexpected turn…",
+        "link-all-projects-3-title": "/all-projects-3/gift",
+        "year": "2020",
+        "_updatedDate": "2024-09-16T22:42:02.138Z",
+        "technology": [
+          "Stop Motion",
+          "Storytelling",
+          "Illustration"
+        ],
+        "gif": "wix:image://v1/565ac9_1a2ff3579aa24dbcb3fc78b50f275730~mv2.gif/June's%20Stop%20Motion%20-%20Gifts.gif#originWidth=358&originHeight=202",
+        "_publishStatus": "PUBLISHED",
+        "hook": "The preconceived roles we often assume in life, capturing the irregularity of life events and initiate this conversation by presenting the gain and loss in the film.",
+        "title": "Gift",
+        "type": [
+          "Animation & VFX",
+          "Illustration & Storytelling",
+          "Sculpture"
+        ],
+        "mainImage": "wix:image://v1/565ac9_d5aa3c93ec8d4fed98f6a44892b630a7~mv2.jpg/Gifts_Feature_2.jpg#originWidth=2448&originHeight=1376"
+      }
+    ]
+  }

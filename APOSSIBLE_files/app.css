@@ -2850,6 +2850,74 @@ article li em {
   width: auto !important;
   z-index: -1;
 }
+
+
+.question {
+  font-family: "Stardust", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  display: none;
+  font-size: 3vw;
+  line-height: 1em;
+  letter-spacing: -0.025em;
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+  /* width: auto !important; */
+  width: auto;
+  z-index: 100;
+}
+
+.fragment:hover + .question {
+  display: block;
+}
+
+.fragment:hover + .project-info {
+  display: block;
+}
+
+
+.project-title-inside {
+  font-family: "Stardust", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 7vw;
+  line-height: 1em;
+  letter-spacing: -0.025em;
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+  width: auto !important;
+  z-index: 30;
+}
+
+.project-info {
+  font-family: "Stardust", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  display: none;
+  font-size: 1vw;
+  line-height: 1em;
+  letter-spacing: -0.025em;
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+  position: fixed;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+  width: auto !important;
+  z-index: 30;
+}
+
 @media (max-width: 768px) {
   .logo {
     font-size: 12vw;

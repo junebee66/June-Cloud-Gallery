@@ -1,0 +1,21 @@
+<head>
+    <style> body { margin: 0; } </style>
+  
+    <script src="../3d-force-graph-vr.js"></script>
+    <!--<script src="../../dist/3d-force-graph-vr.js"></script>-->
+  </head>
+  
+  <body>
+  
+    <div id="3d-graph"></div>
+  
+    <script>
+      const elem = document.getElementById('3d-graph');
+  
+      const Graph = new ForceGraphVR(elem)
+        // .backgroundColor('#ffffff')  // or simply 'white'
+        .jsonUrl('blocks.json')
+        .nodeAutoColorBy('user')
+        .nodeLabel(node => `${node.user}: ${node.description}`);
+    </script>
+  </body>

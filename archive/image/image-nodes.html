@@ -1,0 +1,381 @@
+<head>
+  <!-- <link rel="preload" href="https://apossible.com/assets/fonts/Stardust-VF.ttf" as="font" crossorigin> -->
+  
+  
+  <style>
+    body {
+      margin: 0;
+      background:#F8F7F1;
+      /* font-family: "FK Roman", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    }
+
+	   /* .logo-type .visible-logo-letter {
+		display: inline-block;
+		animation: logoAnimation 2s ease-in-out infinite;
+		animation-play-state: paused;
+	  }  */
+
+    /* #loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      z-index: 1000;
+    } */
+
+
+    
+    @media (max-width: 768px) {
+    .logo {
+        font-size: 12vw;
+    }
+    }
+
+    /* .logo {
+    font-family: "Stardust", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 7vw;
+    line-height: 1em;
+    letter-spacing: -0.025em;
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+    width: auto !important;
+    z-index: -1;
+} */
+ 
+
+    #3d-graph {
+      display: none;
+      background:#F8F7F1;
+    }
+
+    /* element.style {
+    font-variation-settings: "wdth" 70.5499, "wght" 581.447;
+    } */
+
+
+    .logo-type span {
+      display: inline-block;
+      opacity: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      /* font-variation-settings: "wdth" 120, "wght" 500; */
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      font-size: 7vw;
+      line-height: 2em;
+      letter-spacing: -0.025em;
+      /* font-stretch: condensed; */
+      
+      animation: fadeInLetter 0.5s ease forwards;
+
+    }
+    
+
+    .logo-shown .logo-type span {
+    transition: font-variation-settings 10000ms cubic-bezier(0.16, 1, 0.3, 1);
+    transition-behavior: normal;
+    transition-duration: 10000ms;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: 0s;
+    transition-property: font-variation-settings;
+}
+
+
+
+
+
+.logo-type span:nth-child(1) { animation-delay: 0.1s; }
+.logo-type span:nth-child(2) { animation-delay: 0.3s; }
+.logo-type span:nth-child(3) { animation-delay: 0.5s; }
+.logo-type span:nth-child(4) { animation-delay: 0.7s; }
+.logo-type span:nth-child(5) { animation-delay: 0.9s; }
+.logo-type span:nth-child(6) { animation-delay: 1.1s; }
+.logo-type span:nth-child(7) { animation-delay: 1.3s; }
+.logo-type span:nth-child(8) { animation-delay: 1.5s; }
+
+
+
+    @keyframes fadeInLetter {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo-type {
+      animation: pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1,1);
+      }
+      50% {
+        transform: scale(1.2,1);
+      }
+      100% {
+        transform: scale(1,1);
+      }
+    }
+
+    .tagline {
+      /* display: inline-block; */
+      opacity: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 2vw;
+      position: fixed;
+      bottom: 20%;
+      left: 30%;
+      /* transform: translateX(-50%); */
+      animation: fadeInLetter 0.5s ease forwards;
+      animation-delay: 0s; /* Starts after logo animation */
+    }
+  </style>
+
+  <script src="3d-force-image.js"></script>
+  <script type="module">
+    import * as THREE from 'https://esm.sh/three';
+
+    
+    async function fetchGifData(collectionType) {
+      let url;
+      if (collectionType === 'blueprint') {
+        url = 'https://junesbee.com/_functions-dev/allProjects';
+      } else {
+        url = 'https://junesbee.com/_functions-dev/allProjectsStarGif';
+      }
+
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        console.log("data", data);
+        
+        
+        if (data && data.items) {
+          const itemsWithGif = data.items.filter(item => item.gif);
+          return itemsWithGif;
+        } else {
+          console.error("No items found in the response.");
+          return [];
+        }
+      } catch (error) {
+        // console.error("Error fetching GIF data:", error);
+        return [];
+      }
+    }
+
+    function preloadImages(urls, callback) {
+      let loaded = 0;
+      const total = urls.length;
+      urls.forEach((url) => {
+        const img = new Image();
+        img.onload = () => {
+          loaded++;
+          if (loaded === total && callback) {
+            callback();
+          }
+        };
+        img.src = url;
+      });
+    }
+
+    function convertGifUrl(wixImageUrl) {
+      const wixStaticUrlBase = "https://static.wixstatic.com/media/";
+      const prefixToRemove = "wix:image://v1/";
+
+      if (wixImageUrl.startsWith(prefixToRemove)) {
+        let cleanedUrl = wixImageUrl.slice(prefixToRemove.length);
+        const extensionMatch = cleanedUrl.match(/\.(jpg|jpeg|gif|png)/i);
+        if (extensionMatch) {
+          const extension = extensionMatch[0].toLowerCase();
+          cleanedUrl = cleanedUrl.slice(0, cleanedUrl.indexOf(extension) + extension.length);
+          return wixStaticUrlBase + cleanedUrl;
+        }
+      }
+      return null;
+    }
+
+    async function initGraph() {
+      const loadingContainer = document.getElementById('loading-container');
+      const logoType = loadingContainer.querySelector('.logo-type');
+
+      // Start loading animation
+      logoType.classList.remove('loaded');
+
+      try {
+        // Fetch GIF data first
+        const gifItems = await fetchGifData('blueprint');
+        console.log('Number of items:', gifItems.length);
+
+        // Prepare image URLs
+        const imageUrls = gifItems.map(item => convertGifUrl(item.gif)).filter(url => url);
+        
+
+        // Preload images
+        preloadImages(imageUrls, () => {
+        // Create graph data after images are loaded
+        const gData = {
+          nodes: gifItems.map((item, id) => ({ 
+            id, 
+            img: item.gif,
+            type: item.type,
+          })),
+          links: [...Array(gifItems.length).keys()]
+            .filter(id => id < gifItems.length - 1)
+            .map(id => ({
+              source: id,
+              target: id + 1,
+              width: 1 // Thicker link width
+            }))
+        };
+
+        // Add random links
+        for (let i = 0; i < gifItems.length; i++) {
+          if (Math.random() > 0.5) {
+            gData.links.push({
+              color: '#000000',
+              source: i,
+              target: Math.floor(Math.random() * gifItems.length),
+              width: 1
+            });
+          }
+        }
+
+        // Add links between nodes with the same 'type'
+        for (let i = 0; i < gifItems.length; i++) {
+          for (let j = i + 1; j < gifItems.length; j++) {
+            if (gifItems[i].type === gifItems[j].type) {
+              gData.links.push({
+                source: i,
+                target: j,
+                color: '#ff0000', // Optional: Different color for these links
+                width: 2 // Optional: Different width for these links
+              });
+            }
+          }
+        }
+
+  // Continue with rendering the graph using gData
+// });
+console.log('Graph data:', gData); // Debugging
+
+          // Graph initialization after all images are loaded
+          const Graph = new ForceGraph3D(document.getElementById('3d-graph'))
+            .backgroundColor('#ffffff')
+            .linkColor(() => '#000000')
+            .linkOpacity(1)
+            .nodeLabel('title')
+            .nodeThreeObject(({ img }) => {
+              const convertedUrl = convertGifUrl(img);
+              // if (!convertedUrl) {
+              //   console.warn("Could not convert image URL:", img);
+              //   return null;
+              // }
+
+              const imgTexture = new THREE.TextureLoader().load(convertedUrl);
+              imgTexture.colorSpace = THREE.SRGBColorSpace;
+              const material = new THREE.SpriteMaterial({ map: imgTexture });
+              const sprite = new THREE.Sprite(material);
+
+              const originWidthMatch = img.match(/originWidth=(\d+)/);
+              const originHeightMatch = img.match(/originHeight=(\d+)/);
+
+              const originalWidth = originWidthMatch ? parseInt(originWidthMatch[1], 10) : 500;
+              const originalHeight = originHeightMatch ? parseInt(originHeightMatch[1], 10) : 500;
+
+              const aspectRatio = originalWidth / originalHeight;
+              let width, height;
+              if (aspectRatio >= 1) {
+                width = 50;
+                height = width / aspectRatio;
+              } else {
+                height = 50;
+                width = height * aspectRatio;
+              }
+
+              if (width < 20) width = 20;
+              if (height < 20) height = 20;
+
+              sprite.scale.set(width, height);
+              return sprite;
+            })
+            .onNodeClick(node => {
+              // Aim at node from outside it
+              const distance = 100; // Increased distance to account for image size
+              const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+
+              const newPos = node.x || node.y || node.z
+                ? { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }
+                : { x: 0, y: 0, z: distance }; // special case if node is in (0,0,0)
+
+              Graph.cameraPosition(
+                newPos, // new position
+                node, // lookAt ({ x, y, z })
+                2000  // ms transition duration
+              );
+            })
+            .graphData(gData);
+            
+            
+
+          // Add pulse animation while graph initializes
+          logoType.classList.add('loaded');
+
+          // Hide loading animation and show graph
+          setTimeout(() => {
+            loadingContainer.style.display = 'none';
+          }, 5000);
+          document.getElementById('3d-graph').style.display = 'block';
+        });
+
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+
+    // Call initGraph when the document is ready
+    document.addEventListener('DOMContentLoaded', initGraph);
+  </script>
+</head>
+
+
+<!-- background-color: rgba(255, 255, 255, 0.5); -->
+<body>
+  <div id="loading-container" style="position: fixed; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center; z-index: 1000;">
+    <div class="logo logo-type">
+      <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 50, 'wght' 581;">J</span>
+      <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 107.289, 'wght' 581.936;">U</span>
+      <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 70.5499, 'wght' 581.447;">N</span>
+      <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 70.5499, 'wght' 581.447;">E</span>
+      <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 74.5499, 'wght' 581.447;"> </span>
+      <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 120.5499, 'wght' 581.447;">B</span>
+      <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 45.5499, 'wght' 581.447;">E</span>
+      <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 57.5499, 'wght' 581.447;">E</span>
+    </div>
+  </div>
+  <span class="tagline">solving problems by building virtual ecosystems</span>
+  <div id="3d-graph"></div>
+</body>
+
+
+
+

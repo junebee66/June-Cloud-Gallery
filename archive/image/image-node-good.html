@@ -1,4 +1,4 @@
-<head>
+<head></head>
   
     <style>
         body {
@@ -30,183 +30,6 @@
   border-radius: 9px;
   z-index: 10;
 } */
-
-/* tech tags buttons css */
-.neu-button {
-  background-color: #e0e0e0;
-  border-radius: 50px;
-  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
-  color: #4d4d4d;
-  cursor: pointer;
-  font-size: 0.8vw;
-  padding: 5px 20px;
-  transition: all 0.2s ease-in-out;
-  border: 2px solid rgb(206, 206, 206);
-}
-
-.neu-button:hover {
-  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
-}
-
-.neu-button:focus {
-  outline: none;
-  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
-}
-
-/* checkbox css */
-.bubble {
-  display: block;
-  -webkit-tap-highlight-color: transparent;
-  left: 1.5vw;
-}
-
-/* label {
-  animation: float74 4s ease-in-out infinite;
-} */
-
-.bubble, .bubble:before, .bubble:after {
-  transition-duration: 0.2s;
-}
-
-.bubble, .bubble:after {
-  border-radius: 50%;
-}
-
-.bubble {
-  background-image: radial-gradient(8% 8% at 22% 28%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 23% 27%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 24% 26%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 25% 25%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 26% 24%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 27% 23%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 28% 22%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%);
-  box-shadow: 0 -0.06em 0.1em hsl(0,90%,100%) inset,
-		0 -0.15em 0.4em hsl(0,90%,45%) inset,
-		0 0.05em 0.05em hsl(0,90%,45%) inset,
-		0.05em 0 0.1em hsl(0,90%,100%) inset,
-		-0.05em 0 0.1em hsl(0,90%,100%) inset,
-		0 0.1em 0.4em hsl(0,90%,60%) inset;
-  cursor: pointer;
-  position: relative;
-  width: 2.5em;
-  height: 2.5em;
-  transform-style: preserve-3d;
-  transition-property: box-shadow, transform, width, height;
-  transition-timing-function: ease-in-out, ease-in-out, var(--bubbleTiming), var(--bubbleTiming);
-  will-change: transform;
-  -webkit-appearance: none;
-  appearance: none;
-  z-index: 0;
-  top:0px;
-}
-
-.bubble:before, .bubble:after {
-  content: "";
-  display: block;
-  position: absolute;
-  transition-timing-function: var(--bubbleTiming);
-}
-
-.bubble:before {
-  border-radius: 0.75em;
-  box-shadow: 0 0 0 0.5em hsl(0,0%,100%) inset;
-  filter: drop-shadow(0.6em 0.6em 4px hsla(0,0%,0%,0.2));
-  top: 50%;
-  left: 50%;
-  width: 1.5em;
-  height: 1.5em;
-  transform: translate3d(-50%,-50%,-1px);
-  z-index: -1;
-}
-
-.bubble:after {
-  background: radial-gradient(100% 100% at center,hsla(0,0%,0%,0) 35%,hsla(0,0%,0%,0.2) 48%,hsla(0,0%,0%,0) 50%);
-  filter: blur(4px);
-  top: 0.6em;
-  left: 0.6em;
-  width: 100%;
-  height: 100%;
-  transform: translate3d(0,0,-1px);
-  z-index: -2;
-}
-
-.bubble:focus, .bubble:hover {
-  transform: scale(1.1);
-  outline: none;
-}
-
-.bubble:focus:active, .bubble:hover:active {
-  width: 3.6em;
-  height: 2.4em;
-}
-
-.bubble:focus:before, .bubble:hover:before {
-  filter: drop-shadow(0.75em 0.75em 4px hsla(0,0%,0%,0.2));
-}
-
-.bubble:focus:after, .bubble:hover:after {
-  transform: translate3d(0.15em,0.15em,-1px);
-}
-
-.bubble:checked {
-  box-shadow: 0 -0.06em 0.1em hsl(120,90%,100%) inset,
-		0 -0.15em 0.4em hsl(120,90%,45%) inset,
-		0 0.05em 0.05em hsl(120,90%,45%) inset,
-		0.05em 0 0.1em hsl(120,90%,100%) inset,
-		-0.05em 0 0.1em hsl(120,90%,100%) inset,
-		0 0.1em 0.4em hsl(120,90%,60%) inset;
-}
-
-.bubble:checked:before {
-  border-radius: 0.25em;
-  width: 0.5em;
-}
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  /* label {
-    animation: none;
-  } */
-
-  .bubble, .bubble:before, .bubble:after {
-    transition-duration: 0s;
-  }
-
-  .bubble:focus, .bubble:hover {
-    transform: scale(1);
-  }
-
-  .bubble:focus:active, .bubble:hover:active {
-    width: 3em;
-    height: 3em;
-  }
-
-  .bubble:focus:before, .bubble:hover:before {
-    filter: drop-shadow(0.6em 0.6em 4px hsla(0,0%,0%,0.2));
-  }
-
-  .bubble:focus:after, .bubble:hover:after {
-    transform: translate3d(0,0,-1px);
-  }
-}
-/* Animations */
-@keyframes float74 {
-  from, to {
-    transform: translate(0,3%);
-  }
-
-  25% {
-    transform: translate(-3%,0);
-  }
-
-  50% {
-    transform: translate(0,-3%);
-  }
-
-  75% {
-    transform: translate(3%,0);
-  }
-}
-
 
 .tab-container {
   position: relative;
@@ -390,58 +213,18 @@
 }
 
 
-        .node-info {
-            /* font-size: 2vw; */
-            width:30vw;
-            right:2vw;
-            /* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; */
-            position: fixed; 
-            background:#ffffff;
-            /* display: flex;  */
-            /* justify-content: right; 
-            align-items: right;  */
-            z-index: 1000;
-        }    
-        
-        .node-text-outside{
-            font-size: 2vw;
-            /* height: 2vh; */
-            right:2vw;
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            position: fixed; 
-            background: rgba(255, 255, 255, 0); 
-            display: flex; 
-            justify-content: end; 
-            align-items: end; 
-            z-index: 1000;
-
-        }
-
 
         .node-text {
             font-size: 2vw;
-            /* height: 2vh;
-            right:2vw; */
+            height: 2vh;
+            right:2vw;
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            /* position: relative;  */
+            position: fixed; 
             background: rgba(255, 255, 255, 0); 
             display: flex; 
-            justify-content: front; 
-            align-items: front; 
-            /* z-index: 1000; */
-        }
-
-        .node-description {
-            font-size: 1vw;
-            /* height: 2vh;
-            right:2vw; */
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            /* position: relative;  */
-            background: rgba(255, 255, 255, 0); 
-            display: flex; 
-            justify-content: front; 
-            align-items: front; 
-            /* z-index: 1000; */
+            justify-content: center; 
+            align-items: center; 
+            z-index: 1000;
         }
 
 
@@ -654,7 +437,6 @@
           // Prepare image URLs
           const imageUrls = gifItems.map(item => convertGifUrl(item.gif)).filter(url => url);
   
-          
           // Preload images
           preloadImages(imageUrls, () => {
             // Create graph data
@@ -665,43 +447,17 @@
   
             // Add image nodes
             gifItems.forEach((item, id) => {
-                const convertedUrl = convertGifUrl(item.gif);
-                if (convertedUrl) {
-                    gData.nodes.push({
-                        id,
-                        name: item.title,
-                        img: item.gif,
-                        imgUrl: convertedUrl,
-                        type: item.type, // Add type information
-                        x: Math.random() * 1600,
-                        y: Math.random() * 1600,
-                        z: Math.random() * 1600,
-                        url: item.pageUrl,
-                        des: item.shortDescription,
-                        year: item.year,
-                        quest: item.question,
-                        answer: item.hook,
-                        tech: item.technology
-                    });
-                } else {
-                    gData.nodes.push({
-                        id,
-                        name: item.title,
-                        img: item.gif,
-                        type: item.type, // Add type information
-                        x: Math.random() * 1600,
-                        y: Math.random() * 1600,
-                        z: Math.random() * 1600,
-                        url: item.pageUrl,
-                        des: item.shortDescription,
-                        year: item.year,
-                        quest: item.question,
-                        answer: item.hook,
-                        tech: item.technology
-                    });
-                }
+              gData.nodes.push({
+                id,
+                name: item.title,
+                img: item.gif,
+                type: item.type, // Add type information
+                x: Math.random() * 1600,
+                y: Math.random() * 1600,
+                z: Math.random() * 1600,
+                url: item.pageUrl
+              });
             });
-
   
             // Add links between image nodes and type nodes
             const typeNodes = {};
@@ -739,10 +495,6 @@
               b.links.push(link);
             });
 
-        
-            
-            
-            
             const distance = 500;
             // Highlight sets
             const highlightNodes = new Set();
@@ -847,6 +599,7 @@
                 if (height < 20) height = 20;
 
                 sprite.scale.set(width, height);
+                //   sprite.scale.set(50, 50);
                   return sprite;
                 }
               })
@@ -859,91 +612,11 @@
                 const nodeInfoDiv = document.getElementById('node-info');
         // const nodeText = document.getElementsByClassName('node-text');
         const nodeText = document.getElementById('node-text');
-        const nodeTextOutside = document.getElementById('node-text-outside');
-        const nodeDes = document.getElementById('node-description');
-        const nodeQue = document.getElementById('node-question');
-        const nodeAns = document.getElementById('node-answer');
-        const nodeImg = document.getElementById('nodeDesImg');
-        // const nodeImgUrl = convertedUrl(nodeiImgurl);
-        
     // Show text when hovering over a node
     if (node) {
       nodeText.innerText = `${node.name}`;  // Change text as needed
-      nodeTextOutside.innerText = `${node.name}`;
-      nodeInfoDiv.style.display = 'block';  // Show the text box
-        nodeDes.innerText = `${node.des}`;
-        nodeQue.innerText = `${node.quest}`;
-        nodeAns.innerText = `${node.answer}`;
-
-        
-        
-
-        let nodeimgUrl = node.imgUrl;
-        let nodeimgGif = node.img;
-        
-  if (nodeimgUrl) {
-    // Extract original dimensions from the URL
-    const originWidthMatch = nodeimgGif.match(/originWidth=(\d+)/);
-    const originHeightMatch = nodeimgGif.match(/originHeight=(\d+)/);
-
-    console.log("originWidthMatch: ", originWidthMatch, "originHeightMatch: ", originHeightMatch);
-
-    const originalWidth = originWidthMatch ? parseInt(originWidthMatch[1], 10) : 500;
-    const originalHeight = originHeightMatch ? parseInt(originHeightMatch[1], 10) : 500;
-
-    // Calculate aspect ratio
-    const aspectRatio = originalWidth / originalHeight;
-
-    // Define the maximum size for scaling
-    const maxDimension = 25; // Increase this for larger images
-    const minDimension = 5;
-
-    let width, height;
-
-    if (aspectRatio >= 1) {
-        // Landscape or square images
-        width = maxDimension;
-        height = Math.max(minDimension, width / aspectRatio);
-    } else {
-        // Portrait images
-        height = maxDimension;
-        width = Math.max(minDimension, height * aspectRatio);
+    //   nodeInfoDiv.style.display = 'block';  // Show the text box
     }
-
-    // Apply the calculated dimensions to the image
-    nodeImg.src = nodeimgUrl;
-    nodeImg.style.width = `${width}vw`;
-    nodeImg.style.height = `${height}vw`;
-} else {
-    console.log("No node.imgUrl or node is null");
-}
-    }
-
-
-
-
-        // create buttons for tech tags
-
-        if (techBtnsDiv) {
-    techBtnsDiv.innerHTML = '';  // Clear existing buttons
-}
-        if (node && node.tech && Array.isArray(node.tech)) {
-    node.tech.forEach(tech => {
-        // Create a new button element
-        const techButton = document.createElement('button');
-        techButton.classList.add('neu-button');
-        techButton.textContent = tech; // Set the button's text to the tech name
-
-        // Optionally, you can add a click event to each button if you want to handle interaction
-        // Append the button to the div with the id 'techBtnsDiv'
-        const techBtnsDiv = document.getElementById('techBtnsDiv');
-        if (techBtnsDiv) {
-            techBtnsDiv.appendChild(techButton);
-        }
-    });
-} else {
-    // console.log('node or node.tech is not defined or tech is not an array');
-}
 
                     // No state change
     if ((!node && !highlightNodes.size) || (node && hoverNode === node)) return;
@@ -1019,24 +692,6 @@ tabs.forEach((tab, index) => {
   button.textContent = isRotationActive ? 'Stop Rotation' : 'Start Rotation';
 });
             
-
-            //expand description code
-            let expandDesActive = false;
-            document.getElementById('desToggleBtn').addEventListener('click', () => {
-                expandDesActive = !expandDesActive; // Toggle the active state
-                
-                const nodeExpand = document.getElementById('node-expand');
-                
-                // Toggle the display property based on the expandDesActive state
-                if (expandDesActive) {
-                    nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
-                } else {
-                    nodeExpand.style.display = 'none'; // Hide the element
-                }
-            });
-
-
-            
   
             // Hide loading animation and show graph
             logoType.classList.add('loaded');
@@ -1057,25 +712,7 @@ tabs.forEach((tab, index) => {
   </head>
   
   <body>
-    <p id="node-text-outside" class="node-text-outside" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
-    <div id="node-info" class="node-info">
-        <div id="node-expand">
-            <p id="node-text" class="node-text" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
-            <div id="techBtnsDiv">
-            </div>
-            <p id="node-description" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
-            <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Question</p>
-            <p id="node-question" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
-            <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Answer</p>
-            <p id="node-answer" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
-            <img src="https://static.wixstatic.com/media/565ac9_8aa8c853e2244b6ea5dd3afe06430816~mv2.jpg/v1/fill/w_826,h_410,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Memory%20Map_Feature.jpg" 
-            alt="Girl in a jacket" 
-            id="nodeDesImg"
-            width="400" 
-            height="200">
-        </div>
-    </div>
-    
+        <p id="node-text" class="node-text" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
     
     <p id="june-logo" class="june-logo" style="font-variation-settings: 'wdth' 50, 'wght' 581;">JUNE'S CLOUD</p>
     <!-- <div id="controls" style="position: fixed; bottom: 20px; right: 20px; z-index: 10;">
@@ -1108,7 +745,6 @@ tabs.forEach((tab, index) => {
     
     <input type="radio" name="tab" id="tab5" class="tab tab--5" />
     <label class="tab_label" for="tab5">None</label>
-
     
     <div class="indicator"></div>
     </div>
@@ -1118,9 +754,6 @@ tabs.forEach((tab, index) => {
           <span>Self Rotate</span>
           <span>Click to Zoom</span>
     </label>
-
-
-    <label><input value="on" name="dummy" type="checkbox" class="bubble" id="desToggleBtn"></label>
 </div>
     
       

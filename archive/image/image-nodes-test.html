@@ -476,12 +476,16 @@
                 expandDesActive = !expandDesActive; // Toggle the active state
                 
                 const nodeExpand = document.getElementById('node-expand');
+                const nodeTextOutside = document.getElementById('node-text-outside');
                 
                 // Toggle the display property based on the expandDesActive state
                 if (expandDesActive) {
                     nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
+                    nodeTextOutside.style.display = 'none'; 
+                    
                 } else {
                     nodeExpand.style.display = 'none'; // Hide the element
+                    nodeTextOutside.style.display = 'block'; 
                 }
             });
 

@@ -20,7 +20,7 @@
   
       async function fetchGifData(collectionType) {
         const url = collectionType === 'blueprint' 
-          ? 'https://junesbee.com/_functions-dev/allProjects' 
+          ? 'https://junesbee.com/_functions-dev/allProjectsImage' 
           : 'https://junesbee.com/_functions-dev/allProjectsStarGif';
         try {
             const response = await fetch(url);

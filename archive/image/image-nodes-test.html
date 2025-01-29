@@ -6,597 +6,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 
   
-    <style>
-        body {
-          margin: 0;
-          background:#F8F7F1;
-          font-family: 'Oswald', sans-serif;
-          font-weight: 500;
-          /* font-family: "FK Roman", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; */
-        }
-
-        /* Default to Oswald */
-/* Apply BlinkMacSystemFont with specific font-variation settings for macOS */
-        @supports (font-variation-settings: 'wdth' 50, 'wght' 581) {
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            font-variation-settings: 'wdth' 50, 'wght' 581;
-        }
-        }
-
     
-        /* .tab-container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 2px;
-  background-color: #dadadb;
-  border-radius: 9px;
-} */
-
-/* .tab-container {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 2px;
-  background-color: #dadadb;
-  border-radius: 9px;
-  z-index: 10;
-} */
-
-/* tech tags buttons css */
-.neu-button {
-  background-color: #e0e0e0;
-  border-radius: 50px;
-  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
-  color: #4d4d4d;
-  cursor: pointer;
-  font-size: 0.8vw;
-  padding: 5px 20px;
-  transition: all 0.2s ease-in-out;
-  border: 2px solid rgb(206, 206, 206);
-}
-
-.neu-button:hover {
-  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
-}
-
-.neu-button:focus {
-  outline: none;
-  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
-}
-
-/* checkbox css */
-.bubble {
-  display: block;
-  -webkit-tap-highlight-color: transparent;
-  left: 1.5vw;
-}
-
-/* label {
-  animation: float74 4s ease-in-out infinite;
-} */
-
-.bubble, .bubble:before, .bubble:after {
-  transition-duration: 0.2s;
-}
-
-.bubble, .bubble:after {
-  border-radius: 50%;
-}
-
-.bubble {
-  background-image: radial-gradient(8% 8% at 22% 28%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 23% 27%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 24% 26%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 25% 25%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 26% 24%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 27% 23%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
-		radial-gradient(8% 8% at 28% 22%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%);
-  box-shadow: 0 -0.06em 0.1em hsl(0,90%,100%) inset,
-		0 -0.15em 0.4em hsl(0,90%,45%) inset,
-		0 0.05em 0.05em hsl(0,90%,45%) inset,
-		0.05em 0 0.1em hsl(0,90%,100%) inset,
-		-0.05em 0 0.1em hsl(0,90%,100%) inset,
-		0 0.1em 0.4em hsl(0,90%,60%) inset;
-  cursor: pointer;
-  position: relative;
-  width: 2.5em;
-  height: 2.5em;
-  transform-style: preserve-3d;
-  transition-property: box-shadow, transform, width, height;
-  transition-timing-function: ease-in-out, ease-in-out, var(--bubbleTiming), var(--bubbleTiming);
-  will-change: transform;
-  -webkit-appearance: none;
-  appearance: none;
-  z-index: 0;
-  top:0px;
-}
-
-.bubble:before, .bubble:after {
-  content: "";
-  display: block;
-  position: absolute;
-  transition-timing-function: var(--bubbleTiming);
-}
-
-.bubble:before {
-  border-radius: 0.75em;
-  box-shadow: 0 0 0 0.5em hsl(0,0%,100%) inset;
-  filter: drop-shadow(0.6em 0.6em 4px hsla(0,0%,0%,0.2));
-  top: 50%;
-  left: 50%;
-  width: 1.5em;
-  height: 1.5em;
-  transform: translate3d(-50%,-50%,-1px);
-  z-index: -1;
-}
-
-.bubble:after {
-  background: radial-gradient(100% 100% at center,hsla(0,0%,0%,0) 35%,hsla(0,0%,0%,0.2) 48%,hsla(0,0%,0%,0) 50%);
-  filter: blur(4px);
-  top: 0.6em;
-  left: 0.6em;
-  width: 100%;
-  height: 100%;
-  transform: translate3d(0,0,-1px);
-  z-index: -2;
-}
-
-.bubble:focus, .bubble:hover {
-  transform: scale(1.1);
-  outline: none;
-}
-
-.bubble:focus:active, .bubble:hover:active {
-  width: 3.6em;
-  height: 2.4em;
-}
-
-.bubble:focus:before, .bubble:hover:before {
-  filter: drop-shadow(0.75em 0.75em 4px hsla(0,0%,0%,0.2));
-}
-
-.bubble:focus:after, .bubble:hover:after {
-  transform: translate3d(0.15em,0.15em,-1px);
-}
-
-.bubble:checked {
-  box-shadow: 0 -0.06em 0.1em hsl(120,90%,100%) inset,
-		0 -0.15em 0.4em hsl(120,90%,45%) inset,
-		0 0.05em 0.05em hsl(120,90%,45%) inset,
-		0.05em 0 0.1em hsl(120,90%,100%) inset,
-		-0.05em 0 0.1em hsl(120,90%,100%) inset,
-		0 0.1em 0.4em hsl(120,90%,60%) inset;
-}
-
-.bubble:checked:before {
-  border-radius: 0.25em;
-  width: 0.5em;
-}
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  /* label {
-    animation: none;
-  } */
-
-  .bubble, .bubble:before, .bubble:after {
-    transition-duration: 0s;
-  }
-
-  .bubble:focus, .bubble:hover {
-    transform: scale(1);
-  }
-
-  .bubble:focus:active, .bubble:hover:active {
-    width: 3em;
-    height: 3em;
-  }
-
-  .bubble:focus:before, .bubble:hover:before {
-    filter: drop-shadow(0.6em 0.6em 4px hsla(0,0%,0%,0.2));
-  }
-
-  .bubble:focus:after, .bubble:hover:after {
-    transform: translate3d(0,0,-1px);
-  }
-}
-/* Animations */
-@keyframes float74 {
-  from, to {
-    transform: translate(0,3%);
-  }
-
-  25% {
-    transform: translate(-3%,0);
-  }
-
-  50% {
-    transform: translate(0,-3%);
-  }
-
-  75% {
-    transform: translate(3%,0);
-  }
-}
-
-
-.tab-container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 2px;
-  background-color: #dadadb;
-  border-radius: 9px;
-  z-index: 10;
-}
-
-
-.indicator {
-  content: "";
-  width: 130px;
-  height: 28px;
-  background: #ffffff;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  z-index: 9;
-  border: 0.5px solid rgba(0, 0, 0, 0.04);
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
-  border-radius: 7px;
-  transition: all 0.2s ease-out;
-}
-
-.tab {
-  width: 130px;
-  height: 28px;
-  position: absolute;
-  z-index: 99;
-  outline: none;
-  opacity: 0;
-}
-
-.tab_label {
-  width: 130px;
-  height: 28px;
-  position: relative;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 0;
-  font-size: 0.75rem;
-  opacity: 0.6;
-  cursor: pointer;
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
-}
-
-.tab--1:checked ~ .indicator { left: 2px; }
-.tab--2:checked ~ .indicator { left: calc(130px + 2px); }
-.tab--3:checked ~ .indicator { left: calc(130px * 2 + 2px); }
-.tab--4:checked ~ .indicator { left: calc(130px * 3 + 2px); }
-.tab--5:checked ~ .indicator { left: calc(130px * 4 + 2px); }
-
-
-.bottom-menu{
-  position: absolute; /* Position relative to the canvas or page */
-  bottom: 10%;       /* Distance from the bottom of the page/canvas */
-  left: 50%;          /* Center horizontally */
-  transform: translateX(-50%); /* Shift back by 50% of its width to center it */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 2px;
-  border-radius: 9px;
-  z-index: 10; /* Ensure it appears above other elements */
-  width: fit-content;
-}
-
-/* swtich */
-.switch {
-  --_switch-bg-clr: rgba(0,0,0,.1);
-  --_switch-padding: 4px; /* padding around button*/
-  --_slider-bg-clr: white; /* slider color unchecked */
-  --_slider-bg-clr-on: white; /* slider color checked */
-  --_slider-txt-clr: #000000;
-  --_label-padding: 1rem 2rem; /* padding around the labels -  this gives the switch it's global width and height */
-  --_switch-easing: cubic-bezier(
-    0.47,
-    1.64,
-    0.41,
-    0.8
-  ); /* easing on toggle switch */
-  color: black;
-  width: 230px;
-  height: 35px;
-  display: flex;
-  position: relative;
-  border-radius: 9999px;
-  cursor: pointer;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  isolation: isolate;
-  left: 1vw;
-  z-index: 10; /* Ensure it appears above other elements */
-}
-
-
-.switch input[type="checkbox"] {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-.switch > span {
-  display: grid;
-  place-content: center;
-  transition: opacity 300ms ease-in-out 150ms;
-  /* padding: var(--_label-padding); */
-  /* font-weight: bolder; */
-  font-size: 0.75rem;
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
-}
-.switch::before,
-.switch::after {
-  content: "";
-  position: absolute;
-  border-radius: inherit;
-  transition: inset 150ms ease-in-out;
-}
-/* switch slider */
-.switch::before {
-  background-color: var(--_slider-bg-clr);
-  inset: var(--_switch-padding) 50% var(--_switch-padding)
-    var(--_switch-padding);
-  transition:
-    inset 500ms var(--_switch-easing),
-    background-color 500ms ease-in-out;
-  z-index: -1;
-  box-shadow:
-    inset 0 1px 1px rgba(0, 0, 0, 0.3),
-    0 1px rgba(255, 255, 255, 0.3);
-}
-/* switch bg color */
-.switch::after {
-  background-color: var(--_switch-bg-clr);
-  inset: 0;
-  z-index: -2;
-}
-/* switch hover & focus */
-.switch:focus-within::after {
-  inset: -0.25rem;
-}
-.switch:has(input:checked):hover > span:first-of-type,
-.switch:has(input:not(:checked)):hover > span:last-of-type {
-  opacity: 1;
-  transition-delay: 0ms;
-  transition-duration: 100ms;
-}
-/* switch hover */
-.switch:has(input:checked):hover::before {
-  inset: var(--_switch-padding) var(--_switch-padding) var(--_switch-padding)
-    45%;
-}
-.switch:has(input:not(:checked)):hover::before {
-  inset: var(--_switch-padding) 45% var(--_switch-padding)
-    var(--_switch-padding);
-}
-/* checked - move slider to right */
-.switch:has(input:checked)::before {
-  background-color: var(--_slider-bg-clr-on);
-  inset: var(--_switch-padding) var(--_switch-padding) var(--_switch-padding)
-    50%;
-}
-/* checked - set opacity */
-.switch > span:last-of-type,
-.switch > input:checked + span:first-of-type {
-  opacity: 0.75;
-}
-.switch > input:checked ~ span:last-of-type {
-  opacity: 1;
-}
-
-
-        .node-info {
-            /* font-size: 2vw; */
-            width:30vw;
-            right:2vw;
-            /* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; */
-            position: fixed; 
-            background:#ffffff;
-            /* display: flex;  */
-            /* justify-content: right; 
-            align-items: right;  */
-            z-index: 1000;
-        }    
-        
-        .node-text-outside{
-            font-size: 2vw;
-            /* height: 2vh; */
-            right:2vw;
-            font-family: -apple-system, BlinkMacSystemFont, Oswald;
-            position: fixed; 
-            background: rgba(255, 255, 255, 0); 
-            display: flex; 
-            justify-content: end; 
-            align-items: end; 
-            z-index: 1000;
-
-        }
-
-
-        .node-text {
-            font-size: 2vw;
-            /* height: 2vh;
-            right:2vw; */
-            font-family: -apple-system, BlinkMacSystemFont, Oswald;
-            /* position: relative;  */
-            background: rgba(255, 255, 255, 0); 
-            display: flex; 
-            justify-content: front; 
-            align-items: front; 
-            /* z-index: 1000; */
-        }
-
-        .node-description {
-            font-size: 1vw;
-            /* height: 2vh;
-            right:2vw; */
-            font-family: -apple-system, BlinkMacSystemFont, Oswald;
-            /* position: relative;  */
-            background: rgba(255, 255, 255, 0); 
-            display: flex; 
-            justify-content: front; 
-            align-items: front; 
-            /* z-index: 1000; */
-        }
-
-
-        .june-logo {
-            font-size: 2vw;
-            height: 2vh;
-            left:2vw;
-            font-family: -apple-system, BlinkMacSystemFont, Oswald;
-            position: fixed; 
-            background: rgba(255, 255, 255, 0); 
-            display: none; 
-            justify-content: center; 
-            align-items: center; 
-            z-index: 1000;
-        }
-    
-        
-        @media (max-width: 768px) {
-        .logo {
-            font-size: 12vw;
-        }
-        }
-    
-        /* .logo {
-        font-family: "Stardust", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        text-transform: uppercase;
-        font-size: 7vw;
-        line-height: 1em;
-        letter-spacing: -0.025em;
-        cursor: default;
-        user-select: none;
-        pointer-events: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        box-shadow: none;
-        width: auto !important;
-        z-index: -1;
-    } */
-     
-    
-        #3d-graph {
-          display: none;
-          background: transparent;
-        }
-    
-        /* element.style {
-        font-variation-settings: "wdth" 70.5499, "wght" 581.447;
-        } */
-    
-    
-        .logo-type span {
-          display: inline-block;
-          opacity: 0;
-          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-          /* font-variation-settings: "wdth" 120, "wght" 500; */
-          text-transform: uppercase;
-          letter-spacing: 0.025em;
-          font-size: 7vw;
-          line-height: 2em;
-          letter-spacing: -0.025em;
-          /* font-stretch: condensed; */
-          
-          animation: fadeInLetter 0.5s ease forwards;
-    
-        }
-        
-    
-        .logo-shown .logo-type span {
-        transition: font-variation-settings 10000ms cubic-bezier(0.16, 1, 0.3, 1);
-        transition-behavior: normal;
-        transition-duration: 10000ms;
-        transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-        transition-delay: 0s;
-        transition-property: font-variation-settings;
-    }
-    
-    
-    
-    
-    
-    .logo-type span:nth-child(1) { animation-delay: 0.1s; }
-    .logo-type span:nth-child(2) { animation-delay: 0.3s; }
-    .logo-type span:nth-child(3) { animation-delay: 0.5s; }
-    .logo-type span:nth-child(4) { animation-delay: 0.7s; }
-    .logo-type span:nth-child(5) { animation-delay: 0.9s; }
-    .logo-type span:nth-child(6) { animation-delay: 1.1s; }
-    .logo-type span:nth-child(7) { animation-delay: 1.3s; }
-    .logo-type span:nth-child(8) { animation-delay: 1.5s; }
-    
-    
-    
-        @keyframes fadeInLetter {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-    
-        .logo-type {
-          animation: pulse 4s ease-in-out infinite;
-        }
-    
-        @keyframes pulse {
-          0% {
-            transform: scale(1,1);
-          }
-          50% {
-            transform: scale(1.2,1);
-          }
-          100% {
-            transform: scale(1,1);
-          }
-        }
-    
-        .tagline {
-          /* display: inline-block; */
-          opacity: 0;
-          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-          text-transform: uppercase;
-          font-size: 2vw;
-          position: fixed;
-          bottom: 20%;
-          left: 30%;
-          /* transform: translateX(-50%); */
-          animation: fadeInLetter 0.5s ease forwards;
-          animation-delay: 0s; /* Starts after logo animation */
-        }
-      </style>
     <!-- Load required libraries -->
     <script src="3d-force-image.js"></script>
     <!-- <script src="https://unpkg.com/three"></script> -->
+    <link href="image-node.css" rel="stylesheet">
     <script type="module">
       import * as THREE from 'https://esm.sh/three';
       import SpriteText from 'https://esm.sh/three-spritetext';
@@ -769,7 +183,7 @@
   
             // Graph initialization
             const Graph = new ForceGraph3D(document.getElementById('3d-graph'))
-              .backgroundColor('#ffffff')
+              .backgroundColor('#ffffff00')
               .linkColor(() => '#000000')
               .linkOpacity(0.5)
               .nodeColor(node => highlightNodes.has(node) ? node === hoverNode ? 'rgb(255,0,0,1)' : 'rgba(255,160,0,0.8)' : 'rgba(0,255,255,0.6)')
@@ -963,7 +377,7 @@
     // console.log('node or node.tech is not defined or tech is not an array');
 }
 
-                    // No state change
+    // No state change
     if ((!node && !highlightNodes.size) || (node && hoverNode === node)) return;
   
   highlightNodes.clear();
@@ -1007,15 +421,15 @@
 
 //tab
     const tabs = document.querySelectorAll('.tab');
-tabs.forEach((tab, index) => {
-  tab.addEventListener('change', () => {
-    const orientations = ['lr', 'td', 'zout', 'radialout', null]; // Map to DAG orientations
-    const selectedOrientation = orientations[index];
-    if (Graph) {
-      Graph.dagMode(selectedOrientation);
-    }
-  });
-});
+    tabs.forEach((tab, index) => {
+    tab.addEventListener('change', () => {
+        const orientations = ['lr', 'td', 'zout', 'radialout', null]; // Map to DAG orientations
+        const selectedOrientation = orientations[index];
+        if (Graph) {
+        Graph.dagMode(selectedOrientation);
+        }
+    });
+    });
 
 
             
@@ -1038,6 +452,24 @@ tabs.forEach((tab, index) => {
 });
             
 
+            // Select the checkbox and the mouse-canvas div
+            const scribbleBtn = document.getElementById('scribbleBtn');
+            const mouseCanvas = document.getElementById('mouse-canvas');
+            let scribbleBtnActive = true;
+
+            // Add event listener to toggle the visibility of mouse-canvas
+            scribbleBtn.addEventListener('change', function() {
+                // scribbleBtnActive = !scribbleBtnActive;
+                if (scribbleBtn.checked) {
+                    // If checked, show the canvas
+                    mouseCanvas.style.display = 'block';
+                } else {
+                    // If unchecked, hide the canvas
+                    mouseCanvas.style.display = 'none';
+                }
+            });
+
+
             //expand description code
             let expandDesActive = false;
             document.getElementById('desToggleBtn').addEventListener('click', () => {
@@ -1053,6 +485,8 @@ tabs.forEach((tab, index) => {
                 }
             });
 
+            document.getElementById("node-expand").style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
+
 
             
   
@@ -1060,10 +494,11 @@ tabs.forEach((tab, index) => {
             logoType.classList.add('loaded');
             setTimeout(() => {
               loadingContainer.style.display = 'none';
+              mouseCanvas.style.display = 'none';
               document.getElementById('june-logo').style.display = 'block';
             }, 5000);
             document.getElementById('3d-graph').style.display = 'block';
-          })
+            })
           
         } catch (error) {
         //   console.error('Error:', error);
@@ -1071,7 +506,7 @@ tabs.forEach((tab, index) => {
       }
       // Call initGraph when the document is ready
       document.addEventListener('DOMContentLoaded', initGraph);
-    </script>
+    </script> 
   </head>
   
   <body>
@@ -1138,7 +573,21 @@ tabs.forEach((tab, index) => {
     </label>
 
 
-    <label><input value="on" name="dummy" type="checkbox" class="bubble" id="desToggleBtn"></label>
+    <!-- <label><input value="on" name="dummy" type="checkbox" class="bubble" id="desToggleBtn"></label> -->
+    
+    
+    <div class="toggle">
+        <input type="checkbox" id="desToggleBtn">
+        <span class="button"></span>
+        <span class="label">⌕</span>
+    </div>
+    <div class="toggle">
+        <input type="checkbox" id="scribbleBtn">
+        <span class="button"></span>
+        <span class="label">ᝰ</span>
+    </div>
+    
+      
 </div>
     
       
@@ -1155,7 +604,9 @@ tabs.forEach((tab, index) => {
       <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 57.5499, 'wght' 581.447;">E</span>
     </div>
   </div>
-  <span class="tagline">solving problems by building virtual ecosystems</span>
+  <!-- <span class="tagline">solving problems by building virtual ecosystems</span> -->
+  <canvas class="mouse-cursor" id="mouse-canvas"></canvas>
   <div id="3d-graph" style="background: rgba(255, 255, 255, 0)"></div>
+  <script src="cursor.js"></script>
   
   </body>

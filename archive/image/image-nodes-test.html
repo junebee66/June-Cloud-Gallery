@@ -180,6 +180,7 @@
             const highlightNodes = new Set();
             const highlightLinks = new Set();
             let hoverNode = null;
+            let currentNode = null;
   
             // Graph initialization
             const Graph = new ForceGraph3D(document.getElementById('3d-graph'))
@@ -201,7 +202,20 @@
         
             
               .onNodeClick(node => {
-                    // Aim at node from outside it
+                    
+                isRotationActive = false;
+                const toggleRotationCheckbox = document.getElementById('toggle-rotation');
+                toggleRotationCheckbox.checked = true; // Check the input box
+
+
+                const nodeExpand = document.getElementById('node-expand');
+                const nodeTextOutside = document.getElementById('node-text-outside');
+            
+                nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
+                nodeTextOutside.style.display = 'none'; 
+
+
+                // Aim at node from outside it
                     const ZoomDistance = 140;
                     const ZoomDistRatio = 1 + ZoomDistance/Math.hypot(node.x, node.y, node.z);
         
@@ -297,7 +311,10 @@
         const nodeAns = document.getElementById('node-answer');
         const nodeImg = document.getElementById('nodeDesImg');
         // const nodeImgUrl = convertedUrl(nodeiImgurl);
+
+        currentNode = node;
         
+
     // Show text when hovering over a node
     if (node) {
       nodeText.innerText = `${node.name}`;  // Change text as needed
@@ -318,7 +335,7 @@
     const originWidthMatch = nodeimgGif.match(/originWidth=(\d+)/);
     const originHeightMatch = nodeimgGif.match(/originHeight=(\d+)/);
 
-    console.log("originWidthMatch: ", originWidthMatch, "originHeightMatch: ", originHeightMatch);
+    // console.log("originWidthMatch: ", originWidthMatch, "originHeightMatch: ", originHeightMatch);
 
     const originalWidth = originWidthMatch ? parseInt(originWidthMatch[1], 10) : 500;
     const originalHeight = originHeightMatch ? parseInt(originHeightMatch[1], 10) : 500;
@@ -413,6 +430,15 @@
        .linkDirectionalParticles(Graph.linkDirectionalParticles());
 }
 
+Graph.onBackgroundClick(() => {
+    console.log('Clicked on empty space');
+    isRotationActive = true; // Stop rotation
+  const toggleRotationCheckbox = document.getElementById('toggle-rotation');
+  toggleRotationCheckbox.checked = false; // Check the input box
+//   button.textContent = isRotationActive ? 'Stop Rotation' : 'Start Rotation';
+//   button.textContent = 'Start Rotation';
+});
+
 //gui
 // const controls = { 'DAG Orientation': 'null'};
 //   const gui = new GUI();
@@ -445,11 +471,40 @@
                 angle += Math.PI / 1000;
             }
             }, 10);
-            document.getElementById('toggle-rotation').addEventListener('click', () => {
-  isRotationActive = !isRotationActive;
-  const button = document.getElementById('toggle-rotation');
-  button.textContent = isRotationActive ? 'Stop Rotation' : 'Start Rotation';
+
+
+
+    const toggleRotationLabel = document.querySelector('.switch');
+const selfRotateSpan = toggleRotationLabel.children[1]; // First span: "Self Rotate"
+const clickToZoomSpan = toggleRotationLabel.children[2]; // Second span: "Click to Zoom"
+
+
+selfRotateSpan.addEventListener('click', () => {
+    isRotationActive = true; // Enable rotation
+    toggleRotationCheckbox.checked = true; // Check the input box
+    console.log('Self Rotate clicked');
+    animateSpan(selfRotateSpan);
 });
+
+clickToZoomSpan.addEventListener('click', () => {
+    isRotationActive = false; // Disable rotation
+    toggleRotationCheckbox.checked = false; // Uncheck the input box
+    console.log('Click to Zoom clicked');
+    animateSpan(clickToZoomSpan);
+});
+
+//             document.getElementById('toggle-rotation').addEventListener('click', () => {
+//                 isRotationActive = !isRotationActive;
+                
+//   const button = document.getElementById('toggle-rotation');
+//   if (isRotationActive) {
+//     button.textContent = 'Stop Rotation';
+// } else {
+//     button.textContent = 'Start Rotation';
+// }
+
+// //   button.textContent = isRotationActive ? 'Stop Rotation' : 'Start Rotation';
+// });
             
 
             // Select the checkbox and the mouse-canvas div
@@ -492,23 +547,17 @@
                 
             });
 
+            
             document.getElementById('node-text').addEventListener('click', () => {
-                expandDesActive = !expandDesActive; // Toggle the active state
-                
-                const nodeExpand = document.getElementById('node-expand');
-                
-                
-                // Toggle the display property based on the expandDesActive state
-                if (expandDesActive) {
-                    nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
-                    nodeTextOutside.style.display = 'none'; 
-                    
+                const url = currentNode.url; // Assuming the URL is stored in node.img, adjust this if needed
+                if (url) {
+                    console.log('open url:', url);
+                    window.open(url, '_blank');  // Open the URL in a new tab
                 } else {
-                    nodeExpand.style.display = 'none'; // Hide the element
-                    nodeTextOutside.style.display = 'block'; 
+                    console.log('No URL found for this node.');
                 }
-                
             });
+            
             
             document.getElementById('desToggleBtn').addEventListener('click', () => {
                 expandDesActive = !expandDesActive; // Toggle the active state
@@ -527,9 +576,26 @@
                 }
             });
 
+            document.getElementById('closeNodeInfoBtn').addEventListener('click', () => {
+                expandDesActive = !expandDesActive; // Toggle the active state
+                
+                const nodeExpand = document.getElementById('node-expand');
+                
+                
+                // Toggle the display property based on the expandDesActive state
+                if (expandDesActive) {
+                    nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
+                    nodeTextOutside.style.display = 'none'; 
+                    
+                } else {
+                    nodeExpand.style.display = 'none'; // Hide the element
+                    nodeTextOutside.style.display = 'block'; 
+                }
+            });
+
             document.getElementById("node-text").style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
             document.getElementById("node-text-outside").style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
-
+            document.getElementById("3d-graph").style.cursor = "url('https://i.pinimg.com/736x/d2/d0/aa/d2d0aa2ec86432ccc1d2a936fe8b239e.jpg'), auto";
 
             
   
@@ -556,13 +622,23 @@
     <p id="node-text-outside" class="node-text-outside" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
     <div id="node-info" class="node-info">
         <div id="node-expand">
-            <p id="node-text" class="node-text" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
+            <div id="nodeTitleNav" class="nodeTitleNav">
+                <p id="node-text" class="node-text" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
+                <div class="closeNodeInfo">
+                    <div class="toggle" id="closeNodeInfo">
+                        <input type="checkbox" id="closeNodeInfoBtn">
+                        <span class="button"></span>
+                        <span class="label">x</span>
+                    </div>
+                </div>
+            </div>
+
             <div id="techBtnsDiv">
             </div>
             <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Question</p>
             <p id="node-question" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
-            <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Answer</p>
-            <p id="node-answer" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
+            <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 281;">Answer</p>
+            <p id="node-answer" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 281;"></p>
             <p id="node-description" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
             <img src="https://static.wixstatic.com/media/565ac9_8aa8c853e2244b6ea5dd3afe06430816~mv2.jpg/v1/fill/w_826,h_410,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Memory%20Map_Feature.jpg" 
             alt="Girl in a jacket" 

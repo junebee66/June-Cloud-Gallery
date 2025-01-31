@@ -150,6 +150,9 @@
   padding: 5px 20px;
   transition: all 0.2s ease-in-out;
   border: 2px solid rgb(206, 206, 206);
+  font-family: -apple-system, BlinkMacSystemFont, Oswald;
+  font-variation-settings: 'wdth' 50, 'wght' 581;
+
 }
 
 .neu-button:hover {

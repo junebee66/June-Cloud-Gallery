@@ -15,10 +15,11 @@
         let highlightedLinks = [];
         let lastHoveredNode = null; // Variable to store the last hovered node
 
-        async function fetchGifData(collectionType) {
+        // Fetch image data instead of GIF data
+        async function fetchImageData(collectionType) {
             const url = collectionType === 'blueprint' 
                 ? 'https://junesbee.com/_functions-dev/allProjectsImage' 
-                : 'https://junesbee.com/_functions-dev/allProjectsStarGif';
+                : 'https://junesbee.com/_functions-dev/allProjectsImage'; // Adjusted to fetch image data
             try {
                 const response = await fetch(url);
                 const data = await response.json();
@@ -26,14 +27,14 @@
                 console.log("data", data);
 
                 if (data && data.items) {
-                    const itemsWithGif = data.items.filter(item => item.gif);
-                    return itemsWithGif;
+                    const itemsWithImage = data.items.filter(item => item.mainImage);
+                    return itemsWithImage;
                 } else {
                     console.error("No items found in the response.");
                     return [];
                 }
             } catch (error) {
-                console.error("Error fetching GIF data:", error);
+                console.error("Error fetching image data:", error);
                 return [];
             }
         }
@@ -53,7 +54,7 @@
             });
         }
 
-        function convertGifUrl(wixImageUrl) {
+        function convertImageUrl(wixImageUrl) {
             const prefixToRemove = "wix:image://v1/";
             if (wixImageUrl.startsWith(prefixToRemove)) {
                 const cleanedUrl = wixImageUrl.slice(prefixToRemove.length);
@@ -75,12 +76,12 @@
             logoType.classList.remove('loaded');
 
             try {
-                // Fetch GIF data
-                const gifItems = await fetchGifData('blueprint');
-                console.log('Number of items:', gifItems.length); // Debugging
+                // Fetch image data instead of GIF data
+                const items = await fetchImageData('blueprint');
+                console.log('Number of items:', items.length); // Debugging
 
-                // Prepare image URLs
-                const imageUrls = gifItems.map(item => convertGifUrl(item.gif)).filter(url => url);
+                // Prepare image URLs using mainImage
+                const imageUrls = items.map(item => convertImageUrl(item.mainImage)).filter(url => url);
 
                 // Preload images
                 preloadImages(imageUrls, () => {
@@ -91,12 +92,10 @@
                     };
 
                     // Add image nodes
-                    gifItems.forEach((item, id) => {
-                        const convertedUrl = convertGifUrl(item.gif);
-                        // Create tech buttons based on item.tech or fallback to item.question
+                    items.forEach((item, id) => {
+                        const convertedUrl = convertImageUrl(item.mainImage); // Use mainImage instead of gif
                         const techButtons = [];
                         if (item.technology && Array.isArray(item.technology) && item.technology.length > 0) {
-                            // If item.tech is defined and not empty, create buttons for each tech
                             item.technology.forEach(technology => {
                                 const techButton = document.createElement('button');
                                 techButton.classList.add('neu-button');
@@ -104,10 +103,9 @@
                                 techButtons.push(techButton);
                             });
                         } else if (item.technology) {
-                            // If item.tech is empty or undefined, but item.question exists, use it as a fallback
                             const techButton = document.createElement('button');
                             techButton.classList.add('neu-button');
-                            techButton.textContent = item.technology; //jere // Use the question as the button text
+                            techButton.textContent = item.technology; 
                             techButtons.push(techButton);
                         }
 
@@ -115,7 +113,7 @@
                             gData.nodes.push({
                                 id,
                                 name: item.title,
-                                img: item.gif,
+                                img: item.mainImage, // Use mainImage instead of gif
                                 imgUrl: convertedUrl,
                                 type: item.type, // Add type information
                                 x: Math.random() * 1600,
@@ -127,14 +125,14 @@
                                 quest: item.question,
                                 answer: item.hook,
                                 tech: item.technology,
-                                techButtons: techButtons // Store the buttons in the node object
+                                techButtons: techButtons 
                             });
                         } else {
                             gData.nodes.push({
                                 id,
                                 name: item.title,
-                                img: item.gif,
-                                type: item.type, // Add type information
+                                img: item.mainImage, // Use mainImage instead of gif
+                                type: item.type,
                                 x: Math.random() * 1600,
                                 y: Math.random() * 1600,
                                 z: Math.random() * 1600,
@@ -144,21 +142,21 @@
                                 quest: item.question,
                                 answer: item.hook,
                                 tech: item.technology,
-                                techButtons: techButtons // Store the buttons in the node object
+                                techButtons: techButtons 
                             });
                         }
                     });
 
                     // Add links between image nodes and type nodes
                     const typeNodes = {};
-                    gifItems.forEach((item, id) => {
+                    items.forEach((item, id) => {
                         item.type.forEach(type => {
                             if (!typeNodes[type]) {
                                 typeNodes[type] = gData.nodes.length;
                                 gData.nodes.push({
                                     id: gData.nodes.length,
                                     name: type, // Name for type node
-                                    isTypeNode: true // Mark as type node
+                                    isTypeNode: true 
                                 });
                             }
                             gData.links.push({
@@ -169,7 +167,7 @@
                         });
                     });
 
-                    console.log('Graph data:', gData); // Debugging
+                    console.log('Graph data:', gData); 
 
                     gData.links.forEach(link => {
                         const a = gData.nodes[link.source];
@@ -186,13 +184,11 @@
                     });
 
                     const distance = 500;
-                    // Highlight sets
                     const highlightNodes = new Set();
                     const highlightLinks = new Set();
                     let hoverNode = null;
                     let currentNode = null;
 
-                    // Graph initialization
                     const Graph = new ForceGraph3D(document.getElementById('3d-graph'))
                         .backgroundColor('#ffffff00')
                         .linkColor(() => '#000000')
@@ -222,16 +218,27 @@
                             const nodeAns = document.getElementById('node-answer');
                             const nodeATitile = document.getElementById('node-answer-title');
 
-                            nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
-                            nodeTextOutside.style.display = 'none';
-                            nodeDes.style.display = 'block';
-                            nodeQue.style.display = 'block';
-                            nodeAns.style.display = 'block';
-                            nodeQTitile.style.display = 'block';
-                            nodeATitile.style.display = 'block';
-
                             // Clear existing buttons
                             techBtnsDiv.innerHTML = '';
+
+                            if (node.isTypeNode) {
+                                nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
+                                nodeTextOutside.style.display = 'none';
+                                nodeDes.style.display = 'block';
+                                nodeQue.style.display = 'none';
+                                nodeAns.style.display = 'none';
+                                nodeQTitile.style.display = 'none';
+                                nodeATitile.style.display = 'none';
+                            } else {
+                                nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
+                                nodeTextOutside.style.display = 'none';
+                                nodeDes.style.display = 'block';
+                                nodeQue.style.display = 'block';
+                                nodeAns.style.display = 'block';
+                                nodeQTitile.style.display = 'block';
+                                nodeATitile.style.display = 'block';
+                            }
+
 
                             // Add the tech buttons from the last hovered node
                             if (lastHoveredNode && lastHoveredNode.techButtons) {
@@ -288,7 +295,7 @@
                                 return sphere;
                             } else {
                                 // Create image node
-                                const convertedUrl = convertGifUrl(img);
+                                const convertedUrl = convertImageUrl(img);
                                 if (!convertedUrl) return null;
                                 const imgTexture = new THREE.TextureLoader().load(convertedUrl);
                                 imgTexture.colorSpace = THREE.SRGBColorSpace;
@@ -327,6 +334,9 @@
                             const nodeAns = document.getElementById('node-answer');
                             const nodeImg = document.getElementById('nodeDesImg');
                             const techBtnsDiv = document.getElementById('techBtnsDiv');
+
+            
+
 
                             const nodeQTitile = document.getElementById('node-question-title');
                             const nodeATitile = document.getElementById('node-answer-title');
@@ -445,7 +455,6 @@
                         });
 
                     function updateHighlight() {
-                        // This function triggers the graph to re-render by updating the highlighted nodes and links
                         Graph.nodeColor(Graph.nodeColor())
                             .linkWidth(Graph.linkWidth())
                             .linkDirectionalParticles(Graph.linkDirectionalParticles());
@@ -455,8 +464,8 @@
 // Function to get description from JSON based on node type
 function getDescriptionForType(type) {
     const descriptions = {
-        "Architecture & Urban Design": "Thinking through spatial living systems is at the core of my design philosophy. I was raised in a family where both of my parents worked in architecture and interior design. From an early age, I was taught to consider spatial solutions for social impact. Being able to strike a balance between logic and creativity has always been central to my practice.",
-        "Illustration & Storytelling": "I think through imagining the future. I convey ideas through storytelling to get the tangible and non-tangible elements of the message across.",
+        "Architecture & Urban Design": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "Illustration & Storytelling": "I was born in a family with both my parents working in the architecture and interior design industry",
         "Web Tool Development": "I was born in a family with both my parents working in the architecture and interior design industry",
         "Animation & VFX": "I was born in a family with both my parents working in the architecture and interior design industry",
         "Sculpture": "I was born in a family with both my parents working in the architecture and interior design industry",

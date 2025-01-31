@@ -1,0 +1,733 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    <!-- Load required libraries -->
+    <script src="3d-force-image.js"></script>
+    <link href="image-node.css" rel="stylesheet">
+    <script type="module">
+        import * as THREE from 'https://esm.sh/three';
+        import SpriteText from 'https://esm.sh/three-spritetext';
+        import { GUI } from 'https://esm.sh/dat.gui';
+
+        let highlightedLinks = [];
+        let lastHoveredNode = null; // Variable to store the last hovered node
+
+// Fetch mainImage data instead of GIF data
+async function fetchMainImageData() {
+    const url = 'https://junesbee.com/_functions-dev/allProjectsImage';
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        console.log("data", data);
+
+        if (data && data.items) {
+            return data.items; // Return all items
+        } else {
+            console.error("No items found in the response.");
+            return [];
+        }
+    } catch (error) {
+        console.error("Error fetching main image data:", error);
+        return [];
+    }
+}
+
+
+        function preloadImages(urls, callback) {
+            let loaded = 0;
+            const total = urls.length;
+            urls.forEach((url) => {
+                const img = new Image();
+                img.onload = () => {
+                    loaded++;
+                    if (loaded === total && callback) {
+                        callback();
+                    }
+                };
+                img.src = url;
+            });
+        }
+
+        function convertGifUrl(wixImageUrl) {
+            const prefixToRemove = "wix:image://v1/";
+            if (wixImageUrl.startsWith(prefixToRemove)) {
+                const cleanedUrl = wixImageUrl.slice(prefixToRemove.length);
+                const extensionMatch = cleanedUrl.match(/\.(jpg|jpeg|gif|png)/i);
+                if (extensionMatch) {
+                    const extension = extensionMatch[0].toLowerCase();
+                    return `https://static.wixstatic.com/media/${cleanedUrl.slice(0, cleanedUrl.indexOf(extension) + extension.length)}`;
+                }
+            }
+            return null;
+        }
+
+        async function initGraph() {
+            console.log("start initGraph");
+            const loadingContainer = document.getElementById('loading-container');
+            const logoType = loadingContainer.querySelector('.logo-type');
+
+            // Start loading animation
+            logoType.classList.remove('loaded');
+
+            try {
+                // Fetch GIF data
+                const gifItems = await fetchGifData('blueprint');
+                console.log('Number of items:', gifItems.length); // Debugging
+
+                // Prepare image URLs
+                const imageUrls = gifItems.map(item => convertGifUrl(item.gif)).filter(url => url);
+
+                // Preload images
+                preloadImages(imageUrls, () => {
+                    // Create graph data
+                    const gData = {
+                        nodes: [],
+                        links: []
+                    };
+
+                    // Add image nodes
+                    gifItems.forEach((item, id) => {
+                        const convertedUrl = convertGifUrl(item.mainImage);
+                        // Create tech buttons based on item.tech or fallback to item.question
+                        const techButtons = [];
+                        if (item.technology && Array.isArray(item.technology) && item.technology.length > 0) {
+                            // If item.tech is defined and not empty, create buttons for each tech
+                            item.technology.forEach(technology => {
+                                const techButton = document.createElement('button');
+                                techButton.classList.add('neu-button');
+                                techButton.textContent = technology;
+                                techButtons.push(techButton);
+                            });
+                        } else if (item.technology) {
+                            // If item.tech is empty or undefined, but item.question exists, use it as a fallback
+                            const techButton = document.createElement('button');
+                            techButton.classList.add('neu-button');
+                            techButton.textContent = item.technology; //jere // Use the question as the button text
+                            techButtons.push(techButton);
+                        }
+
+                        if (convertedUrl) {
+                            gData.nodes.push({
+                                id,
+                                name: item.title,
+                                img: item.gif,
+                                imgUrl: convertedUrl,
+                                type: item.type, // Add type information
+                                x: Math.random() * 1600,
+                                y: Math.random() * 1600,
+                                z: Math.random() * 1600,
+                                url: item.pageUrl,
+                                des: item.shortDescription,
+                                year: item.year,
+                                quest: item.question,
+                                answer: item.hook,
+                                tech: item.technology,
+                                techButtons: techButtons // Store the buttons in the node object
+                            });
+                        } else {
+                            gData.nodes.push({
+                                id,
+                                name: item.title,
+                                img: item.gif,
+                                type: item.type, // Add type information
+                                x: Math.random() * 1600,
+                                y: Math.random() * 1600,
+                                z: Math.random() * 1600,
+                                url: item.pageUrl,
+                                des: item.shortDescription,
+                                year: item.year,
+                                quest: item.question,
+                                answer: item.hook,
+                                tech: item.technology,
+                                techButtons: techButtons // Store the buttons in the node object
+                            });
+                        }
+                    });
+
+                    // Add links between image nodes and type nodes
+                    const typeNodes = {};
+                    gifItems.forEach((item, id) => {
+                        item.type.forEach(type => {
+                            if (!typeNodes[type]) {
+                                typeNodes[type] = gData.nodes.length;
+                                gData.nodes.push({
+                                    id: gData.nodes.length,
+                                    name: type, // Name for type node
+                                    isTypeNode: true // Mark as type node
+                                });
+                            }
+                            gData.links.push({
+                                source: id,
+                                target: typeNodes[type],
+                                width: 10
+                            });
+                        });
+                    });
+
+                    console.log('Graph data:', gData); // Debugging
+
+                    gData.links.forEach(link => {
+                        const a = gData.nodes[link.source];
+                        const b = gData.nodes[link.target];
+                        !a.neighbors && (a.neighbors = []);
+                        !b.neighbors && (b.neighbors = []);
+                        a.neighbors.push(b);
+                        b.neighbors.push(a);
+
+                        !a.links && (a.links = []);
+                        !b.links && (b.links = []);
+                        a.links.push(link);
+                        b.links.push(link);
+                    });
+
+                    const distance = 500;
+                    // Highlight sets
+                    const highlightNodes = new Set();
+                    const highlightLinks = new Set();
+                    let hoverNode = null;
+                    let currentNode = null;
+
+                    // Graph initialization
+                    const Graph = new ForceGraph3D(document.getElementById('3d-graph'))
+                        .backgroundColor('#ffffff00')
+                        .linkColor(() => '#000000')
+                        .linkOpacity(0.5)
+                        .nodeColor(node => highlightNodes.has(node) ? node === hoverNode ? 'rgb(255,0,0,1)' : 'rgba(255,160,0,0.8)' : 'rgba(0,255,255,0.6)')
+                        .linkWidth(link => highlightLinks.has(link) ? 3 : 0.5)
+                        .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
+                        .linkDirectionalParticleWidth(2)
+                        .cameraPosition({ z: distance })
+                        .dagMode('lr')
+                        .onNodeDragEnd(node => {
+                            node.fx = node.x;
+                            node.fy = node.y;
+                            node.fz = node.z;
+                        })
+                        .onNodeClick(node => {
+                            isRotationActive = false;
+                            const toggleRotationCheckbox = document.getElementById('toggle-rotation');
+                            toggleRotationCheckbox.checked = true; // Check the input box
+
+                            const nodeExpand = document.getElementById('node-expand');
+                            const nodeTextOutside = document.getElementById('node-text-outside');
+                            const techBtnsDiv = document.getElementById('techBtnsDiv');
+
+                            nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
+                            nodeTextOutside.style.display = 'none';
+                            const NodeQuestion = document.getElementById('node-question');
+                            const QuestionTitle = document.getElementById('node-question-title');
+                            const NodeAnswer = document.getElementById('node-answer');
+                            const AnswerTitle = document.getElementById('node-answer-title');
+                            
+                            AnswerTitle.style.display = 'none'; // Hide the element
+                            NodeQuestion.style.display = 'none'; // Hide the element
+                            QuestionTitle.style.display = 'none'; // Hide the element
+                            NodeAnswer.style.display = 'none'; // Hide the element
+
+                            // Clear existing buttons
+                            techBtnsDiv.innerHTML = '';
+
+                            // Add the tech buttons from the last hovered node
+                            if (lastHoveredNode && lastHoveredNode.techButtons) {
+                                lastHoveredNode.techButtons.forEach(button => {
+                                    techBtnsDiv.appendChild(button);
+                                });
+                            }
+
+                            // Aim at node from outside it
+                            const ZoomDistance = 40;
+                            const ZoomDistRatio = 1 + ZoomDistance / Math.hypot(node.x, node.y, node.z);
+
+                            const newPos = node.x || node.y || node.z
+                                ? { x: node.x * ZoomDistRatio, y: node.y * ZoomDistRatio, z: node.z * ZoomDistRatio }
+                                : { x: 0, y: 0, z: ZoomDistance }; // special case if node is in (0,0,0)
+
+                            Graph.cameraPosition(
+                                newPos, // new position
+                                node, // lookAt ({ x, y, z })
+                                3000  // ms transition duration
+                            );
+                        })
+                        .onNodeRightClick(node => {
+                            console.log('rightclick');
+                            const url = node.url; // Assuming the URL is stored in node.img, adjust this if needed
+                            if (url) {
+                                window.open(url, '_blank');  // Open the URL in a new tab
+                            } else {
+                                console.log('No URL found for this node.');
+                            }
+                        })
+                        .nodeThreeObject(({ img, isTypeNode, name }) => {
+                            if (isTypeNode) {
+                                // Create geometry node for type
+                                const geometries = [
+                                    new THREE.BoxGeometry(Math.random() * 30, Math.random() * 30, Math.random() * 30),
+                                    new THREE.ConeGeometry(Math.random() * 30, Math.random() * 30),
+                                    new THREE.CylinderGeometry(Math.random() * 30, Math.random() * 20, Math.random() * 30),
+                                    new THREE.DodecahedronGeometry(Math.random() * 30),
+                                    new THREE.SphereGeometry(Math.random() * 30),
+                                    new THREE.TorusGeometry(Math.random() * 30, Math.random() * 3),
+                                    new THREE.TorusKnotGeometry(Math.random() * 30, Math.random() * 3)
+                                ];
+
+                                // Select a geometry based on a unique id or random index
+                                const geometry = geometries[Math.floor(Math.random() * geometries.length)];
+
+                                const material = new THREE.MeshLambertMaterial({
+                                    color: Math.round(Math.random() * Math.pow(2, 24)),
+                                    transparent: true,
+                                    opacity: 0.75
+                                });
+                                const sphere = new THREE.Mesh(geometry, material);
+                                return sphere;
+                            } else {
+                                // Create image node
+                                const convertedUrl = convertGifUrl(img);
+                                if (!convertedUrl) return null;
+                                const imgTexture = new THREE.TextureLoader().load(convertedUrl);
+                                imgTexture.colorSpace = THREE.SRGBColorSpace;
+                                const material = new THREE.SpriteMaterial({ map: imgTexture });
+                                const sprite = new THREE.Sprite(material);
+                                const originWidthMatch = img.match(/originWidth=(\d+)/);
+                                const originHeightMatch = img.match(/originHeight=(\d+)/);
+
+                                const originalWidth = originWidthMatch ? parseInt(originWidthMatch[1], 10) : 500;
+                                const originalHeight = originHeightMatch ? parseInt(originHeightMatch[1], 10) : 500;
+
+                                const aspectRatio = originalWidth / originalHeight;
+                                let width, height;
+                                if (aspectRatio >= 1) {
+                                    width = 25;
+                                    height = width / aspectRatio;
+                                } else {
+                                    height = 25;
+                                    width = height * aspectRatio;
+                                }
+
+                                if (width < 10) width = 10;
+                                if (height < 10) height = 10;
+
+                                sprite.scale.set(width, height);
+                                return sprite;
+                            }
+                        })
+                        .graphData(gData)
+                        .onNodeHover((node) => {
+                            const nodeInfoDiv = document.getElementById('node-info');
+                            const nodeText = document.getElementById('node-text');
+                            const nodeTextOutside = document.getElementById('node-text-outside');
+                            const nodeDes = document.getElementById('node-description');
+                            const nodeQue = document.getElementById('node-question');
+                            const nodeAns = document.getElementById('node-answer');
+                            const nodeImg = document.getElementById('nodeDesImg');
+                            const techBtnsDiv = document.getElementById('techBtnsDiv');
+
+                            currentNode = node;
+
+                            // Update the last hovered node
+                            if (node) {
+                                lastHoveredNode = node;
+                            }
+
+                            // Clear existing buttons
+                            techBtnsDiv.innerHTML = '';
+
+                            // Add the tech buttons from the last hovered node
+                            if (lastHoveredNode && lastHoveredNode.techButtons) {
+                                lastHoveredNode.techButtons.forEach(button => {
+                                    techBtnsDiv.appendChild(button);
+                                });
+                            }
+
+                            // Show text when hovering over a node
+                            if (node) {
+                                nodeText.innerText = `${node.name}`;
+                                nodeTextOutside.innerText = `${node.name}`;
+                                nodeInfoDiv.style.display = 'block';
+                                nodeDes.innerText = `${node.des}`;
+                                nodeQue.innerText = `${node.quest}`;
+                                nodeAns.innerText = `${node.answer}`;
+
+                                let nodeimgUrl = node.imgUrl;
+                                let nodeimgGif = node.img;
+
+                                if (nodeimgUrl) {
+                                    // Extract original dimensions from the URL
+                                    const originWidthMatch = nodeimgGif.match(/originWidth=(\d+)/);
+                                    const originHeightMatch = nodeimgGif.match(/originHeight=(\d+)/);
+
+                                    const originalWidth = originWidthMatch ? parseInt(originWidthMatch[1], 10) : 500;
+                                    const originalHeight = originHeightMatch ? parseInt(originHeightMatch[1], 10) : 500;
+
+                                    // Calculate aspect ratio
+                                    const aspectRatio = originalWidth / originalHeight;
+
+                                    // Define the maximum size for scaling
+                                    const maxDimension = 25; // Increase this for larger images
+                                    const minDimension = 5;
+
+                                    let width, height;
+
+                                    if (aspectRatio >= 1) {
+                                        // Landscape or square images
+                                        width = maxDimension;
+                                        height = Math.max(minDimension, width / aspectRatio);
+                                    } else {
+                                        // Portrait images
+                                        height = maxDimension;
+                                        width = Math.max(minDimension, height * aspectRatio);
+                                    }
+
+                                    // Apply the calculated dimensions to the image
+                                    nodeImg.src = nodeimgUrl;
+                                    nodeImg.style.width = `${width}vw`;
+                                    nodeImg.style.height = `${height}vw`;
+                                } else {
+                                    console.log("No node.imgUrl or node is null");
+                                }
+
+                                        // If this is a type node, show description from the JSON
+        if (node.isTypeNode) {
+            const typeDescription = getDescriptionForType(node.name);
+            const NodeQuestion = document.getElementById('node-question');
+            const QuestionTitle = document.getElementById('node-question-title');
+            const NodeAnswer = document.getElementById('node-answer');
+            const AnswerTitle = document.getElementById('node-answer-title');
+            
+            AnswerTitle.style.display = 'none'; // Hide the element
+            NodeQuestion.style.display = 'none'; // Hide the element
+            QuestionTitle.style.display = 'none'; // Hide the element
+            NodeAnswer.style.display = 'none'; // Hide the element
+            nodeDes.innerText = typeDescription;
+        }
+
+                            }
+
+                            // No state change
+                            if ((!node && !highlightNodes.size) || (node && hoverNode === node)) return;
+
+                            highlightNodes.clear();
+                            highlightLinks.clear();
+                            if (node) {
+                                highlightNodes.add(node);
+                                node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
+                                node.links.forEach(link => highlightLinks.add(link));
+                            }
+
+                            hoverNode = node || null;
+
+                            updateHighlight();
+                        })
+                        .onLinkHover(link => {
+                            highlightNodes.clear();
+                            highlightLinks.clear();
+
+                            if (link) {
+                                highlightLinks.add(link);
+                                highlightNodes.add(link.source);
+                                highlightNodes.add(link.target);
+                            }
+
+                            updateHighlight();
+                        });
+
+                    function updateHighlight() {
+                        // This function triggers the graph to re-render by updating the highlighted nodes and links
+                        Graph.nodeColor(Graph.nodeColor())
+                            .linkWidth(Graph.linkWidth())
+                            .linkDirectionalParticles(Graph.linkDirectionalParticles());
+                    }
+
+
+// Function to get description from JSON based on node type
+function getDescriptionForType(type) {
+    const descriptions = {
+        "Architecture & Urban Design": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "Illustration & Storytelling": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "Web Tool Development": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "Animation & VFX": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "Sculpture": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "Research": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "VR AR XR Design": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "Game": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "Computation": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "Code Sketch": "I was born in a family with both my parents working in the architecture and interior design industry",
+        "UI UX Design": "I was born in a family with both my parents working in the architecture and interior design industry"
+    };
+
+    return descriptions[type] || "No description available";
+}
+
+                    const nodeExpand = document.getElementById('node-expand');
+
+                    Graph.onBackgroundClick(() => {
+                        console.log('Clicked on empty space');
+                        isRotationActive = true; // Stop rotation
+                        const toggleRotationCheckbox = document.getElementById('toggle-rotation');
+                        toggleRotationCheckbox.checked = false; // Check the input box
+                        nodeExpand.style.display = 'none'; // Show the element (or 'flex' if needed for a flex container)
+                        nodeTextOutside.style.display = 'block';
+                        console.log('nodeExpand.style.display');
+                    });
+
+                    //tab
+                    const tabs = document.querySelectorAll('.tab');
+                    tabs.forEach((tab, index) => {
+                        tab.addEventListener('change', () => {
+                            const orientations = ['lr', 'td', 'zout', 'radialout', null]; // Map to DAG orientations
+                            const selectedOrientation = orientations[index];
+                            if (Graph) {
+                                Graph.dagMode(selectedOrientation);
+                            }
+                        });
+                    });
+
+                    //rotation animation
+                    let angle = 0;
+                    let isRotationActive = true;
+                    setInterval(() => {
+                        if (isRotationActive) {
+                            Graph.cameraPosition({
+                                x: distance * Math.sin(angle),
+                                z: distance * Math.cos(angle)
+                            });
+                            angle += Math.PI / 1000;
+                        }
+                    }, 10);
+
+                    const toggleRotationLabel = document.querySelector('.switch');
+                    const selfRotateSpan = toggleRotationLabel.children[1]; // First span: "Self Rotate"
+                    const clickToZoomSpan = toggleRotationLabel.children[2]; // Second span: "Click to Zoom"
+
+                    selfRotateSpan.addEventListener('click', () => {
+                        isRotationActive = true; // Enable rotation
+                        console.log('Self Rotate clicked');
+                    });
+
+                    clickToZoomSpan.addEventListener('click', () => {
+                        isRotationActive = false; // Disable rotation
+                        console.log('Click to Zoom clicked');
+                    });
+
+                    // Select the checkbox and the mouse-canvas div
+                    const scribbleBtn = document.getElementById('scribbleBtn');
+                    const mouseCanvas = document.getElementById('mouse-canvas');
+                    let scribbleBtnActive = true;
+
+                    // Add event listener to toggle the visibility of mouse-canvas
+                    scribbleBtn.addEventListener('change', function() {
+                        if (scribbleBtn.checked) {
+                            // If checked, show the canvas
+                            mouseCanvas.style.display = 'block';
+                        } else {
+                            // If unchecked, hide the canvas
+                            mouseCanvas.style.display = 'none';
+                        }
+                    });
+
+                    //expand description code
+                    let expandDesActive = false;
+                    const nodeTextOutside = document.getElementById('node-text-outside');
+
+                    nodeTextOutside.addEventListener('click', () => {
+                        expandDesActive = !expandDesActive; // Toggle the active state
+
+                        const nodeExpand = document.getElementById('node-expand');
+                        const techBtnsDiv = document.getElementById('techBtnsDiv');
+
+                        // Toggle the display property based on the expandDesActive state
+                        if (expandDesActive) {
+                            nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
+                            nodeTextOutside.style.display = 'none';
+
+                            // Clear existing buttons
+                            techBtnsDiv.innerHTML = '';
+
+                            // Add the tech buttons from the last hovered node
+                            if (lastHoveredNode && lastHoveredNode.techButtons) {
+                                lastHoveredNode.techButtons.forEach(button => {
+                                    techBtnsDiv.appendChild(button);
+                                });
+                            }
+                        } else {
+                            nodeExpand.style.display = 'none'; // Hide the element
+                            nodeTextOutside.style.display = 'block';
+                        }
+                    });
+
+                    document.getElementById('node-text').addEventListener('click', () => {
+                        const url = currentNode.url; // Assuming the URL is stored in node.img, adjust this if needed
+                        if (url) {
+                            console.log('open url:', url);
+                            window.open(url, '_blank');  // Open the URL in a new tab
+                        } else {
+                            console.log('No URL found for this node.');
+                        }
+                    });
+
+                    document.getElementById('desToggleBtn').addEventListener('click', () => {
+                        expandDesActive = !expandDesActive; // Toggle the active state
+
+                        const nodeExpand = document.getElementById('node-expand');
+                        const nodeTextOutside = document.getElementById('node-text-outside');
+                        const techBtnsDiv = document.getElementById('techBtnsDiv');
+
+                        if (expandDesActive) {
+                            nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
+                            nodeTextOutside.style.display = 'none';
+
+                            // Clear existing buttons
+                            techBtnsDiv.innerHTML = '';
+
+                            // Add the tech buttons from the last hovered node
+                            if (lastHoveredNode && lastHoveredNode.techButtons) {
+                                lastHoveredNode.techButtons.forEach(button => {
+                                    techBtnsDiv.appendChild(button);
+                                });
+                            }
+                        } else {
+                            nodeExpand.style.display = 'none'; // Hide the element
+                            nodeTextOutside.style.display = 'block';
+                        }
+                    });
+
+                    document.getElementById('closeNodeInfoBtn').addEventListener('click', () => {
+                        expandDesActive = !expandDesActive; // Toggle the active state
+
+                        const nodeExpand = document.getElementById('node-expand');
+                        const nodeTextOutside = document.getElementById('node-text-outside');
+                        const techBtnsDiv = document.getElementById('techBtnsDiv');
+
+                        if (expandDesActive) {
+                            nodeExpand.style.display = 'block'; // Show the element (or 'flex' if needed for a flex container)
+                            nodeTextOutside.style.display = 'none';
+
+                            // Clear existing buttons
+                            techBtnsDiv.innerHTML = '';
+
+                            // Add the tech buttons from the last hovered node
+                            if (lastHoveredNode && lastHoveredNode.techButtons) {
+                                lastHoveredNode.techButtons.forEach(button => {
+                                    techBtnsDiv.appendChild(button);
+                                });
+                            }
+                        } else {
+                            nodeExpand.style.display = 'none'; // Hide the element
+                            nodeTextOutside.style.display = 'block';
+                        }
+                    });
+
+                    document.getElementById("node-text").style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
+                    document.getElementById("node-text-outside").style.cursor = "url('http://wiki-devel.sugarlabs.org/images/e/e2/Arrow.cur'), auto";
+                    document.getElementById("3d-graph").style.cursor = "url('https://i.pinimg.com/736x/d2/d0/aa/d2d0aa2ec86432ccc1d2a936fe8b239e.jpg'), auto";
+                    
+
+                    // Hide loading animation and show graph
+                    logoType.classList.add('loaded');
+                    setTimeout(() => {
+                        loadingContainer.style.display = 'none';
+                        mouseCanvas.style.display = 'none';
+                        document.getElementById('june-logo').style.display = 'block';
+                    }, 5000);
+                    document.getElementById('3d-graph').style.display = 'block';
+                });
+            } catch (error) {
+                // console.error('Error:', error);
+            }
+        }
+        // Call initGraph when the document is ready
+        document.addEventListener('DOMContentLoaded', initGraph);
+    </script>
+</head>
+
+<body>
+    <p id="node-text-outside" class="node-text-outside" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
+    <div id="node-info" class="node-info">
+        <div id="node-expand">
+            <div id="nodeTitleNav" class="nodeTitleNav">
+                <p id="node-text" class="node-text" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
+                <div class="closeNodeInfo">
+                    <div class="toggle" id="closeNodeInfo">
+                        <input type="checkbox" id="closeNodeInfoBtn">
+                        <span class="button"></span>
+                        <span class="label">x</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="techBtnsDiv">
+            </div>
+            <p id="node-question-title" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Question</p>
+            <p id="node-question" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 281;"></p>
+            <p id="node-answer-title" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Answer</p>
+            <p id="node-answer" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 281;"></p>
+            <p id="node-description" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
+            <img src="https://static.wixstatic.com/media/565ac9_8aa8c853e2244b6ea5dd3afe06430816~mv2.jpg/v1/fill/w_826,h_410,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Memory%20Map_Feature.jpg" 
+            alt="Girl in a jacket" 
+            id="nodeDesImg"
+            width="400" 
+            height="200">
+        </div>
+    </div>
+
+    <p id="june-logo" class="june-logo" style="font-variation-settings: 'wdth' 50, 'wght' 581;">JUNE'S CLOUD</p>
+
+    <div class="bottom-menu">
+        <div class="tab-container">
+            <input type="radio" name="tab" id="tab1" class="tab tab--1" checked />
+            <label class="tab_label" for="tab1">Left-Right</label>
+
+            <input type="radio" name="tab" id="tab2" class="tab tab--2" />
+            <label class="tab_label" for="tab2">Top-Down</label>
+
+            <input type="radio" name="tab" id="tab3" class="tab tab--3" />
+            <label class="tab_label" for="tab3">Zoom-Out</label>
+
+            <input type="radio" name="tab" id="tab4" class="tab tab--4" />
+            <label class="tab_label" for="tab4">Radial-Out</label>
+
+            <input type="radio" name="tab" id="tab5" class="tab tab--5" />
+            <label class="tab_label" for="tab5">None</label>
+
+            <div class="indicator"></div>
+        </div>
+
+        <label for="toggle-rotation" class="switch" aria-label="Toggle Filter">
+            <input type="checkbox" id="toggle-rotation" />      
+            <span>Self Rotate</span>
+            <span>Stop Rotate</span>
+        </label>
+
+        <div class="toggle">
+            <input type="checkbox" id="desToggleBtn">
+            <span class="button"></span>
+            <span class="label">⌕</span>
+        </div>
+        <div class="toggle">
+            <input type="checkbox" id="scribbleBtn">
+            <span class="button"></span>
+            <span class="label">ᝰ</span>
+        </div>
+    </div>
+
+    <div id="loading-container" style="position: fixed; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center; z-index: 1000;">
+        <div class="logo logo-type">
+            <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 50, 'wght' 581;">J</span>
+            <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 107.289, 'wght' 581.936;">U</span>
+            <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 70.5499, 'wght' 581.447;">N</span>
+            <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 70.5499, 'wght' 581.447;">E</span>
+            <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 74.5499, 'wght' 581.447;"> </span>
+            <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 120.5499, 'wght' 581.447;">B</span>
+            <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 45.5499, 'wght' 581.447;">E</span>
+            <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 57.5499, 'wght' 581.447;">E</span>
+        </div>
+    </div>
+
+    <canvas class="mouse-cursor" id="mouse-canvas"></canvas>
+    <div id="3d-graph" style="background: rgba(255, 255, 255, 0)"></div>
+    <script src="cursor.js"></script>
+</body>

@@ -20,7 +20,7 @@
   
       async function fetchGifData(collectionType) {
         const url = collectionType === 'blueprint' 
-          ? 'https://junesbee.com/_functions-dev/allProjectsImage' 
+          ? 'https://junesbee.com/_functions-dev/allProjectsGif' 
           : 'https://junesbee.com/_functions-dev/allProjectsStarGif';
         try {
             const response = await fetch(url);
@@ -134,6 +134,10 @@
                 }
             });
 
+
+            
+
+
   
             // Add links between image nodes and type nodes
             const typeNodes = {};
@@ -188,7 +192,7 @@
               .linkColor(() => '#000000')
               .linkOpacity(0.5)
               .nodeColor(node => highlightNodes.has(node) ? node === hoverNode ? 'rgb(255,0,0,1)' : 'rgba(255,160,0,0.8)' : 'rgba(0,255,255,0.6)')
-              .linkWidth(link => highlightLinks.has(link) ? 4 : 1)
+              .linkWidth(link => highlightLinks.has(link) ? 3 : 0.5)
               .linkDirectionalParticles(link => highlightLinks.has(link) ? 4 : 0)
               .linkDirectionalParticleWidth(2)
               .cameraPosition({ z: distance })
@@ -216,7 +220,7 @@
 
 
                 // Aim at node from outside it
-                    const ZoomDistance = 140;
+                    const ZoomDistance = 40;
                     const ZoomDistRatio = 1 + ZoomDistance/Math.hypot(node.x, node.y, node.z);
         
                     const newPos = node.x || node.y || node.z
@@ -282,15 +286,15 @@
                 const aspectRatio = originalWidth / originalHeight;
                 let width, height;
                 if (aspectRatio >= 1) {
-                    width = 50;
+                    width = 25;
                     height = width / aspectRatio;
                 } else {
-                    height = 50;
+                    height = 25;
                     width = height * aspectRatio;
                 }
 
-                if (width < 20) width = 20;
-                if (height < 20) height = 20;
+                if (width < 10) width = 10;
+                if (height < 10) height = 10;
 
                 sprite.scale.set(width, height);
                   return sprite;
@@ -430,13 +434,16 @@
        .linkDirectionalParticles(Graph.linkDirectionalParticles());
 }
 
+const nodeExpand = document.getElementById('node-expand');
+
 Graph.onBackgroundClick(() => {
     console.log('Clicked on empty space');
     isRotationActive = true; // Stop rotation
-  const toggleRotationCheckbox = document.getElementById('toggle-rotation');
-  toggleRotationCheckbox.checked = false; // Check the input box
-//   button.textContent = isRotationActive ? 'Stop Rotation' : 'Start Rotation';
-//   button.textContent = 'Start Rotation';
+    const toggleRotationCheckbox = document.getElementById('toggle-rotation');
+    toggleRotationCheckbox.checked = false; // Check the input box
+    nodeExpand.style.display = 'none'; // Show the element (or 'flex' if needed for a flex container)
+    nodeTextOutside.style.display = 'block'; 
+    console.log('nodeExpand.style.display');
 });
 
 //gui
@@ -493,18 +500,6 @@ clickToZoomSpan.addEventListener('click', () => {
     animateSpan(clickToZoomSpan);
 });
 
-//             document.getElementById('toggle-rotation').addEventListener('click', () => {
-//                 isRotationActive = !isRotationActive;
-                
-//   const button = document.getElementById('toggle-rotation');
-//   if (isRotationActive) {
-//     button.textContent = 'Stop Rotation';
-// } else {
-//     button.textContent = 'Start Rotation';
-// }
-
-// //   button.textContent = isRotationActive ? 'Stop Rotation' : 'Start Rotation';
-// });
             
 
             // Select the checkbox and the mouse-canvas div
@@ -636,8 +631,8 @@ clickToZoomSpan.addEventListener('click', () => {
             <div id="techBtnsDiv">
             </div>
             <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Question</p>
-            <p id="node-question" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
-            <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 281;">Answer</p>
+            <p id="node-question" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 281;"></p>
+            <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Answer</p>
             <p id="node-answer" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 281;"></p>
             <p id="node-description" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
             <img src="https://static.wixstatic.com/media/565ac9_8aa8c853e2244b6ea5dd3afe06430816~mv2.jpg/v1/fill/w_826,h_410,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Memory%20Map_Feature.jpg" 
@@ -650,19 +645,6 @@ clickToZoomSpan.addEventListener('click', () => {
     
     
     <p id="june-logo" class="june-logo" style="font-variation-settings: 'wdth' 50, 'wght' 581;">JUNE'S CLOUD</p>
-    <!-- <div id="controls" style="position: fixed; bottom: 20px; right: 20px; z-index: 10;">
-        <button id="toggle-rotation" style="padding: 10px 20px; font-size: 16px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
-          Toggle Rotation
-        </button>
-      </div> -->
-
-      <!-- switch html -->
-      <!-- <label for="toggle-rotation" class="switch" aria-label="Toggle Filter">
-        <input type="checkbox" id="toggle-rotation" />      
-          <span>Self Rotate</span>
-          <span>Click to Zoom</span>
-    </label>
-       -->
 
     <div class="bottom-menu">
     <div class="tab-container">
@@ -688,7 +670,7 @@ clickToZoomSpan.addEventListener('click', () => {
     <label for="toggle-rotation" class="switch" aria-label="Toggle Filter">
         <input type="checkbox" id="toggle-rotation" />      
           <span>Self Rotate</span>
-          <span>Click to Zoom</span>
+          <span>Stop Rotate</span>
     </label>
 
 

@@ -498,6 +498,10 @@
 }
 
 
+#techBtnsDiv{
+  display:block;
+}
+
         .node-info {
             /* font-size: 2vw; */
             width:30vw;

@@ -1,0 +1,138 @@
+/*========== Google fonts ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+:root{
+  /*======= Main colors =======*/
+  --first-color: #222;
+  --second-color: #fff;
+  
+  /*======= Background colors =======*/
+  --body-bg-color: #fefefe;
+  --light-gray-bg-color: #eee;
+  
+  /*======= Other font colors =======*/
+  --light-gray-font-color: #dadcdd;
+  --dark-gray-font-color: #777;
+  
+  /*======= Hover colors =======*/
+  --hover-red-color: #fe5578;
+  --hover-dark-color: #010101;
+
+  /*======= Transparent bg colors =======*/
+  --transparent-white-bg-color-01: rgba(255, 255, 255, .25);
+  --transparent-white-bg-color-02: rgba(255, 255, 255, .1);
+
+  /*======= Border color =======*/
+  --gray-border-color: #ccc;
+
+  /*======= Box shadow =======*/
+  --box-shadow: 0 5px 25px rgba(0, 0, 0, .35);
+
+  /*======= Card bg gradient colors =======*/
+  --mercury-bg: linear-gradient(45deg, #394147, #767f85);
+  --venus-bg: linear-gradient(45deg, #ac1013, #e37b62);
+  --earth-bg: linear-gradient(45deg, #005192, #0ea7eb);
+  --mars-bg: linear-gradient(45deg, #ad1c1f, #e57a35);
+  --jupiter-bg: linear-gradient(45deg, #ae5f4e, #e28482);
+  --saturn-bg: linear-gradient(45deg, #a04b36, #d1977c);
+  --uranus-bg: linear-gradient(45deg, #02396f, #0f81ad);
+  --neptune-bg: linear-gradient(45deg, #09225a, #4ab5e1);
+
+  /*======= Scroll bar colors =======*/
+  --scroll-bar-color: #f1f1f1;
+  --scroll-bar-thumb-color: #555;
+  --scroll-bar-thumb-hover-color: #444;
+}
+
+/*========== Main CSS ==========*/
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+/*========== Header CSS ==========*/
+
+/*===== Logo =====*/
+
+/*===== Search box =====*/
+
+/*===== Main menu =====*/
+
+/*========== Slider main CSS ==========*/
+
+/*========== Slider cards CSS ==========*/
+
+/*========== Slider navigation CSS ==========*/
+
+/*========== Main social media links CSS ==========*/
+
+/*========== Modals CSS ==========*/
+
+/*========== Media queries (max-width: 1220px) ==========*/
+@media screen and (max-width: 1220px){
+  /*========== Modals CSS ==========*/
+
+}
+
+/*========== Media queries (max-width: 980px) ==========*/
+@media screen and (max-width: 980px){
+  /*===== Search box =====*/
+
+}
+
+/*========== Media queries (max-width: 926px) ==========*/
+@media screen and (max-width: 926px){
+  /*========== Slider navigation CSS ==========*/
+
+  /*========== Main social media links CSS ==========*/
+
+  /*========== Modals CSS ==========*/
+
+}
+
+/*========== Media queries (max-width: 750px) ==========*/
+@media screen and (max-width: 750px){
+  /*========== Header CSS ==========*/
+
+  /*===== Logo =====*/
+
+  /*========== Modals CSS ==========*/
+
+}
+
+/*========== Media queries (max-width: 700px) ==========*/
+@media screen and (max-width: 700px){
+  /*===== Main menu =====*/
+
+  /*========== Main social media links CSS ==========*/
+
+  /*========== Modals CSS ==========*/
+
+}
+
+/*========== Media queries (max-width: 450px) ==========*/
+@media screen and (max-width: 450px){
+  /*===== Logo =====*/
+
+  /*===== Search box =====*/
+
+  /*===== Main menu =====*/
+
+  /*========== Modals CSS ==========*/
+
+}
+
+/*========== Media queries (max-width: 370px) ==========*/
+@media screen and (max-width: 370px){
+  /*========== Header CSS ==========*/
+  
+  /*===== Search box =====*/
+
+  /*===== Main menu =====*/
+
+  /*========== Slider cards CSS ==========*/
+
+  /*========== Modals CSS ==========*/
+
+}
+      

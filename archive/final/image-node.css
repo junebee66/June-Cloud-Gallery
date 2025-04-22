@@ -16,6 +16,49 @@
         }
         }
 
+        #loading-container{
+          display: flex;
+        }
+
+        .cloud-subtitle {
+          text-align: center;
+          bottom:0px;
+          font-size: 14px;
+          color: #999;
+          margin-top: -10px;
+          font-family: 'Oswald', sans-serif;
+          font-variation-settings: 'wdth' 50, 'wght' 350;
+        }
+
+        #type-project-list {
+          display: flex;
+          flex-direction: row;
+          overflow-x: auto;
+          max-width: 100%;
+          gap: 1vw;
+          margin-top: 1vh;
+          padding-bottom: 1vh;
+          scrollbar-width: thin;
+          scrollbar-color: #ccc transparent;
+        }
+        
+        .type-project-thumbnail {
+          width: 10vw;
+          height: auto;
+          flex-shrink: 0;
+          object-fit: cover;
+          border-radius: 0.6vw;
+          box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+          cursor: pointer;
+          transition: transform 0.2s ease;
+        }
+        .type-project-thumbnail:hover {
+          transform: scale(1.05);
+        }
+        
+        
+        
+
         .mouse-cursor{
             position: fixed; 
             width: 100vw; 

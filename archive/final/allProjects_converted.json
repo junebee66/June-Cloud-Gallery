@@ -1,0 +1,1637 @@
+{
+  "items": [
+    {
+      "title": "If XR",
+      "gif": "wix:image://v1/565ac9_0d633be5b170460c8f2f46c7ed384441~mv2.gif/If%20XR%20Short%20Clip%20Final%20(No%20Margin)%20Small%20V2.gif#originWidth=602&originHeight=226",
+      "type1": [
+        "Animation & VFX",
+        "Research"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/205848221/If-City-Humans-Nature-Technology-live-in-harmony",
+      "shortDescription": "This animation depicts the core concept \"If City\" project. The story follows a solitary bionic wanders through the desolate remnants of humanity, the ruins stretching endlessly beneath a hollow sky. With no trace of life left on Earth, it continues its journey, driven by an unseen force\u2014until, at last, it arrives at a place known only as If...",
+      "year": 2024,
+      "question": "What remains after the relentless evolution of humanity, nature, and technology?",
+      "hook": "\"I see field but no beings. I hear wind but no conversations. I live in ruins but nothing works, until I found this place...\"",
+      "technology": [
+        "Unreal Engine",
+        "Blender",
+        "Houdini",
+        "MAYA"
+      ]
+    },
+    {
+      "title": "AVR Startup",
+      "gif": "wix:image://v1/565ac9_407f84ea13454a33a776c94a36d7bc97~mv2.gif/About%20Us.gif#originWidth=720&originHeight=404",
+      "type1": [
+        "Research"
+      ],
+      "pageUrl": "https://junesbee.com/avr",
+      "shortDescription": "In 2023, I developed a pixel algorithm that transforms a 2D website browser into a 3D immersive experience. Inspired by the entrepreneurial atmosphere at NYU, I decided to take the project further and start a small startup. Along this journey, I joined and won various competitions, met incredible people, learned many lessons, and gained valuable insights. These blogs intend to record down this journey of mine:",
+      "year": 2024,
+      "question": "Who is my target audience - people who uses 3D graphics interactivity? ",
+      "hook": "Many market pivots but eventually won the only award \u201cMost Resilient\u201d in NYU Startup Sprint 2024",
+      "technology": [
+        "Market Analysis",
+        "Competitions",
+        "Investor Pitches",
+        "Leadership"
+      ]
+    },
+    {
+      "title": "CoVision",
+      "gif": "wix:image://v1/565ac9_d4da00df28a74507ab50c732051716cf~mv2.gif/part-2.gif#originWidth=600&originHeight=334",
+      "type1": [
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/how-to-make-teamwork-work-creative-collaboration-in-virtual-spaces-7ee10de91202",
+      "shortDescription": "This is an online virtual meeting tool that helps members in a creative group project to come to a same vision in discussions. The communications are solely dependent on a text to point cloud visualization for users to co-build a vision together.\n",
+      "year": 2022,
+      "question": "How to make teamwork work?",
+      "hook": "Merging Visions: Co-Building Ideas with CoVision\u2019s Point Cloud Technology. A collaborative interface design tool that let people in a group see the same vision",
+      "technology": [
+        "p5LiveMedia: Simple P5 WebRTC",
+        "three.js",
+        "Pointcloud",
+        "Adobe Illustrator",
+        "After Effects"
+      ]
+    },
+    {
+      "title": "3D Web Translator",
+      "gif": "wix:image://v1/565ac9_9574954ee83c4f04ac79e76daa1cf4f3~mv2.gif/web-translator.gif#originWidth=1024&originHeight=396",
+      "type1": [
+        "Web Tool Development",
+        "Computation",
+        "Code Sketch"
+      ],
+      "pageUrl": "https://github.com/junebee66/3D-Web",
+      "shortDescription": "This study aims to adapt the AVR filter for web use and segment website elements into 3D for anaglyph glasses. Created by June Bee, the AVR filter converts web visuals to 3D formats for anaglyph glasses. This technology improves XR accessibility and introduces new digital interactions, allowing users to engage with internet content in physical space more complexly.",
+      "year": 2024,
+      "question": "How to bridge current 2D internet to 3D?",
+      "hook": "converting traditional websites into 3D user interfaces. and my anaglyph algorithm to have 3d effect  ",
+      "technology": [
+        "Node.js",
+        "three.js",
+        "backend"
+      ]
+    },
+    {
+      "title": "Texture Story",
+      "gif": "wix:image://v1/565ac9_647427375dfe4ac0bedaa965f749da0e~mv2.jpg/texture%20story%20Mockup%20copy.jpg#originWidth=4362&originHeight=3024",
+      "type1": [
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/207711837/Texture-Story",
+      "shortDescription": "This is a charcoal texture drawing practice from Drawing & Imagining class Freshman year at Parsons School of Design",
+      "year": 2022,
+      "question": "Are materials storytellers?",
+      "hook": "Looking into the Edges - Mono texture to all nature substances",
+      "technology": [
+        "Charcoal",
+        "Texture"
+      ]
+    },
+    {
+      "title": "Water Lily Pond Timelapse",
+      "gif": "wix:image://v1/565ac9_744a9a9ae1e540268c7e054e7393a758~mv2.gif/waterlily.gif#originWidth=720&originHeight=480",
+      "type1": [
+        "Code Sketch"
+      ],
+      "pageUrl": "https://quixotic-mandible-495.notion.site/NOC-7-Fractals-and-Cellular-Automata-Water-Lily-Pond-Timelapse-ddbebefc721d4973970cdc675dbccd69?pvs=4",
+      "shortDescription": "The project simulates ripples, lily pads, and flowers in a pond, each with unique life cycle states. These elements interact and influence each other, creating varied growth patterns. A cellular automata system determines each cell's next state based on its current state and neighbors, producing a dynamic pond ecosystem simulation.",
+      "year": 2023,
+      "question": "What if we can simulate the life cycle inside a pond: ripples & lily pad & flower ? ",
+      "hook": "Code simulation of time-lapse of the life cycle of waterlily pond",
+      "technology": [
+        "P5.js",
+        "Game of Life"
+      ]
+    },
+    {
+      "title": "Yuchi's Journey App",
+      "gif": "wix:image://v1/565ac9_2c7bd6e8db7f4056a3062a81ab2c30de~mv2.gif/Yuchi's%20Journey.gif#originWidth=912&originHeight=550",
+      "type1": [
+        "UI UX Design",
+        "Code Sketch",
+        "Computation"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/gamify-ios-notification-yuchis-journey-app-fd429d005d0c",
+      "shortDescription": "Real-time game app where users receive hourly notifications updating them about their virtual pet living in their phone, allowing them to co-live together through daily life",
+      "year": 2022,
+      "question": "When our phone is co-living with us, what more is it then just a device?",
+      "hook": "IOS Notification pet  - Real-time presences as company through your daily life ",
+      "technology": [
+        "Mobile App",
+        "Real Time Interactions",
+        "Storytelling",
+        "Node.js",
+        "npm"
+      ]
+    },
+    {
+      "title": "Qiang Garden",
+      "gif": "wix:image://v1/565ac9_46a51454d9c84da98c0a9db17e331366~mv2.gif/QiangGarden_edited.gif#originWidth=210&originHeight=454",
+      "type1": [
+        "VR AR XR Design",
+        "Game",
+        "UI UX Design",
+        "Web Tool Development",
+        "Computation"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/205847411/Qiang-Garden-AR-App",
+      "shortDescription": "An AR-powered Google Maps plugin for playful, casual, and immersive cultural learning",
+      "year": 2024,
+      "question": "Is learning about history always isolating and irrelevant? How to preserve culture? ",
+      "hook": "Engage learners across time and space: Blend historical insights with modern perspectives for an immersive cultural experience",
+      "technology": [
+        "Geo-location",
+        "AR App",
+        "Cultural Education",
+        "AI Conversation",
+        "Google Map Extension"
+      ]
+    },
+    {
+      "title": "ONE",
+      "gif": "wix:image://v1/565ac9_827c9b11c33d4b5bb335b63fa9cc0a74~mv2.gif/ONE_Final.gif#originWidth=462&originHeight=260",
+      "type1": [
+        "Sculpture",
+        "Computation"
+      ],
+      "pageUrl": "https://parsons.edu/undergrad/student-work/june-bee/",
+      "shortDescription": "Head, a physical state that trapped our spiritual state.  Using wire as a linear material, this piece creates a directional narrative showing ONE in motion. It represents a point where start and end coincide, symbolizing both departure and arrival. Unlike ZERO, it exists, yet like ZERO, it's eternal.",
+      "year": 2020,
+      "question": "What will happen if we \u201cfree\u201d/\u201drelease\u201d the head?",
+      "hook": "An ocean of consciousness: The idea of ONE or ALL - the coexisting time, space, and form of the releasing of the mind. ",
+      "technology": [
+        "Sculpture",
+        "Wire",
+        "Math"
+      ]
+    },
+    {
+      "title": "Mozilla Shared Space",
+      "gif": "wix:image://v1/565ac9_519e6e78dc574c5da8cb806e779caede~mv2.gif/mozilla-hub_opening_pretty_small.gif#originWidth=626&originHeight=392",
+      "type1": [
+        "VR AR XR Design",
+        "Game",
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/207711219/-Web-VR-Social-Rooms-2022",
+      "shortDescription": "This Mozilla Hub Rooms project was part of the Core Environments Class during my sophomore year at Parsons School of Design.\n\nIt features three rooms based on my 2022 story \"Enclosed,\" set in 2200 during a data war. \n\n1. 2200 Future Room (all data accessed corrupted)\n\n2. Within Time (building new home)\n\n3. The Stream (found the core of enclosed)",
+      "year": 2021,
+      "question": "How to make virtual meetings more engaging and collaborative?",
+      "hook": "An narration based real-time social space on the internet where people can gather, co-create, and explore stories together. ",
+      "technology": [
+        "Web VR",
+        "Storytelling",
+        "Writing"
+      ]
+    },
+    {
+      "title": "MetaSensory Game",
+      "gif": "wix:image://v1/565ac9_df53c78287244c15aab47df14f620f32~mv2.gif/MetaSensory%20Short%20Clip%20Small.gif#originWidth=450&originHeight=254",
+      "type1": [
+        "Game"
+      ],
+      "pageUrl": "https://www.junesbee.com/playground/metasensory",
+      "shortDescription": "In MetaSensory, 2D thoughts evolve into 3D sensations. Your senses unravel and merge with the surrounding where stories reshape with every move you make. Stand at the crossroads of two potential futures, your choices in a shifting reality determine the fate of stories that blend time, space, and reform intention. \u20183D Game assignment from Core Labs: Environments class sophomore year at Parsons School of Design\u2019",
+      "year": 2022,
+      "question": "How much do people experience in a trailer?",
+      "hook": "Experiential Trailer where your senses are unraveled to surroundings and interact with the environment to get fragmented information and objects from the world. ",
+      "technology": [
+        "Unity",
+        "C++",
+        "MAYA",
+        "Blender",
+        "Adobe Premiere",
+        "Shader Code"
+      ]
+    },
+    {
+      "title": "Tomorrow Game",
+      "gif": "wix:image://v1/565ac9_f2d46b38c6a749c28db15cc2d1399835~mv2.gif/tomorrow_feature.gif#originWidth=926&originHeight=500",
+      "type1": [
+        "Game",
+        "Computation",
+        "Code Sketch"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/205846439/Tomorrow-Web-Game",
+      "shortDescription": "This web game project developed by p5.js. Players control a candle, symbolizing hope in a dark world. Navigate a monorail through ruins, collecting text fragments from popular Google searches. These represent items for your future vision, stored in an inventory. Encounter pixelated images from related searches along the way. The journey ends with a collage\u2014your unique vision of tomorrow.",
+      "year": 2021,
+      "question": "What will tomorrow look like?",
+      "hook": "Tomorrow is the question.",
+      "technology": [
+        "Web Game",
+        "Google API",
+        "Illustration"
+      ]
+    },
+    {
+      "title": "Affordable Housing Design",
+      "gif": "wix:image://v1/565ac9_d38b6e0f8d504c4faf7972c33423a39c~mv2.jpg/June's%20Portfolio_Page_09.jpg#originWidth=1740&originHeight=1305",
+      "type1": [
+        "Architecture & Urban Design"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/206272069/Affordable-Housing-Design-2018",
+      "shortDescription": "This affordable housing project, designed during 11th grade in high school, reimagines affordable housing through light design. An indoor courtyard maximizes natural light, symbolizing hope and new beginnings. ",
+      "year": 2018,
+      "question": "What do people who need affordable house actually need? ",
+      "hook": "Hope - Light being the central design -  symbolizes a better future that is carried by this affordable house",
+      "technology": [
+        "Light",
+        "CAD",
+        "Autodesk Revit",
+        "3D Render"
+      ]
+    },
+    {
+      "title": "Interdisciplinary Project Matrix",
+      "gif": "wix:image://v1/565ac9_310bc3739b55420db3ebd6e458c484a9~mv2.gif/draggable%20website%20quick.gif#originWidth=678&originHeight=388",
+      "type1": [
+        "Computation",
+        "UI UX Design",
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/portfolios-are-boring-because-they-are-limiting-beyond-sight-8f56b4b09efb",
+      "shortDescription": "This is an experimental interdisciplinary matrix that showcases overlapping qualities of different projects. Users can drag project boxes onto four themed areas (themes, presentation, focus, strategy/tools) to remix ideas and generate new project possibilities. The result is displayed in a vertical grey box on the left.\n",
+      "year": 2021,
+      "question": "Portfolios are boring because they are limiting beyond sight?",
+      "hook": "Draggable website remixing projects from user POV and existing sources outside to generate new ideas and visions!",
+      "technology": [
+        "Javascript",
+        "Code Experiment",
+        "Content Strategy",
+        "Json Div Managment"
+      ]
+    },
+    {
+      "title": "Answers At The End of The World",
+      "gif": "wix:image://v1/565ac9_946294a3d2fa4ee280193bca2e9670c0~mv2.gif/OZ%20hand%20C%20(3).gif#originWidth=1188&originHeight=668",
+      "type1": [
+        "VR AR XR Design",
+        "Game"
+      ],
+      "pageUrl": "https://www.junesbee.com/answers",
+      "shortDescription": "Answers at the End of the World is a virtual reality game (VR)  that takes place in a generative environment built collaboratively by artificial intelligence (AI) and the player themselves. Players will be able to wander around the co-created space and take pictures of the environment to - collecting the \u201canswers\u201d of their deepest underlining questions. Inspired by the artist Julie Mehretu multi-layered and abstracted spatial thinking, this piece explores the possibilities of the collisions between humans\u2019 emerging ideas and computer vision graphics.",
+      "year": 2022,
+      "question": "Can AI answer life\u2019s biggest questions?",
+      "hook": "A VR journey to find answers to your deepest questions with generative AI environment",
+      "technology": [
+        "Unreal Engine",
+        "AI",
+        "Pointcloud",
+        "MAYA",
+        "Blender"
+      ]
+    },
+    {
+      "title": "Experimental Ocean",
+      "gif": "wix:image://v1/565ac9_abb455bd57e7468a8a7355cd46535b74~mv2.gif/Experimental%20Ocean%20End.gif#originWidth=610&originHeight=618",
+      "type1": [
+        "Code Sketch",
+        "Computation"
+      ],
+      "pageUrl": "https://june-bee-crit-comp.glitch.me/cclab/p3.html",
+      "shortDescription": "This is a 3D code simulation of waves in ocean with vector computational logic. The dynamic force allows tides to have different forms changing with time. 'Vector Froce coding assignment from Nature of Code instructed by Daniel Shiffman Junior year at New York University (NYU)'",
+      "year": 2023,
+      "question": "What is simplest wave  in 3D? ",
+      "hook": "Rotating spheres with rhythms",
+      "technology": [
+        "three.js",
+        "P5.js"
+      ]
+    },
+    {
+      "title": "Gift",
+      "gif": "wix:image://v1/565ac9_1a2ff3579aa24dbcb3fc78b50f275730~mv2.gif/June's%20Stop%20Motion%20-%20Gifts.gif#originWidth=358&originHeight=202",
+      "type1": [
+        "Animation & VFX",
+        "Illustration & Storytelling",
+        "Sculpture"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/207718679/Gifts-Stop-Motion-2020",
+      "shortDescription": "The short film \"Gifts\" tells the story of a young girl who chances upon a goose ensnared within a mysterious container. Determined to free the creature, she embarks on a rescue mission. But as her resolve begins to falter, the story takes an unexpected turn\u2026",
+      "year": 2020,
+      "question": "What is left out in frozen frames?",
+      "hook": "The preconceived roles we often assume in life, capturing the irregularity of life events and initiate this conversation by presenting the gain and loss in the film.",
+      "technology": [
+        "Stop Motion",
+        "Storytelling",
+        "Illustration"
+      ]
+    },
+    {
+      "title": "Material v3. Database",
+      "gif": "wix:image://v1/565ac9_cf9baf34446c4047b857e1876609330f~mv2.gif/Imperial%20Eyes%20(with%20sounds).gif#originWidth=356&originHeight=200",
+      "type1": [
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://youtu.be/6SMUT8akQfM",
+      "shortDescription": "This is Material Keyword assignment from Integrative Studio class Freshman year at Parsons School of Design",
+      "year": 2020,
+      "question": "What is material in this era?",
+      "hook": "Data as Material",
+      "technology": [
+        "Computer Sounds",
+        "Data Visualization",
+        "Motion Graphics",
+        "Material Study"
+      ]
+    },
+    {
+      "title": "AI construction",
+      "gif": "wix:image://v1/565ac9_aa2a972ea41b41cd83321326ed6e1d81~mv2.png/prj8_kpark.png#originWidth=1991&originHeight=1028",
+      "type1": [
+        "Architecture & Urban Design",
+        "Research",
+        "VR AR XR Design"
+      ],
+      "pageUrl": "https://bilab.engineering.nyu.edu/projects/arm4mod",
+      "shortDescription": "This is the PHD research project I worked on at NYU Tandon School of Engineering's \nBi Lab (Building Informatics and Visualization Lab). The project is worked on by PHD candidate Keundeok Park and instructed by Professor Semiha Ergan. I was in charge of all the 3D construction models sampling for our AI model training.",
+      "year": 2022,
+      "question": "How to make construction process more efficient with AI? ",
+      "hook": "AI-powered & Robot-assisted Manufacturing for Modular Construction in VR",
+      "technology": [
+        "Python",
+        "AutoCAD",
+        "AI",
+        "Autodesk Revit",
+        "Blender",
+        "Autodesk Fusion"
+      ]
+    },
+    {
+      "title": "Red Feather Web Design",
+      "gif": "wix:image://v1/565ac9_9924f70255ea45948e205ee9587db4d3~mv2.gif/Red%20Feather.gif#originWidth=720&originHeight=452",
+      "type1": [
+        "UI UX Design"
+      ],
+      "pageUrl": "https://www.junesbee.com/red-feather",
+      "shortDescription": "The Red Feather website is a commercial platform designed and developed by June Bee and Andrea Chang for the Red Feather restaurant, situated in Washington Square, New York City.",
+      "year": 2022,
+      "question": "How to make an attractive & competitive enough webpage for nyc restaurant?",
+      "hook": "High-end visuals with smooth transitions, conveying the price level of the dishes and the luxurious experience of the restaurant.",
+      "technology": [
+        "Javascript",
+        "html/css",
+        "Figma",
+        "Photoshop"
+      ]
+    },
+    {
+      "title": "Spring Disappear",
+      "gif": "wix:image://v1/565ac9_0c2d4e17346f40159fbf982f9a9fb939~mv2.gif/Spring%20Dissapear%20(1).gif#originWidth=266&originHeight=472",
+      "type1": [
+        "Code Sketch",
+        "Computation"
+      ],
+      "pageUrl": "https://quixotic-mandible-495.notion.site/NOC-6-Soft-Body-The-Breathing-Deformer-02d5278206e24eb39d4b64c2948584a7?pvs=4",
+      "shortDescription": "The Spring Deformer project is a mesh sophistication using shaders to manipulate 3D meshes through the application of a noise map, combined with plans to integrate physics-based interactions.\n",
+      "year": 2023,
+      "question": "What if the customizable deformation is intelligent which always balance itself into a coherent being?",
+      "hook": "A customizable sphere where players can drag vertices of the sphere and model their own 3D mesh",
+      "technology": [
+        "P5.js",
+        "Javascript",
+        "Shader Code",
+        "three.js"
+      ]
+    },
+    {
+      "title": "Archive Gallery",
+      "gif": "wix:image://v1/565ac9_74e7ea9a35194c43873631be7cc89458~mv2.gif/archive-gallery-category-short.gif#originWidth=758&originHeight=428",
+      "type1": [
+        "UI UX Design"
+      ],
+      "pageUrl": "https://www.junesbee.com/archive-gallery",
+      "shortDescription": "An archive gallery of all projects of mine with its relating information, where people can search and remix to see what they are interested in.",
+      "year": 2025,
+      "question": "How to display all info for all projects?",
+      "hook": "Display projects as cards",
+      "technology": [
+        "Velo Coding",
+        "Data Visualization",
+        "Figma"
+      ]
+    },
+    {
+      "title": "Dreams Swim",
+      "gif": "wix:image://v1/565ac9_a237fda2678b4359ab481a9263e72b21~mv2.gif/Dreams_Swiming_NO_Frame_Line.gif#originWidth=1262&originHeight=628",
+      "type1": [
+        "Code Sketch",
+        "Computation",
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/infinite-graphics-p5-js-code-exercise-3b4a9eb80dad",
+      "shortDescription": "This Looping & Logic coding assignment for Digital Craft class uses P5.js to create a web animation. Looping generates dreamy water ripples, while logic and randomization control their colors.",
+      "year": 2021,
+      "question": "Do Dreams Swim?",
+      "hook": "In a world bathed in hues of yellow and orange, where dreams flow like water, you hold the power to reshape the ripples and transform the landscape with every stroke.",
+      "technology": [
+        "Mouse Interaction",
+        "Processing",
+        "P5.js"
+      ]
+    },
+    {
+      "title": "Byzantine, Icon of Crucifixion Explained 2020",
+      "gif": "wix:image://v1/565ac9_808edb1092454746bd6bf290bb667293~mv2.gif/Byzantine,%20Icon%20of%20Crucifixion%20Explained%202020.gif#originWidth=760&originHeight=428",
+      "type1": [
+        "Research",
+        "Sculpture"
+      ],
+      "pageUrl": "https://youtu.be/7g_-JLsb2K4?si=_QYmYrd56E_8k9oI",
+      "shortDescription": "This project explains how these religious artworks conveyed complex theological concepts to a largely illiterate audience during the Byzantine era. The analysis examines the composition, imagery, and symbolic elements used to depict Christ's crucifixion and its spiritual significance. Through this artwork, the project provides insights into the role of icons in Byzantine religious practice and their lasting impact on Christian art and spirituality.",
+      "year": 2021,
+      "question": "What is the language of icons?",
+      "hook": "Visual Explanation of  the Byzantine time artwork- Icon of Crucifixion ",
+      "technology": [
+        "Art History",
+        "Research",
+        "Explainer Video"
+      ]
+    },
+    {
+      "title": "Where's the Water & Where Water is",
+      "gif": "wix:image://v1/565ac9_9c53a19bd6fc4468ba61c5c5dc0e2063~mv2.jpg/poster-vertical.jpg#originWidth=3300&originHeight=5100",
+      "type1": [
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/205834453/Wheres-Water-Where-Water-is-Fluid-Environment",
+      "shortDescription": "Poster design for \"Where's the water & where water is\" exhibition at NYU Tisch Photography & Imagining Department.",
+      "year": 2022,
+      "question": "What is the parallel dimension of water?",
+      "hook": "A split poster where it can be viewed as the source of water or the result of flowing water",
+      "technology": [
+        "Graphic Design",
+        "Digital Art",
+        "Poster"
+      ]
+    },
+    {
+      "title": "Empirical Perspective",
+      "gif": "wix:image://v1/565ac9_b1c457425ef54fe48d7246d9e7d1b6ca~mv2.gif/Empirical_Perspective.gif#originWidth=960&originHeight=540",
+      "type1": [
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/207714041/-Empirical-Perspective-2020",
+      "shortDescription": "Through that breach, an ancient boat, weathered by forgotten eons, slowly emerged from the cosmic depths\u2014its origins unknown, its purpose buried in the stardust of forgotten legends.",
+      "year": 2021,
+      "question": "What is Empirical Perspective?",
+      "hook": "The gateway only reveals itself when two galaxies collide, dripping with the molten flow of time itself. ",
+      "technology": [
+        "Digital Art",
+        "Photoshop",
+        "Illustration"
+      ]
+    },
+    {
+      "title": "The Breathing Deformer",
+      "gif": "wix:image://v1/565ac9_3a56bedcbe624e6794e8f65493a6cad9~mv2.gif/breathing%20deformer.gif#originWidth=720&originHeight=480",
+      "type1": [
+        "Computation",
+        "Code Sketch"
+      ],
+      "pageUrl": "https://quixotic-mandible-495.notion.site/NOC-6-Soft-Body-The-Breathing-Deformer-02d5278206e24eb39d4b64c2948584a7?pvs=4",
+      "shortDescription": "The Breathing Deformer project explores mesh sophistication using the Toxiclibs physics engine. It simulates a deformable 3D object with Verlet integration for particle updates and spring forces for shape maintenance. Vertices are connected by springs, creating chain effects that balance external forces. This results in a lifelike, dynamic simulation that responds to complex physics calculations in an interactive digital environment. ",
+      "year": 2023,
+      "question": "What if the customizable deformation is intelligent which always balance itself into a coherent being?",
+      "hook": "A customizable sphere where players can drag vertices of the sphere and model their own 3D mesh",
+      "technology": [
+        "P5.js",
+        "three.js",
+        "Toxiclibs Physics Engine",
+        "Verlet Integration",
+        "Hooke's Law"
+      ]
+    },
+    {
+      "title": "Idea",
+      "gif": "",
+      "type1": [
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://www.youtube.com/watch?v=HwjrXY80Kds",
+      "shortDescription": "This animation is from Integrative Studio Class Freshmen year at Parsons School of Design",
+      "year": 2023,
+      "question": "What are ideas for computers?",
+      "hook": "visualize the birth of an idea",
+      "technology": []
+    },
+    {
+      "title": "Aftermath",
+      "gif": "wix:image://v1/565ac9_8374d841cb2e4d109490ea2774574319~mv2.gif/Aftermath_Whale.gif#originWidth=922&originHeight=518",
+      "type1": [
+        "VR AR XR Design",
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/206187079/Aftermath-2022",
+      "shortDescription": "\"Aftermath\" is a virtual reality experience exploring the intersection of artificial intelligence and human consciousness. The experience follows a lost bionic entity navigating through a surreal, cave-like environment. \nGuided by a recording of an actual interview between a Google engineer and an AI, the journey prompts viewers to contemplate the nature of consciousness and the potential future of AI.\n",
+      "year": 2022,
+      "question": "What do we do after AI? ",
+      "hook": "The journey of a lost bionic who wakes up in the cracks between yesterday and tomorrow and overhears two people talking on an old recorder\u2026",
+      "technology": [
+        "Unreal Engine",
+        "MAYA",
+        "Oculus Quest VR",
+        "Niagara System",
+        "Adobe Premiere"
+      ]
+    },
+    {
+      "title": "Nostalgia Derive 2019",
+      "gif": "wix:image://v1/565ac9_af68e852506d42ef9e1acfa115756031~mv2.gif/Derive%20v.3.gif#originWidth=734&originHeight=412",
+      "type1": [
+        "Research",
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://youtu.be/97uYNtmVfMc",
+      "shortDescription": "This is the Minsheng Community in Taipei's Songshan District, where I grew up. This quick 2.5D animation sketch whispers of time\u2019s passage, as developments slowly reshape the landscape, stirring a sense of d\u00e9rive.",
+      "year": 2020,
+      "question": "When deriving, which direction is right? Past or future?",
+      "hook": "Things are different. But it all depends on what pair of glasses did you choose to wear today.",
+      "technology": [
+        "After Effects",
+        "Adobe Illustrator",
+        "2.5 Animation"
+      ]
+    },
+    {
+      "title": "Street Design: 3rd AVE Brooklyn",
+      "gif": "wix:image://v1/565ac9_aa1e5509aadc4b4fad86060f9ea73d2f~mv2.gif/3rd%20Ave%20ReDesign%20(2).gif#originWidth=632&originHeight=356",
+      "type1": [
+        "Architecture & Urban Design"
+      ],
+      "pageUrl": "https://www.junesbee.com/3rd",
+      "shortDescription": "3rd ave. from Atlantic to Union St. Redesign for Sustainable Transportation class in NYU for Spring 2023 term. Deisgn focuses on redefining suburbs in progressive area. What happens to the suburbs when metropolitan area like Manhattan is expanding?",
+      "year": 2023,
+      "question": "What happens to suburbs when metropolitans are expanding?",
+      "hook": "Relocate industrial operations underground and build residential areas above, allowing for unobstructed truck loading while creating a green corridor from Gowanus Canal to Barclays Center, replacing streets with parks.",
+      "technology": [
+        "Site Analysis",
+        "Unreal Engine",
+        "Urban Research",
+        "After Effects",
+        "Adobe Premiere",
+        "Digital Twin"
+      ]
+    },
+    {
+      "title": "Your Preferences Makes Differences International Program",
+      "gif": "wix:image://v1/565ac9_218abd1ff7f5486bbc906a04c86d3e30~mv2.gif/WHAT'S%20NEXT_Short_End.gif#originWidth=332&originHeight=186",
+      "type1": [
+        "Animation & VFX",
+        "Computation",
+        "Research",
+        "UI UX Design"
+      ],
+      "pageUrl": "https://youtube.com/playlist?list=PL1u6jVt_Z28oP5Hf3dm1TPkyEtJVlG7d0&si=C_ioMVbaeakNuIZ2",
+      "shortDescription": "A new social media that connects high school students around the world, accompanying them through the teenage years that might produce the feel of lost in directions. We help them to learn about themselves through looking at the world from a broader lens. We partnered with 11 schools across nine countries: Taiwan, Malaysia, China, Australia, Canada, Germany, Korea, Japan, and the United Kingdom.",
+      "year": 2018,
+      "question": "Power as an individual?",
+      "hook": "Dynamic community forming across the world based on people's strengths aim to grow from weaknesses",
+      "technology": [
+        "Mobile App",
+        "Networking",
+        "Research",
+        "Social Media"
+      ]
+    },
+    {
+      "title": "Covid Data VR",
+      "gif": "wix:image://v1/565ac9_cda9a6e5874d483c9b0bdfbbbea524f1~mv2.gif/Covid_Data_VR_final.gif#originWidth=1130&originHeight=640",
+      "type1": [
+        "VR AR XR Design",
+        "Computation"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/207709437/-Web-VR-Covid-Data-2021",
+      "shortDescription": "This is WebXR assignment from Immersive Experiences Class Sophomore year at Parsons School of Design. It aims to raise awareness and encourage people to take precautions to protect themselves and others.",
+      "year": 2021,
+      "question": "How to raise awareness of COVID?",
+      "hook": "Using real-time COVID-19 data from NYC.gov, I developed a WebVR experience that immerses users in the severity of the pandemic.",
+      "technology": [
+        "Data Visualization",
+        "Web VR",
+        "Social Impact"
+      ]
+    },
+    {
+      "title": "Morphing Rabbit",
+      "gif": "wix:image://v1/565ac9_6eec1c9f9b2b4c21bea02e9ac091f217~mv2.gif/flocking_3.gif#originWidth=1280&originHeight=720",
+      "type1": [
+        "Code Sketch",
+        "Computation"
+      ],
+      "pageUrl": "https://quixotic-mandible-495.notion.site/NOC-5-Simulation-Project-Soft-Environment-Dynamic-Desire-Conscious-Points-98e0acc386bd4fc2ac4da2165512d409?pvs=4",
+      "shortDescription": "This is the Simulation assignment from Nature of Code class instructed by Professor Daniel Shiffman during my Junior year at NYU - Interactive Media Arts Major in Tisch School of Arts in Spring 2023 term. This sketch dissolves boundaries of objects, transforming solid objects into point clouds. Once boundaries break, points gain independence with unique attributes such as velocity, direction, and starting point. This shift from group cohesion to individual autonomy creates a dynamic, fluid visual environment, enabling complex interactions and transformations in the simulation.",
+      "year": 2023,
+      "question": "What are the boundaries that make us single objects?",
+      "hook": "Attractions - dissolving boundaries on single objects like rabbit/ dragon/ trees and transitioning from group to individual behavior",
+      "technology": [
+        "P5.js",
+        "three.js",
+        "WebGL",
+        "Pointcloud",
+        "Photogrammetry"
+      ]
+    },
+    {
+      "title": "AVR Concept Animation",
+      "gif": "wix:image://v1/565ac9_32484012e127422b8c1e8ffe70307a36~mv2.gif/AVR%20Short%20Clip%20Final%20Small.gif#originWidth=472&originHeight=266",
+      "type1": [
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://youtu.be/ntalhCrsPZo?si=AiMEcjQJrj2RRYQQ",
+      "shortDescription": "At the stroke of midnight, a quiet ripple stirs through the digital realm. Something is happening\u2014something all digital beings can feel. One by one, they emerge from the depths of cyberspace, drawn to the soft glow of a laptop screen.\n\nA hush falls as they gather, waiting in anticipation. Then, like a spell breaking, the internet services June uses\u2014Disney+, Google, and more\u2014begin to shift, flicker, and transform. No longer confined to pixels and data streams, they take shape, stepping out of the screen and into the physical world.\n\nThis moment of magic has a name. It is called AVR.",
+      "year": 2023,
+      "question": "Are the digital services I use during the day alive in physical reality?",
+      "hook": "At midnight, I hear sounds coming out from my laptop that wasn\u2019t closed\u2026",
+      "technology": [
+        "Blender",
+        "MAYA",
+        "Unreal Engine",
+        "Adobe Premiere",
+        "After Effects"
+      ]
+    },
+    {
+      "title": "Interactive Point Cloud Garden",
+      "gif": "wix:image://v1/565ac9_40be4639b99e400bb596457942766dee~mv2.gif/point%20cloud%20forest.gif#originWidth=504&originHeight=418",
+      "type1": [
+        "Code Sketch"
+      ],
+      "pageUrl": "https://github.com/junebee66/Particle-Practices/tree/main/logo-particle",
+      "shortDescription": "This is the Vector Motion assignment from Nature of Code class instructed by Professor Daniel Shiffman during my Junior year at NYU - Interactive Media Arts Major in Tisch School of Arts in Spring 2023 term. The core concept is to create a dynamic, 3D point cloud representation of an image, which responds to user input in real-time.",
+      "year": 2023,
+      "question": "The Nature of code? Or Code\u2019s nature?",
+      "hook": "a nature sketch that combines image processing, vector mathematics, and user interaction",
+      "technology": [
+        "P5.js",
+        "three.js"
+      ]
+    },
+    {
+      "title": "Your Decision Consultant",
+      "gif": "wix:image://v1/565ac9_1db3a00b414741a28956b46ee3492da8~mv2.gif/Your%20Decision%20Consultant.gif#originWidth=720&originHeight=405",
+      "type1": [
+        "Code Sketch",
+        "Computation",
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/are-computers-capable-of-making-emotional-decisions-in-life-0151c3965730",
+      "shortDescription": "a computational logic that generates inspirational/suggestive drawings\nbased on the user\u2019s mental state concerning a certain decision topic.",
+      "year": 2021,
+      "question": "Is the randomness generated by computers truly random?",
+      "hook": "Experimenting computer capturing abstract concepts - as relations between emotions and decisions.",
+      "technology": [
+        "generative code",
+        "computational randomness",
+        "Psychology Research"
+      ]
+    },
+    {
+      "title": "Cloud",
+      "gif": "wix:image://v1/565ac9_db6c06052a22405e8140208e450465c0~mv2.gif/tube%20w%20cover%20Small.gif#originWidth=674&originHeight=422",
+      "type1": [
+        "UI UX Design",
+        "Research"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/the-cloud-era-post-ai-who-we-are-58eb862e4eec",
+      "shortDescription": "This research project utilizes a 3D interactive website as its primary medium to explain the researched information. It aims to engage viewers in spatial and experiential learning, \nencouraging them to contemplate the shift from objective understanding to subjective experiences and thoughts. The research explores human identity and purpose in a world increasingly dominated by artificial intelligence. \n\n\n",
+      "year": 2023,
+      "question": "Post AI - Who we are?",
+      "hook": "Utopian solution \u2013 The Cloud Era: An coherent collective conscious of subjectivities",
+      "technology": [
+        "three.js",
+        "Blender",
+        "Spline",
+        "Expert Interviews"
+      ]
+    },
+    {
+      "title": "Depth Map to 3D Model",
+      "gif": "wix:image://v1/565ac9_2c92086f7b954d289c32dcb0ce410925~mv2.gif/popcorn.gif#originWidth=800&originHeight=533",
+      "type1": [
+        "Code Sketch",
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://github.com/junebee66/DepthMap-To-3DModel",
+      "shortDescription": "The Depth Player is a 3D visualization tool that allows users to generate 3D models from a pair of 2D images: a reference image and a depth map. The depth map provides information on how far or near different parts of the scene are, with white representing areas closer to the viewer and black representing areas farther away. Using this depth data, the Depth Player creates a 3D model, giving a sense of depth and spatial arrangement.",
+      "year": 2023,
+      "question": "How to transform a 2D image to 3D model?",
+      "hook": "Light determines depths",
+      "technology": [
+        "GLSL",
+        "three.js"
+      ]
+    },
+    {
+      "title": "VR Education ",
+      "gif": "wix:image://v1/565ac9_b04bc9562653452c89328cc7b01d8cba~mv2.gif/VR%20Education%20Room%20Experiences.gif#originWidth=720&originHeight=378",
+      "type1": [
+        "VR AR XR Design",
+        "Research",
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/206101069/Learning-in-Digitalization-Era-VR-Education",
+      "shortDescription": "This project stems from my Integrative Seminar research, exploring Dewey's Experiential learning theory to reimagine 21st-century digitalized higher education using virtual reality (VR). The research paper served as the foundation for an animation visualizing key points.",
+      "year": 2021,
+      "question": "How do we learn in the era of digitalization? ",
+      "hook": "Learning beyond 2D: Experiential Learning - Virtual Reality",
+      "technology": [
+        "Virtual Reality",
+        "360 Video",
+        "Research",
+        "Education"
+      ]
+    },
+    {
+      "title": "AR World Building Camera 3D",
+      "gif": "wix:image://v1/565ac9_61ca6ab562354804956a5216fa6bfbab~mv2.gif/Poitory%20Mockup.gif#originWidth=532&originHeight=300",
+      "type1": [
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://www.junesbee.com/poitory",
+      "shortDescription": "This is an online tool for the 21st century mixed media creatives (artists, designers, writers, and more types of creator) to resolve their creativity blocks by reimagining and remixing their current space and time. As creatives, we have always imagine the world going forward with a new vision, but how do we break the habit of looking to the front and start by applying the same vision to the present in order to bridge our way to reach that ultimate future? Stories, stories are the answer.\n\n",
+      "year": 2022,
+      "question": "How can we break the habit of always looking ahead and instead apply the same vision to the present, paving the way to reach our ultimate future?",
+      "hook": "Stories, stories are the answer. Desolating physical solid into point cloud, allow senses to be independent as molecules",
+      "technology": [
+        "Google Books API",
+        "Object Detection",
+        "Machine Learning",
+        "Pointcloud",
+        "three.js",
+        "AI"
+      ]
+    },
+    {
+      "title": "I Have A Dream",
+      "gif": "",
+      "type1": [
+        "Sculpture",
+        "Illustration & Storytelling",
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://www.youtube.com/watch?v=cFS738Tbkw0",
+      "shortDescription": "Each boxes here represent the different people I met in America.\n\nEveryone has a story And telling these stories to you is my story. This project is done during my second year in the USA when I was 16.",
+      "year": 2017,
+      "question": "Do you like America?",
+      "hook": "Coming to America is like a dream, for me. It\u2019s a really long dream. It doesn\u2019t feel real, good and bad.",
+      "technology": [
+        "Recycled Materials",
+        "Poems"
+      ]
+    },
+    {
+      "title": "Hollywood Autuers",
+      "gif": "wix:image://v1/565ac9_d294b83df84342c78681142e76337d3e~mv2.png/Screenshot%202025-03-01%20at%206.31.51%20PM.png#originWidth=1362&originHeight=902",
+      "type1": [
+        "Research",
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/list/movie-reviews-b8a7a72fe337",
+      "shortDescription": "Hollywood Authors are  authors who have been able to keep alive their personal vision while dealing with the studios (i.e., Stone, Lee, Scorsese, Kubrick), the ones that dared to fight Hollywood (i.e., Welles, Peckinah, Cimino, von Stroheim) and the loose cannons",
+      "year": 2024,
+      "question": "How to balance market and artistic goals in films?",
+      "hook": "A series of film analysis of films produced by hollywood autheurs",
+      "technology": [
+        "Film Analysis",
+        "Writing"
+      ]
+    },
+    {
+      "title": "Memory Map",
+      "gif": "wix:image://v1/565ac9_eaa494cca1dc49d0be175101fcb3257e~mv2.gif/Memory%20Map.gif#originWidth=566&originHeight=318",
+      "type1": [
+        "Sculpture",
+        "Research"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/memory-map-recording-space-time-with-fluids-b3d313fb64cc",
+      "shortDescription": "This project delves into the relationship between experiences and memories, exploring how memories are fluid and ever-changing compared to the fixed nature of past events. By creating a \"memory map\" using dry glue pieces injected with colored water, I visually represents the dynamic and reflective nature of memory. The process allowed the artist to revisit and reconcile past experiences, ultimately leading to personal growth and self-forgiveness.",
+      "year": 2021,
+      "question": "How to record space and time as memory?",
+      "hook": "Solidify water - Inventing/Reinventing Boundaries. The Map is not the territory but a blur of time",
+      "technology": [
+        "Sculpture",
+        "Psychology Research",
+        "Art Statement"
+      ]
+    },
+    {
+      "title": "Forager",
+      "gif": "wix:image://v1/565ac9_e9ba3a68c2e04b87bbfac31be9ae7f1b~mv2.gif/Forager%20Short.gif#originWidth=1920&originHeight=1080",
+      "type1": [
+        "VR AR XR Design"
+      ],
+      "pageUrl": "https://www.forager.earth/",
+      "shortDescription": "This the VR experience project I worked on for artist Winslow Porter\u2019s work, Forager. Forager is an essential song that sustains all earthly life. Enter Forager and live the life of fungi, from air-borne spore to underground mycelium to sprouting mushroom.",
+      "year": 2022,
+      "question": "How participate with a fungi magic of growth?",
+      "hook": "Point cloud in Unreal Engine, stitching mushroom's bio-data into sequential photogrammetry, transforming organic data into a interactive immersive experience.",
+      "technology": [
+        "Unreal Engine",
+        "Niagara System",
+        "Bio-data",
+        "Oculus Quest VR"
+      ]
+    },
+    {
+      "title": "June's Cloud Archive",
+      "gif": "wix:image://v1/565ac9_5231529799e04a948d05aef424e59dec~mv2.gif/cloud-logo.gif#originWidth=3072&originHeight=1738",
+      "type1": [
+        "UI UX Design",
+        "Research",
+        "Computation"
+      ],
+      "pageUrl": "https://junebee66.github.io/June-Cloud-Gallery/archive/final/index.html",
+      "shortDescription": "This is a cloud archive that maps the topic and technology connections between my projects, illustrating how they are all inter-relaed.",
+      "year": 2025,
+      "question": "How to show all projects?",
+      "hook": "Visualizing the relations of all projects",
+      "technology": [
+        "Data Visualization",
+        "three.js",
+        "html/css"
+      ]
+    },
+    {
+      "title": "Sacred Play Secret Place",
+      "gif": "wix:image://v1/565ac9_78897000cecb4d07b935ee66c0c2e045~mv2.gif/SPSP%20Short%20Clip%20Video%20Small.gif#originWidth=468&originHeight=264",
+      "type1": [
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://www.junesbee.com/sacredplay",
+      "shortDescription": "Walking up the hill, I see the post-mess of what a generation has done. I know I have to go up there to save the day or myself, but when I actually got up there, I saw him...",
+      "year": 2022,
+      "question": "What is left after the era of Babylon?",
+      "hook": "\"I think I'm the last light...\", I whispered.",
+      "technology": [
+        "MAYA",
+        "Blender",
+        "Adobe Premiere"
+      ]
+    },
+    {
+      "title": "Mental Colors of Plants",
+      "gif": "wix:image://v1/565ac9_7f03e3122b7f4570b973d0e5fdba757b~mv2.gif/mental_colors.gif#originWidth=744&originHeight=426",
+      "type1": [
+        "UI UX Design",
+        "Illustration & Storytelling",
+        "Research",
+        "Web Tool Development",
+        "Sculpture"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/206192749/Mental-Color-of-Plants-2020",
+      "shortDescription": "Mental Color of Plants is a device that collects the behavioral datas (sun level, soil temperature, soil moisture, and ph value) of a plant and convert the data into a color code that shows \"a plant's mental state/being.\" The result will be presented as a color.",
+      "year": 2021,
+      "question": "Hey plant, how are you doing?",
+      "hook": "Observational/analytical tool for a sustainable system, mapping plants' pH levels with colors to indicate their mental state",
+      "technology": [
+        "Sustainable",
+        "Environmental Science",
+        "Web Tool",
+        "Adobe Illustrator",
+        "html/css",
+        "Javascript"
+      ]
+    },
+    {
+      "title": "Multidimensional Reality Camera",
+      "gif": "wix:image://v1/565ac9_e890979f7abd4609a1617111848dc921~mv2.gif/multi-dimensional_camera_demo_small.gif#originWidth=196&originHeight=348",
+      "type1": [
+        "VR AR XR Design",
+        "Computation",
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://medium.com/p/718890a60463",
+      "shortDescription": "The camera are your eyes that helps you see multidimensional reality = real world + virtual world from the external api . The camera detects what is captured and paints out the same object found from web api.",
+      "year": 2022,
+      "question": "What is the reality that we see? Accurate?",
+      "hook": "Reality is a continuous constant. Overlaying every possible reality real time in your current space",
+      "technology": [
+        "Giphy Api",
+        "Web AR",
+        "Pixel Overlay"
+      ]
+    },
+    {
+      "title": "Derive",
+      "gif": "wix:image://v1/565ac9_af68e852506d42ef9e1acfa115756031~mv2.gif/Derive%20v.3.gif#originWidth=734&originHeight=412",
+      "type1": [
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://youtu.be/97uYNtmVfMc",
+      "shortDescription": "This is the Minsheng Community in Taipei's Songshan District, where I grew up. This quick 2.5D animation sketch whispers of time\u2019s passage, as developments slowly reshape the landscape, stirring a sense of d\u00e9rive.",
+      "year": 2020,
+      "question": "When deriving, which direction is right? Past or future?",
+      "hook": "Things are different. But it all depends on what pair of glasses did you choose to wear today.",
+      "technology": [
+        "2.5 Animation",
+        "Map",
+        "Time",
+        "Illustration"
+      ]
+    },
+    {
+      "title": "Anaglyph Scroll",
+      "gif": "wix:image://v1/565ac9_0f2e39c78e5d4081a64a6da46ae0e512~mv2.gif/scroll_w_anaglyoh.gif#originWidth=924&originHeight=526",
+      "type1": [
+        "Code Sketch"
+      ],
+      "pageUrl": "https://github.com/junebee66/Web-Widget/tree/main?tab=readme-ov-file#-anaglyph-scroll--code-experiment--may-2023",
+      "shortDescription": "A three.js scroll effect wrote based on my anaglyph algorithm",
+      "year": 2024,
+      "question": "What would an anaglyph scroll look like?",
+      "hook": "Separates all blue and red pixels when scroll",
+      "technology": [
+        "three.js"
+      ]
+    },
+    {
+      "title": "Children's Museum | Mistake Education",
+      "gif": "wix:image://v1/565ac9_f447bc1ac17c4b39bbff9b451698608c~mv2.gif/Gen-3%20Alpha%20Turbo%201114620479,%204k%20qaulity,%20walking%20,%20June's%20Portfolio_Pag%20(4)large.gif#originWidth=1570&originHeight=942",
+      "type1": [
+        "Architecture & Urban Design"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/206111373/Mistake-Education-Childrens-Museum-Architecture",
+      "shortDescription": "This museum guides children to learn from mistakes and own them. Traditional children\u2019s museum has a tendency to be the \u201cperfect\u201d place where children learn what is correct and what is wrong \u2013 mistakes. The conception of avoiding mistakes obstructed children\u2019s acknowledgment between the situation they are in and the position they take. It restricted children\u2019s decision-making development, preventing them to think and act to their full potential. In this children\u2019s, I designed a ramp system that blurs the idea of avoiding mistake.",
+      "year": 2019,
+      "question": "Should I still do it if it end up being a mistake?",
+      "hook": "Yes, A Ramp Loop - Children\u2019s Museum should be a space that encourages learning from mistakes? ",
+      "technology": [
+        "Autodesk Revit",
+        "AutoCAD",
+        "V-Ray",
+        "After Effects",
+        "Adobe Premiere"
+      ]
+    },
+    {
+      "title": "Enclosed",
+      "gif": "wix:image://v1/565ac9_4cea5e751f9a4fd3a326bd8e5ff14858~mv2.gif/enclosed%20gif%20Copy%2001.gif#originWidth=1000&originHeight=563",
+      "type1": [
+        "Illustration & Storytelling",
+        "Animation & VFX",
+        "Game"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/205846025/Enclosed",
+      "shortDescription": "This is an interactive & decentralized story experience made with the open-source tool Twine. This story is about a team of data hunters from the year 2100, sent back to 2020 to activate non-living objects and give them senses in order to collect data for a society ravaged by the Data War between The Decentralized and The Central. ",
+      "year": 2021,
+      "question": "Are we going 2D to 3D or vise versa? What happens if we are in-between?",
+      "hook": "\"Something must be wrong... Datas are changing... I think we are stuck in enclosed data loop\", said the hunter.",
+      "technology": [
+        "Decentralized Storytelling",
+        "Twine"
+      ]
+    },
+    {
+      "title": "Directions",
+      "gif": "wix:image://v1/565ac9_365bdcbf25e449a59869f3f3b2f7cd20~mv2.gif/directions_open_woodA.gif#originWidth=720&originHeight=478",
+      "type1": [
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/205794375/Directions-Comic-Book",
+      "shortDescription": "Comic book assignment from Time class Freshman year at Parsons School of Design",
+      "year": 2020,
+      "question": "Are you really lost?",
+      "hook": "Or just forget where you were heading?",
+      "technology": [
+        "Illustration",
+        "Comic Book",
+        "Mental Health"
+      ]
+    },
+    {
+      "title": "Flower Life Cycle",
+      "gif": "wix:image://v1/565ac9_7519a4c2e9634a71a4e09c5ac15f4304~mv2.gif/flowerverse.gif#originWidth=1280&originHeight=720",
+      "type1": [
+        "Code Sketch",
+        "Computation"
+      ],
+      "pageUrl": "https://quixotic-mandible-495.notion.site/NOC-4-Oscillating-Motion-Eternal-Rose-Life-Cycle-c0dac027771c41a89f903a259313aa04?pvs=4",
+      "shortDescription": "This code simulation focuses on the concept of oscillating motion through the creation of an animated \"Eternal Rose\" that simulates a life cycle. The rose's petals are generated using mathematical equations, particularly the rose curve formula combined with time-dependent oscillations. This creates a mesmerizing blooming effect that repeats indefinitely, symbolizing the cyclical nature of life.",
+      "year": 2023,
+      "question": "What are the forms of vectors expressed through morphing point-cloud?",
+      "hook": "Rebirth & death of a flower through life point clouds",
+      "technology": [
+        "P5.js",
+        "Vector Math",
+        "three.js"
+      ]
+    },
+    {
+      "title": "AR World Building Camera 2D",
+      "gif": "wix:image://v1/565ac9_77d929f96a8042248ff4b2fab40d87b2~mv2.gif/AR%20Decentalized%20World%20Building%20Camera_demo%20(4).gif#originWidth=1010&originHeight=632",
+      "type1": [
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://www.junesbee.com/poitory",
+      "shortDescription": "This is an online tool for the 21st century mixed media creatives (artists, designers, writers, and more types of creator) to resolve their creativity blocks by reimagining and remixing their current space and time. As creatives, we have always imagine the world going forward with a new vision, but how do we break the habit of looking to the front and start by applying the same vision to the present in order to bridge our way to reach that ultimate future? Stories, stories are the answer.\n\n",
+      "year": 2022,
+      "question": "What is our relationship with the world surrounding us?",
+      "hook": "Drawing to remix imaginations with reality and verbalize such relationships through computers'  POV",
+      "technology": [
+        "three.js",
+        "Webcam Code",
+        "Javascript",
+        "Pointcloud",
+        "html/css"
+      ]
+    },
+    {
+      "title": "The Investigation of Existence Aging in The Aspect of Time and Value",
+      "gif": "wix:image://v1/565ac9_7b899072892d4718a71e6bd31b223458~mv2.gif/Value%20Age%20Time.gif#originWidth=430&originHeight=234",
+      "type1": [
+        "Research",
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/the-investigation-of-existence-aging-in-the-aspect-of-time-and-value-900507312612",
+      "shortDescription": "This is a performance art project conducted in 2021\u200a-\u200athe year after COVID-19. I came up with this prompt \"\", researched, and composed a series of experiment to test my different  hypothesis.\n\n",
+      "year": 2020,
+      "question": "Any direct relationships between time and value?",
+      "hook": "Performance art engaging strangers to conduct a value exchange in the passage of time, witnessing aging in the process",
+      "technology": [
+        "Street Interviews",
+        "Research",
+        "Performance Art"
+      ]
+    },
+    {
+      "title": "Transforming Higher Education Adapting to the Era of Digitalization with The Use of Virtual Reality",
+      "gif": "wix:image://v1/565ac9_bd3e6bb78eec4cf88d932a1273276b45~mv2.gif/VR%20Education_begininign.gif#originWidth=606&originHeight=306",
+      "type1": [
+        "Research"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/higher-education-adaptation-to-digitalization-era-with-virtual-reality-5a89b6705444",
+      "shortDescription": "This project stems from my Integrative Seminar research, exploring Dewey's Experiential learning theory to reimagine 21st-century digitalized higher education using virtual reality (VR). The research paper served as the foundation for an animation visualizing key points.",
+      "year": 2021,
+      "question": "How do we learn in the era of digitalization? ",
+      "hook": "Learning beyond 2D: Experiential Learning - Virtual Reality",
+      "technology": [
+        "Education",
+        "Research"
+      ]
+    },
+    {
+      "title": "AI Philosophy: Minds & Machines",
+      "gif": "wix:image://v1/565ac9_2b584987a8c242babebc3d21ae30d7b0~mv2.jpg/Firefly%20a%20section%20view%20of%20how%20a%20computer%20brain%20looks%20like%20-%20it%20looks%20like%20a%20high%20tech%20scif.jpg#originWidth=2688&originHeight=1536",
+      "type1": [
+        "Research"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/list/minds-machine-philosophy-802934bda0a4",
+      "shortDescription": "A series of paper written in \u201cMinds and Machine\u201d course taken at the Philosophy department at NYU 2024 taught by ",
+      "year": 2024,
+      "question": "Can AI be human?",
+      "hook": "Deep dive into mental state, intentionality, and creativity",
+      "technology": [
+        "AI",
+        "Philosophy",
+        "Writing"
+      ]
+    },
+    {
+      "title": "Yroll World VR",
+      "gif": "wix:image://v1/565ac9_11728dd1fbbf4986a65999bc3f0b62c7~mv2.gif/Yroll%20Game%20Small.gif#originWidth=552&originHeight=310",
+      "type1": [
+        "VR AR XR Design",
+        "Game"
+      ],
+      "pageUrl": "https://www.junesbee.com/yroll",
+      "shortDescription": "YROLL World is a Unity based game, setting in a dystopian realm where the protagonist is stuck between 2D and 3D worlds. Players will creatively navigate this multi-dimensional landscape, questioning the future of human identity in an increasingly technological society.",
+      "year": 2021,
+      "question": "Are we going 2D to 3D or vise versa? What happens if we are in-between?",
+      "hook": "a WebVR game that trapped players between 2D and 3D realities in dystopian realms, where they use the designed object \"yroll\" - 3D controller - to navigate a network of evolving internet portals.",
+      "technology": [
+        "Unity",
+        "C++"
+      ]
+    },
+    {
+      "title": "AVR Filter",
+      "gif": "wix:image://v1/565ac9_0145696c503f466c8a222c6d7b296988~mv2.gif/elemental%20%20small.gif#originWidth=720&originHeight=480",
+      "type1": [
+        "Web Tool Development",
+        "VR AR XR Design",
+        "Research"
+      ],
+      "pageUrl": "https://github.com/junebee66/AVR-Filter",
+      "shortDescription": "This software allows users to see their usual content on mobile devices coming out into their reality with the three dimensional visual orientation. Without buying a 3D TV, purchasing 3D produced films, wearing VR headset, or only see augmented reality in certain apps. AVR filter is a lightweight algorithm on mobile screens that runs across all platforms to bring the internet world into the real life.",
+      "year": 2023,
+      "question": "How can we bridge the gap between the 2D screen world and the era of 3D digital interactivity?",
+      "hook": "An algorithm that converts all pixels into 3D, creating a flying-out-of-the-screen effect using anaglyph calculations",
+      "technology": [
+        "three.js",
+        "WebGL",
+        "Pixel Overlay"
+      ]
+    },
+    {
+      "title": "Pointcloud Webcam",
+      "gif": "wix:image://v1/565ac9_059d15ae799d46a6bb4057b48689c2d3~mv2.gif/point-cloud-webcam.gif#originWidth=854&originHeight=480",
+      "type1": [
+        "Code Sketch",
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://github.com/junebee66/Point-cloud-Webcam",
+      "shortDescription": "This coding sketch creates point cloud from user's webcam image data.",
+      "year": 2022,
+      "question": "How to make a 3D camera?",
+      "hook": "The point cloud is mapped with the brightness of the pixels to create real-time depth.",
+      "technology": [
+        "Code Experiment",
+        "generative code",
+        "Web Camera"
+      ]
+    },
+    {
+      "title": "Experimental Clock",
+      "gif": "wix:image://v1/565ac9_6da648aced87410b9125f0cb0a689710~mv2.gif/Experimental%20Clockmov.gif#originWidth=1068&originHeight=960",
+      "type1": [
+        "Code Sketch",
+        "Computation"
+      ],
+      "pageUrl": "https://june-bee-crit-comp.glitch.me/cclab/p3.html",
+      "shortDescription": "The Experimental Clock visualizes time through falling balls and arc-shaped containers. Every second, a new ball drops, with colored arcs representing hours, minutes, and seconds as baskets. This design allows viewers to observe time's accumulation and release, offering a fresh perspective on time perception.",
+      "year": 2021,
+      "question": "A clock that captures and represents individual moments?",
+      "hook": "Recording and capturing time - every second, a new ball will drop into the space",
+      "technology": [
+        "Object-Oriented Programming",
+        "P5.js"
+      ]
+    },
+    {
+      "title": "If City",
+      "gif": "wix:image://v1/565ac9_e6b4afc1d8464f3b9dd0cad3742628a6~mv2.gif/If%20City%20Clip%20(1).gif#originWidth=772&originHeight=238",
+      "type1": [
+        "VR AR XR Design",
+        "Game"
+      ],
+      "pageUrl": "https://www.junesbee.com/if-city",
+      "shortDescription": "Thesis Project from one semester Capstone course from Senior year (Spring 2024) at New York University (NYU).",
+      "year": 2024,
+      "question": "Can humans, nature, and technology live in harmony?",
+      "hook": "If XR -  a real time urban simulator that runs an ever-growing ecosystem of XR market",
+      "technology": [
+        "Simulation",
+        "Urban Design"
+      ]
+    },
+    {
+      "title": "WEB 3.999",
+      "gif": "wix:image://v1/565ac9_d9c2fd88922245c79e65b014b80fb286~mv2.gif/Web%203.999-30sec%20Small.gif#originWidth=724&originHeight=408",
+      "type1": [
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/206186707/Web-3999-2022",
+      "shortDescription": "This animation explores Web 3.0's evolution through 3D animation. Created in 2022, it visualizes internet concepts using volumetric clouds, questioning the path to Web 4.0 while depicting the internet's complex nature. I experimented with different particle forms in Maya from volumetric clouds, NParticles, NHair, and instanced geometry. ",
+      "year": 2022,
+      "question": "What does it mean when internet has come to the peak?",
+      "hook": "Internet is consisted of products that are not sure is valuable existence or trash dumpster of the world - cloud",
+      "technology": [
+        "MAYA",
+        "Blender",
+        "Adobe Premiere"
+      ]
+    },
+    {
+      "title": "Spatial Structures Review",
+      "gif": "wix:image://v1/565ac9_9ce7551cfd644465b2c606e7160ef30b~mv2.png/Spatial%20Structures%20Review.png#originWidth=3072&originHeight=1730",
+      "type1": [
+        "Research",
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/206180677/Spatial-Structure-2020",
+      "shortDescription": "In the final piece the spatial depth was defined by the consistence color of black, white, and grey. The stairs in the center introduced a guide of one perspective on\nunderstanding the space.",
+      "year": 2020,
+      "question": "What is a confined space?",
+      "hook": "Redesigning the relationships between the boundary lines.",
+      "technology": [
+        "Illustration",
+        "Optical Illusion"
+      ]
+    },
+    {
+      "title": "Pixie Dust at Midnight",
+      "gif": "wix:image://v1/565ac9_8d7db63d849f4ff4b80dbe76120c48b5~mv2.gif/Pixel%20Dust%20DEmo.gif#originWidth=574&originHeight=582",
+      "type1": [
+        "Code Sketch",
+        "Computation"
+      ],
+      "pageUrl": "https://quixotic-mandible-495.notion.site/NOC-3-Forces-Pixie-Dust-at-Midnight-Experimental-Ocean-89c31c1a4d2d4390845c6bc6912b9821?pvs=4",
+      "shortDescription": "Vector points/ pixie dusts fly freely and occasionally stick the area with weaker gravity to slowing reveal the scene of a forest. This is the Froce coding assignment from Nature of Code instructed by Daniel Shiffman Junior year at New York University (NYU).",
+      "year": 2023,
+      "question": "What's in-between material objects? Void?",
+      "hook": "Forces - 3D code simulation of a space with different gravity areas shaped as a forest",
+      "technology": [
+        "P5.js",
+        "three.js"
+      ]
+    },
+    {
+      "title": "Geo 3 Cesium",
+      "gif": "wix:image://v1/565ac9_5c4d9e64275e42bba550d17ab42aca21~mv2.gif/ar%203d%20draw%20Small.gif#originWidth=1080&originHeight=1920",
+      "type1": [
+        "VR AR XR Design",
+        "UI UX Design",
+        "Research"
+      ],
+      "pageUrl": "https://github.com/junebee66/GEO3-App",
+      "shortDescription": "GEO3 is an IOS mobile app that provides a cloud paltform for sharing sptial videos and trade geospatial data. Spatial video is the next media format after .mp4 videos. In this app you can record videos in 3D orientation, view other's intriguiing 3D videos, and trade your video as either geospatial data or or motion data for machine training purposes. I planned to futther develop this after class.",
+      "year": 2023,
+      "question": "What is the next medium after videos for this generation?",
+      "hook": "Spatial Video, capturing moments in 3D",
+      "technology": [
+        "Swift",
+        "three.js",
+        "Adobe Premiere",
+        "Figma"
+      ]
+    },
+    {
+      "title": "Walk in Glitch City",
+      "gif": "wix:image://v1/565ac9_0cad61b28efa4ddfa19665c7129d3408~mv2.gif/glitch-demo%20small.gif#originWidth=574&originHeight=320",
+      "type1": [
+        "Code Sketch"
+      ],
+      "pageUrl": "https://quixotic-mandible-495.notion.site/NOC-1-A-Walk-in-Glitch-City-POV-computer-d2080bb5fd864ce7af71ba5afb0c4fdb?pvs=4",
+      "shortDescription": "This is the computational noise assignment from Nature of Code class instructed by Professor Daniel Shiffman during my Junior year at NYU - Interactive Media Arts Major in Tisch School of Arts in Spring 2023 term. The camera moves on its own (with perlin noise logic). My mouse is moving to create more buildings not the way camera moves",
+      "year": 2022,
+      "question": "What does a computer see on a daily basis?",
+      "hook": "A walk in Glitch City from the point of view of a computer.",
+      "technology": [
+        "P5.js",
+        "Webcam Code"
+      ]
+    },
+    {
+      "title": "Poitory",
+      "gif": "wix:image://v1/565ac9_c163236c61f54acc87c4232acc918925~mv2.gif/Poitory%20Particle%20Run.gif#originWidth=842&originHeight=474",
+      "type1": [
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://www.junesbee.com/poitory",
+      "shortDescription": "This is animation is based on the AR tool I created called \"AR Decentralized World Building\u00a0Camera\" camera based on users' drawings. The goal is to reverse the existing trend of bringing the physical world to the digital.\u00a0 This camera brings the digital world's abilities to the physical world in creating a third realm, where the existing can be altered and reimagined through the unlimited information provided by the digital world. \n\nThis is final project assignment from Digital Asset: 3D Class instrcuted by Qianqian Ye during Sophomore year at Parsons School of Design under Design and Technology major.",
+      "year": 2022,
+      "question": "Are we separated from our environment? ",
+      "hook": "Our existence defines our environment - release your senses to blend into the environment and soften the virtual environment to be customizable, allowing you to experience its true nature.",
+      "technology": [
+        "Unity",
+        "C++",
+        "Shader Code",
+        "MAYA",
+        "Blender",
+        "Photogrammetry"
+      ]
+    },
+    {
+      "title": "God's Manuscript",
+      "gif": "wix:image://v1/565ac9_26fc220871b540c480923d5481261458~mv2.gif/God's%20Manuscript.gif#originWidth=168&originHeight=230",
+      "type1": [
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/207714645/-Gods-Manuscript-Imagining-2021",
+      "shortDescription": "This is Body/Map assignment from Drawing Class Freshman year at Parsons School of Design. I imagined stealing God's manuscript detailing human creation. This multi-dimensional manuscript represents the space between divine creation and human existence.",
+      "year": 2020,
+      "question": "What is the relationship between the human body and maps?",
+      "hook": "God's point of view- Stealing God's manuscript from heaven: the exact procedure for sculpting humans.",
+      "technology": [
+        "Illustration",
+        "Digital Art"
+      ]
+    },
+    {
+      "title": "Exploring Visual Music: Walter Ruttmann & Oskar Fischinger\u2019s Symphony of Animation",
+      "gif": "wix:image://v1/565ac9_b61dde795b2d49eaa245fbc63b6b5dec~mv2.jpeg/center%20of%20visual%20music.jpeg#originWidth=671&originHeight=434",
+      "type1": [
+        "Research",
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/exploring-visual-music-walter-ruttmann-oskar-fischingers-symphony-of-animation-1ce2b1296996",
+      "shortDescription": "Walter Ruttmann and Oskar Fischinger developed distinct approaches to Visual Music\u2014Ruttmann focused on capturing the emotional fluidity of music through abstract animation, while Fischinger structured visuals based on orchestral hierarchy, treating it as a scientific exploration. Their work redefined animation as an independent art form, influencing both experimental and commercial animation, including later works in Disney and modern visual storytelling.",
+      "year": 2024,
+      "question": "Is visual music scientific or emotional?",
+      "hook": "Exploring the history of visual music through the contrasting approaches of two masters: Walter Ruttmann and Oskar Fischinger.",
+      "technology": [
+        "Animation History",
+        "Art Analysis",
+        "Writing"
+      ]
+    },
+    {
+      "title": "Sankofa Self Portrait",
+      "gif": "wix:image://v1/565ac9_d9b7ac29a7284a1b8bb1d2ee4f0463bb~mv2.gif/Sankofa%20Self%20Portrait.gif#originWidth=720&originHeight=405",
+      "type1": [
+        "Sculpture",
+        "Research"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/205790899/Sankofa-Self-Portrait-2021-by-June-Bee",
+      "shortDescription": "This is Self Portrait assignment from Integrative Studio class Freshman year at Parsons School of Design. This project explores self-portraiture through data visualization and neuroscience. It combines sculpture and computational art, using threads to represent neural networks and data pathways.",
+      "year": 2021,
+      "question": "What is the most accurate way to make a self-portrait?",
+      "hook": "Collective Data Sets Interweave Experiences Into An Image of Self",
+      "technology": [
+        "Sculpture",
+        "Artwork",
+        "Wire"
+      ]
+    },
+    {
+      "title": "Archive Question",
+      "gif": "wix:image://v1/565ac9_49800f53648e43a094b0d6d51508fc53~mv2.gif/archive-question_enter_short.gif#originWidth=3072&originHeight=1738",
+      "type1": [
+        "UI UX Design"
+      ],
+      "pageUrl": "https://www.junesbee.com/archive-question",
+      "shortDescription": "A list of all the question how the project started and the final designed form- answer",
+      "year": 2025,
+      "question": "How does a project start?",
+      "hook": "Every project starts with a why, here\u2019s all QA",
+      "technology": [
+        "Velo Coding",
+        "Data Visualization",
+        "Figma"
+      ]
+    },
+    {
+      "title": "Objects Relations",
+      "gif": "wix:image://v1/565ac9_07e2e68345344d67b21555683e079cb8~mv2.gif/control_tubes_w_music.gif#originWidth=690&originHeight=392",
+      "type1": [
+        "Code Sketch",
+        "Illustration & Storytelling",
+        "UI UX Design"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/206566873/Objects-Relation-Experimental-Website",
+      "shortDescription": "This experimental website explores relationships between projects. 3D icons on the canvas represent projects or themes. Users create connections by moving the cursor, with connected themes displayed in the title. This approach remixes themes to reveal new possibilities from past ideas.",
+      "year": 2023,
+      "question": "What does the GUI look like for remixing ideas?",
+      "hook": "Control panel -make project into idea balls and user can manipulate tubes allow balls to collide and create new possibility",
+      "technology": [
+        "uiux",
+        "three.js",
+        "GUI"
+      ]
+    },
+    {
+      "title": "Looping Calendar",
+      "gif": "wix:image://v1/565ac9_28c0609fdd3844afadf88320c4a37d0c~mv2.png/Looping%20Calendar.png#originWidth=2492&originHeight=1404",
+      "type1": [
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/206180431/Looping-Calendar",
+      "shortDescription": "\"Time is the coin of your life. It is the only coin you have, and only you can determine how it will be spent. Be careful lest you let other people spend it for you.\u201d\n\n\u2013 Carl Sandburg",
+      "year": 2020,
+      "question": "How to visualize a month?",
+      "hook": "A circular routine design that highlights important events throughout the month",
+      "technology": [
+        "Poster",
+        "Graphic Design",
+        "Time"
+      ]
+    },
+    {
+      "title": "Logo Particle",
+      "gif": "",
+      "type1": [
+        "Code Sketch"
+      ],
+      "pageUrl": "https://github.com/junebee66/Particle-Practices/tree/main/logo-particle",
+      "shortDescription": "Some 3D interactive particle practices worked on my own",
+      "year": 2024,
+      "question": "How to make welcome texts interactive?",
+      "hook": "Dissolve into particles and have it invite and lead the audiences",
+      "technology": [
+        "Pointcloud",
+        "three.js"
+      ]
+    },
+    {
+      "title": "One Inch Tour \u2013 Microsystem",
+      "gif": "wix:image://v1/565ac9_485cab46fa394de6892f8faa44c0f7d3~mv2.gif/One-inch-tour_mockup.gif#originWidth=604&originHeight=352",
+      "type1": [
+        "Illustration & Storytelling",
+        "Research"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/navigate-a-sustainable-systems-site-as-an-once-inch-mouse-d9e7cec1e09c",
+      "shortDescription": "This project offers a one-inch-tall perspective tour of a microsystem in a Taipei City park. It features a street cat's shelter, where mice steal food at night. The tour, narrated by a mother mouse teaching her child to navigate and steal food, provides unique insights into this miniature ecosystem's hidden spaces.",
+      "year": 2021,
+      "question": "What is the microsystem within my sustainable systems research site?",
+      "hook": "A mother mouse guides her child through a miniature ecosystem, stealing food from a cat's site.",
+      "technology": [
+        "Sustainable",
+        "Illustration",
+        "Storytelling"
+      ]
+    },
+    {
+      "title": "The Creatives",
+      "gif": "wix:image://v1/565ac9_aeacc8c2190e45649a6b447f98e3a597~mv2.gif/The_Creatives.gif#originWidth=568&originHeight=344",
+      "type1": [
+        "Research",
+        "UI UX Design",
+        "Web Tool Development"
+      ],
+      "pageUrl": "https://medium.com/@junesthoughts/the-creatives-artistic-freedom-reimagined-f6bfc9ab4732",
+      "shortDescription": "The Creatives is a collaborative platform empowering artists and designers independent of social status or background. By emphasizing artistic talent, The Creatives aims to boost confidence in underrepresented artists and foster a diverse, interconnected creative community.",
+      "year": 2021,
+      "question": "How can we free artists from institutional and societal structures to enable their creativity and success?",
+      "hook": "Design a collaborative environment that focuses solely on talent and creativity",
+      "technology": [
+        "UIUX",
+        "Website",
+        "Social Justice",
+        "Research"
+      ]
+    },
+    {
+      "title": "I Missed You",
+      "gif": "wix:image://v1/565ac9_37fc3a98ddfa44da8f594efd35caafde~mv2.gif/main_code.gif#originWidth=972&originHeight=430",
+      "type1": [
+        "Animation & VFX"
+      ],
+      "pageUrl": "https://www.behance.net/gallery/205926249/I-Missed-You-Movie-Animation",
+      "shortDescription": "This is a contracted work I completed during my gap year before college for the Warner Bros. film \"I Missed You,\" which is streaming on Netflix. I worked at the VFX studio for a couple months for this movie.",
+      "year": 2020,
+      "question": "What does the the computer world looks like for Kuo Chin Chin (main actress lead)?",
+      "hook": "Multi-dimensional workspaces computer world 3D VFX envision for movie \"I Missed You\" on Netflix",
+      "technology": [
+        "2.5 Animation",
+        "Data Sorting",
+        "CG"
+      ]
+    },
+    {
+      "title": "Taipei 101 Sky Park",
+      "gif": "wix:image://v1/565ac9_7184df4fd831456e8ac663066f452554~mv2.gif/101%20Sky%20Park%20many%20floors.gif#originWidth=740&originHeight=416",
+      "type1": [
+        "Architecture & Urban Design"
+      ],
+      "pageUrl": "https://www.bioarch.com.tw/work/taipei-101-35-f-sky-park",
+      "shortDescription": "An explainer video highlights the design decisions made by BaF for the Sky Park project at Taipei 101, incorporating the concept of a circular economy in collaboration with IKEA. ",
+      "year": 2020,
+      "question": "Connect vertical community space in an office building?",
+      "hook": "Through a central hub where true relaxation takes place, Circulation design becomes the means by which all resources in the building are recycled.",
+      "technology": [
+        "Circular Economy",
+        "Interior Design",
+        "Explainer Video"
+      ]
+    },
+    {
+      "title": "MetaEternity",
+      "gif": "wix:image://v1/565ac9_72f10aed7f1e40f996ecc1c2797324a7~mv2.gif/MetaEternity_Short.gif#originWidth=488&originHeight=240",
+      "type1": [
+        "VR AR XR Design",
+        "Research"
+      ],
+      "pageUrl": "https://practicegallery.org/meta-eternity/",
+      "shortDescription": "\"Meta-Eternity\" is a collaborative exhibition that explores the intersection of virtual and physical existence, questioning the implications of life beyond the body. Artists and participants engage with AI-generated imagery, performance, and interactive modular controllers to collectively build a user-driven virtual world. Through drawing, writing, and crafting, visitors contribute to an evolving, generative space, examining themes of embodiment, consciousness, and the digital afterlife. The exhibition invites reflection on how virtual reality can transcend its usual limitations, fostering new methods of connection and collaborative meaning-making.",
+      "year": 2022,
+      "question": "Can the Metaverse offer an afterlife?\u00a0",
+      "hook": "collaboratively infuse the museum visitors imagination drawings and crafts with real time VR digital space to have a gathering indegiounes human afterlife space that in coherent with everyone\u2019s consciousness and interactions ",
+      "technology": [
+        "Unity",
+        "Oculus Quest VR",
+        "C++",
+        "MAYA",
+        "Blender",
+        "Installation"
+      ]
+    },
+    {
+      "title": "What's Next?",
+      "gif": "wix:image://v1/565ac9_1146b121d1cf42759590a2ef8aca7630~mv2.gif/What's%20Next%20Clip.gif#originWidth=442&originHeight=248",
+      "type1": [
+        "Research",
+        "Web Tool Development",
+        "UI UX Design"
+      ],
+      "pageUrl": "https://www.youtube.com/watch?v=S2pIouihjuU",
+      "shortDescription": "This is my gap year exploration (during covid and before going to college) of what does next mean in life and how to make decisions that leads to the right \u201cnext\u201d",
+      "year": 2020,
+      "question": "What to do at the intersection of life?",
+      "hook": "Exploring the next for people who are at their first intersection - college and reflect through hosting a program ",
+      "technology": [
+        "Networking",
+        "Research"
+      ]
+    },
+    {
+      "title": "Architecture Work At Baf",
+      "gif": "wix:image://v1/565ac9_255a1a53cfb740a885edd6cca3bae6ba~mv2.png/Screenshot%202023-04-05%20at%201.25.24%20PM.png#originWidth=2374&originHeight=1334",
+      "type1": [
+        "Animation & VFX",
+        "Architecture & Urban Design"
+      ],
+      "pageUrl": "https://www.junesbee.com/baf-work",
+      "shortDescription": "A series of projects I worked on during my time at the international ward wining green architecture company  \"Bio-formosana Architecture\"",
+      "year": 2020,
+      "question": "What is sustainable architecture/creation?",
+      "hook": "Explainer videos, architecture diagrams, published book of green architecture design studies",
+      "technology": [
+        "After Effects",
+        "Adobe Premiere",
+        "Autodesk Revit",
+        "SketchUp",
+        "AutoCAD",
+        "Adobe Illustrator"
+      ]
+    },
+    {
+      "title": "Soft Environment",
+      "gif": "wix:image://v1/565ac9_8bec4d328b094504816220a531ac4c80~mv2.gif/envirnment-mix.gif#originWidth=720&originHeight=480",
+      "type1": [
+        "Code Sketch"
+      ],
+      "pageUrl": "https://quixotic-mandible-495.notion.site/NOC-5-Simulation-Project-Soft-Environment-Dynamic-Desire-Conscious-Points-98e0acc386bd4fc2ac4da2165512d409?pvs=4",
+      "shortDescription": "This project explores a \"Soft Environment\" where object boundaries dissolve. It simulates conscious points, once part of distinct objects, now freely interacting and blending \"desires\" upon collision.",
+      "year": 2023,
+      "question": "What is virtual environments composed of?",
+      "hook": "Deconstructing an environment into a dynamic desire - conscious points",
+      "technology": [
+        "Code Simulation",
+        "Bio Data",
+        "Run on Web"
+      ]
+    },
+    {
+      "title": "BI: The Origin of Architectural Creativity ",
+      "gif": "wix:image://v1/565ac9_d44b881a6aa446f8aaeb65b21b357282~mv2.gif/unit-lvwlnKFaSfUvTbu8NiSD_2020_BIbook.gif#originWidth=1200&originHeight=900",
+      "type1": [
+        "Research",
+        "Architecture & Urban Design",
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://www.junesbee.com/bi-book",
+      "shortDescription": "This is a green architectural research publication I participated in \nduring my gap year before college in 2020 at Taiwan's renowned and award-winning \nBio-formosana architecture firm. The book is now available for purchase on major \nonline platforms: Amazon, Barnes & Noble, and Elite\n",
+      "year": 2020,
+      "question": "What is the relationship between nature & architecture?",
+      "hook": "\u201cBI\u201d \u2013 Biological Intelligence: We call the mechanism behind this unintended creativity of nature. Nature doesn\u2019t necessarily mean creativity, yet its diversity and beauty are stunning. ",
+      "technology": [
+        "Published Book",
+        "Adobe Illustrator",
+        "After Effects",
+        "Writing"
+      ]
+    },
+    {
+      "title": "Sustainable System Website",
+      "gif": "wix:image://v1/565ac9_9962ab0accf64f6c99aeabc5d2e3a0ca~mv2.gif/cat-sustainable-map.gif#originWidth=854&originHeight=480",
+      "type1": [
+        "Code Sketch",
+        "Research",
+        "Web Tool Development",
+        "Illustration & Storytelling"
+      ],
+      "pageUrl": "https://github.com/junebee66/SustainableSystem_Spring2021/tree/main",
+      "shortDescription": "This is June's Site Map from 2021 Sustainable System Class. This website insludes the time journal, tour, hydr-map, living observation of the site. It also includes \"Mental Color of Plants\" - a tool I invented to test the how the plants are feeling with color representations.",
+      "year": 2021,
+      "question": "Can websites be sustainable?",
+      "hook": "A 2D ecosystem of time journal, hydro-map and more!",
+      "technology": [
+        "html/css",
+        "Javascript",
+        "Illustrator"
+      ]
+    },
+    {
+      "title": "Yroll",
+      "gif": "wix:image://v1/565ac9_a16bc2292e9c48068357a68c36388feb~mv2.gif/Yroll%20Device%20Small.gif#originWidth=726&originHeight=408",
+      "type1": [
+        "Physical Computing",
+        "Computation"
+      ],
+      "pageUrl": "https://www.junesbee.com/yroll",
+      "shortDescription": "A 3D controller that helps you navigate between dimensions (WebVR, AR...).",
+      "year": 2021,
+      "question": "How to navigate in this new 3D internet era?",
+      "hook": "Transform users into the cursor itself",
+      "technology": [
+        "Python",
+        "Coordinate Chips",
+        "Feather Board",
+        "Unity"
+      ]
+    },
+    {
+      "title": "God's View",
+      "gif": "wix:image://v1/565ac9_dc089ca2ff4a4ce7a1f406b5497012de~mv2.gif/God's%20View%20Website%20Final.gif#originWidth=454&originHeight=258",
+      "type1": [
+        "Web Tool Development",
+        "Computation"
+      ],
+      "pageUrl": "https://github.com/junebee66/GodsView",
+      "shortDescription": "This website matches users' problems with similar experiences of Bible characters, revealing their journeys with God. It offers spiritual guidance for those feeling lost or frustrated in life. We often struggle to understand why events unfold as they do and where they're leading. Here, you'll gain a higher perspective on your situation, glimpsing God's overall plan for you.",
+      "year": 2022,
+      "question": "What to do if I\u2019m lost?",
+      "hook": "Looking at your life from God\u2019s Point of view. There must be at least one Bible character just like you.",
+      "technology": [
+        "AI",
+        "Web Dev",
+        "Christianity"
+      ]
+    }
+  ]
+}

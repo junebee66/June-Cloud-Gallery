@@ -90,7 +90,7 @@ async function initGraph() {
                   name: item.title,
                   img: item.gif,
                   imgUrl: convertedUrl,
-                  type: item.type, // Add type information
+                  type: item.type1, // Add type information
                   x: Math.random() * 1600,
                   y: Math.random() * 1600,
                   z: Math.random() * 1600,
@@ -106,7 +106,7 @@ async function initGraph() {
                   id,
                   name: item.title,
                   img: item.gif,
-                  type: item.type, // Add type information
+                  type: item.type1, // Add type information
                   x: Math.random() * 1600,
                   y: Math.random() * 1600,
                   z: Math.random() * 1600,
@@ -128,7 +128,7 @@ async function initGraph() {
       // Add links between image nodes and type nodes
       const typeNodes = {};
       gifItems.forEach((item, id) => {
-        item.type.forEach(type => {
+        item.type1.forEach(type => {
           if (!typeNodes[type]) {
             typeNodes[type] = gData.nodes.length;
             gData.nodes.push({

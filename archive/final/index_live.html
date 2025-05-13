@@ -7,16 +7,16 @@
     <link rel="icon" type="image/x-icon" href="https://junebee66.github.io/June-Cloud-Gallery/images/favicon.ico">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  
   </head>
   
   <body>
     <script src="3d-force-image.js"></script>
     <!-- <script src="https://unpkg.com/three"></script> -->
-    <link href="image-node.css" rel="stylesheet">
+    <link href="image-node.css" rel="stylesheet"> 
     <script type="module" src="script.js"></script>
     
     <p id="node-text-outside" class="node-text-outside" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
@@ -32,12 +32,12 @@
                     </div>
                 </div>
             </div>
-
+  
             <div id="techBtnsDiv">
             </div>
-            <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Question</p>
+            <p id="node-question-title" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Question</p>
             <p id="node-question" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 281;"></p>
-            <p class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Answer</p>
+            <p id="node-answer-title"class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;">Answer</p>
             <p id="node-answer" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 281;"></p>
             <p id="node-description" class="node-description" style="font-variation-settings: 'wdth' 50, 'wght' 581;"></p>
             <img src="https://static.wixstatic.com/media/565ac9_8aa8c853e2244b6ea5dd3afe06430816~mv2.jpg/v1/fill/w_826,h_410,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Memory%20Map_Feature.jpg" 
@@ -45,12 +45,14 @@
             id="nodeDesImg"
             width="400" 
             height="200">
+            <div id="type-project-list" class="type-project-list"></div>
+  
         </div>
     </div>
     
     
     <p id="june-logo" class="june-logo" style="font-variation-settings: 'wdth' 50, 'wght' 581;">JUNE'S CLOUD</p>
-
+  
     <div class="bottom-menu">
     <div class="tab-container">
     <input type="radio" name="tab" id="tab1" class="tab tab--1" checked />
@@ -67,18 +69,18 @@
     
     <input type="radio" name="tab" id="tab5" class="tab tab--5" />
     <label class="tab_label" for="tab5">None</label>
-
+  
     
     <div class="indicator"></div>
     </div>
-
+  
     <label for="toggle-rotation" class="switch" aria-label="Toggle Filter">
         <input type="checkbox" id="toggle-rotation" />      
           <span>Self Rotate</span>
           <span>Stop Rotate</span>
     </label>
-
-
+  
+  
     <!-- <label><input value="on" name="dummy" type="checkbox" class="bubble" id="desToggleBtn"></label> -->
     
     
@@ -94,11 +96,11 @@
     </div>
     
       
-</div>
+  </div>
     
       
-</div>
-  <div id="loading-container" style="position: fixed; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center; z-index: 1000;">
+  </div>
+  <div id="loading-container" style="flex-direction: column; display: flex; position: fixed; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.5); display: flex; justify-content: center; align-items: center; z-index: 1000;">
     <div class="logo logo-type">
       <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 50, 'wght' 581;">J</span>
       <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 107.289, 'wght' 581.936;">U</span>
@@ -109,6 +111,7 @@
       <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 45.5499, 'wght' 581.447;">E</span>
       <span class="visible-logo-letter" style="font-variation-settings: 'wdth' 57.5499, 'wght' 581.447;">E</span>
     </div>
+    <p id="cloud-subtitle" class="cloud-subtitle">Fetching all real-time cloud components... please wait patiently, thank you!</p>
   </div>
   <!-- <span class="tagline">solving problems by building virtual ecosystems</span> -->
   <canvas class="mouse-cursor" id="mouse-canvas"></canvas>

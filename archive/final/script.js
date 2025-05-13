@@ -17,48 +17,31 @@ function safeArray(value) {
 
 let highlightedLinks = [];
 
-// async function fetchGifData(collectionType) {
-//   const url = collectionType === 'blueprint' 
-//     ? 'https://junesbee.com/_functions-dev/allProjectsGif' 
-//     : 'https://junesbee.com/_functions-dev/allProjectsStarGif';
-//   try {
-//       const response = await fetch(url);
-//   const data = await response.json();
-
-//   console.log("data", data);
-  
-  
-//   if (data && data.items) {
-//     const itemsWithGif = data.items.filter(item => item.gif);
-//     return itemsWithGif;
-//   } else {
-//     console.error("No items found in the response.");
-//     return [];
-//   }
-//   } catch (error) {
-//     console.error("Error fetching GIF data:", error);
-//     return [];
-//   }
-// }
-
-
 async function fetchGifData(collectionType) {
+  const url = collectionType === 'blueprint' 
+    ? 'https://junesbee.com/_functions-dev/allProjectsGif' 
+    : 'https://junesbee.com/_functions-dev/allProjectsStarGif';
   try {
-    const response = await fetch('./allProjects_converted.json');
-    const data = await response.json();
+      const response = await fetch(url);
+  const data = await response.json();
 
-    if (data && data.items) {
-      const itemsWithGif = data.items.filter(item => item.gif);
-      return itemsWithGif;
-    } else {
-      console.error("No items found in the local JSON.");
-      return [];
-    }
+  console.log("data", data);
+  
+  
+  if (data && data.items) {
+    const itemsWithGif = data.items.filter(item => item.gif);
+    return itemsWithGif;
+  } else {
+    console.error("No items found in the response.");
+    return [];
+  }
   } catch (error) {
-    console.error("Error loading local JSON data:", error);
+    console.error("Error fetching GIF data:", error);
     return [];
   }
 }
+
+
 
 
 function preloadImages(urls, callback) {

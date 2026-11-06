@@ -44,9 +44,29 @@ Smaller issues:
 
 `script.js`: the ×, ⌕ and title toggles now read the panel's real open state. Before, the first click on × after opening a node did nothing.
 
+## Focus mode and phones (2026-11-06)
+
+**Clicking a project (`focusOn` in `script.js`):**
+- The project is drawn on top of everything; nothing can sit in front of it.
+- All other objects fade to 10% opacity; categories linked to it fade to 30%.
+- The camera frames the project inside the free part of the screen: left of the card on desktop, above the bottom sheet on phones. It does this by shifting the camera's view offset.
+- The project's texture swaps to a sharp 1024 px still from `media/still/` (85 files, 3.2 MB in total). Only the clicked project's still is downloaded.
+- While a project is focused, hovering over other objects doesn't change the card.
+- Closing the card (×, ⌕, a background click or Self Rotate) restores everything.
+- Add `?debug` to the URL to expose the graph as `window.__graph`.
+
+**Phones (`mobile.css`, ≤ 768 px):**
+- The page never scrolls sideways.
+- The menu becomes two full-width rows: the layout tabs, then Self/Stop Rotate and the ⌕ / scribble buttons.
+- The logo and hover title get readable sizes.
+- Safe areas (notch and home indicator) are respected.
+- The mouse-only "Left-click: rotate" hint is hidden.
+- Portrait screens start further back so the whole cloud fits.
+- Tapping a project fills the card image too. Phones have no hover, which the card image relied on before.
+
 ## Files
 
-`index.html`, `panel.css`, `script.js` (the original script with targeted edits, each one commented), `image-node.css` and `cursor.js` (both unchanged), `vendor.min.js`, `projects.json`, `type-node-description.json`, `media/thumb/` (85 files, 0.9 MB), `media/anim/` (85 files, 53 MB).
+`index.html`, `panel.css`, `mobile.css`, `script.js` (the original script with targeted edits, each one commented), `image-node.css` and `cursor.js` (both unchanged), `vendor.min.js`, `projects.json`, `type-node-description.json`, `media/thumb/` (85 files, 0.9 MB), `media/still/` (85 files, 3.2 MB, loaded on click), `media/anim/` (85 files, 53 MB).
 
 The media was made from the original Wix files with Pillow. To redo it after adding projects, regenerate a thumb and an anim for each new item's Wix id (the `565ac9_…` part of the `gif` field). Items that have no local file fall back to the Wix original automatically.
 

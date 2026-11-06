@@ -1,0 +1,65 @@
+/* Phone / small-screen layout — loaded last. Desktop is unchanged. */
+
+html, body { overflow: hidden; overscroll-behavior: none; }
+#\33 d-graph { touch-action: none; }   /* let the 3D view own pinch / drag gestures */
+
+@media (max-width: 768px) {
+  :root { --tab-w: calc((100vw - 24px - 4px) / 5); }
+
+  /* header */
+  .june-logo {
+    font-size: 22px;
+    top: calc(14px + env(safe-area-inset-top));
+    left: 16px;
+    height: auto;
+    margin: 0;
+  }
+  .node-text-outside {
+    font-size: 15px;
+    top: calc(14px + env(safe-area-inset-top));
+    right: 16px;
+    left: 45%;
+    margin: 0;
+    text-align: right;
+    line-height: 1.15;
+  }
+
+  /* bottom menu: full width, two rows — layout tabs, then rotate switch + buttons */
+  .bottom-menu {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(14px + env(safe-area-inset-bottom));
+    transform: none;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    column-gap: 4px;
+    padding: 0;
+  }
+  .tab-container { width: 100%; box-sizing: border-box; }
+  .tab, .tab_label, .indicator { width: var(--tab-w); }
+  .tab_label { font-size: 11px; height: 32px; }
+  .tab { height: 32px; }
+  .indicator { height: 32px; }
+  .tab--2:checked ~ .indicator { left: calc(var(--tab-w) + 2px); }
+  .tab--3:checked ~ .indicator { left: calc(var(--tab-w) * 2 + 2px); }
+  .tab--4:checked ~ .indicator { left: calc(var(--tab-w) * 3 + 2px); }
+  .tab--5:checked ~ .indicator { left: calc(var(--tab-w) * 4 + 2px); }
+
+  .switch { left: 0; width: 200px; height: 38px; }
+  .bottom-menu > .toggle { top: 0; left: 0; width: 44px; height: 44px; }
+
+  /* the 3D library's "Left-click: rotate…" hint is mouse-only */
+  .scene-nav-info { display: none; }
+
+  /* loader */
+  .cloud-subtitle { padding: 0 24px; font-size: 13px; }
+
+  /* info sheet sits above the home indicator */
+  .node-info { bottom: calc(10px + env(safe-area-inset-bottom)); }
+  #node-expand .neu-button { font-size: 12px; }
+  #node-expand #type-project-list { grid-template-columns: repeat(3, 1fr); }
+}

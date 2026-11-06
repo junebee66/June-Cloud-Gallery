@@ -215,9 +215,9 @@
     right: 10px;
     bottom: 10px;
     width: auto;
-    max-height: 62vh;
+    max-height: 56vh;
   }
-  #node-expand { max-height: 62vh; padding: 18px; }
+  #node-expand { max-height: 56vh; padding: 18px; }
   .node-text { font-size: 22px; }
 }
 

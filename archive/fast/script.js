@@ -240,7 +240,7 @@ async function initGraph() {
       
       
       
-      const distance = 500;
+      const distance = window.innerWidth < window.innerHeight ? 500 * Math.min(1.8, window.innerHeight / window.innerWidth) : 500;
       // Highlight sets
       const highlightNodes = new Set();
       const highlightLinks = new Set();
@@ -273,14 +273,9 @@ async function initGraph() {
     const toggleRotationCheckbox = document.getElementById('toggle-rotation');
     toggleRotationCheckbox.checked = true;
 
-    // Zoom logic
-    const ZoomDistance = 40;
-    const ZoomDistRatio = 1 + ZoomDistance / Math.hypot(node.x, node.y, node.z);
-    const newPos = node.x || node.y || node.z
-      ? { x: node.x * ZoomDistRatio, y: node.y * ZoomDistRatio, z: node.z * ZoomDistRatio }
-      : { x: 0, y: 0, z: ZoomDistance };
-
-    Graph.cameraPosition(newPos, node, 3000);
+    // Zoom logic: focus mode (see focusOn) - runs after the panel below is shown so the
+    // picture can be framed in the space the panel leaves free.
+    requestAnimationFrame(() => focusOn(node));
 
     const title = document.getElementById('node-text');
     const desc = document.getElementById('node-description');
@@ -365,6 +360,7 @@ async function initGraph() {
       aTitle.style.display = 'block';
       qTitle.style.display = 'block';
       img.style.display = 'block';
+      setPanelImage(document.getElementById('nodeDesImg'), node);
   
 
     }
@@ -482,6 +478,8 @@ if (url) {
       //     .d3Force('center', d3.forceCenter(0, 0, 0)) // Keep nodes roughly centered
         
         .onNodeHover((node) => {
+          // in focus mode the open panel belongs to the clicked project; don't let hover rewrite it
+          if (focusedNode) return;
           const title = document.getElementById('node-text');
           const desc = document.getElementById('node-description');
           const ques = document.getElementById('node-question');
@@ -700,7 +698,113 @@ function updateHighlight() {
 Graph.nodeColor(Graph.nodeColor())
  .linkWidth(Graph.linkWidth())
  .linkDirectionalParticles(Graph.linkDirectionalParticles());
+if (focusedNode) applyFocus();
 }
+
+// ---------- focus mode ----------
+// The clicked object is drawn on top of everything; all other objects fade back so
+// nothing covers it. The camera frames it inside the part of the screen the panel
+// leaves free (left of the card on desktop, above the bottom sheet on phones).
+let focusedNode = null;
+if (location.search.includes('debug')) window.__graph = Graph;
+const FADE_OTHER = 0.1, FADE_NEIGHBOUR = 0.3;
+const baseLinkOpacity = Graph.linkOpacity();
+
+function applyFocus() {
+  const f = focusedNode;
+  Graph.graphData().nodes.forEach(n => {
+    const o = n.__threeObj;
+    const m = o && o.material;
+    if (!m) return;
+    if (m.userData.baseOpacity === undefined) m.userData.baseOpacity = m.opacity;
+    const isF = f && n === f;
+    const near = f && f.neighbors && f.neighbors.includes(n);
+    m.transparent = true;
+    m.opacity = !f ? m.userData.baseOpacity : isF ? 1 : (near ? FADE_NEIGHBOUR : FADE_OTHER);
+    m.depthTest = !isF;            // focused object ignores anything in front of it
+    m.depthWrite = !f;             // faded ghosts don't hide each other either
+    o.renderOrder = isF ? 999 : 0; // and it is drawn last
+    m.needsUpdate = true;
+  });
+  Graph.linkOpacity(f ? 0.06 : baseLinkOpacity);
+}
+
+// free screen area next to the panel, as fractions of the window
+function freeArea() {
+  const w = window.innerWidth, h = window.innerHeight;
+  const card = document.getElementById('node-expand');
+  const r = card && getComputedStyle(card).display !== 'none' ? card.getBoundingClientRect() : null;
+  if (!r || !r.width) return { fx: 1, fy: 1, dx: 0, dy: 0 };
+  if (w <= 768) {                      // bottom sheet: use the space above it
+    const top = Math.max(80, r.top);
+    return { fx: 1, fy: top / h, dx: 0, dy: (h - top) / 2 };
+  }
+  const left = Math.max(200, r.left); // side card: use the space left of it
+  return { fx: left / w, fy: 1, dx: (w - left) / 2, dy: 0 };
+}
+
+// shift the picture's centre into the free area (animated)
+let offsetAnim = null, curOffset = { x: 0, y: 0 };
+function setViewShift(tx, ty) {
+  cancelAnimationFrame(offsetAnim);
+  const cam = Graph.camera(), from = { ...curOffset }, t0 = performance.now(), dur = 700;
+  const step = now => {
+    const t = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - t, 3);
+    curOffset = { x: from.x + (tx - from.x) * e, y: from.y + (ty - from.y) * e };
+    const w = window.innerWidth, h = window.innerHeight;
+    if (Math.abs(curOffset.x) < 0.5 && Math.abs(curOffset.y) < 0.5 && t === 1) cam.clearViewOffset();
+    else cam.setViewOffset(w, h, curOffset.x, curOffset.y, w, h);
+    if (t < 1) offsetAnim = requestAnimationFrame(step);
+  };
+  offsetAnim = requestAnimationFrame(step);
+}
+
+function focusOn(node) {
+  focusedNode = node;
+  applyFocus();
+  loadSharpStill(node);
+  const a = freeArea();
+  setViewShift(a.dx, a.dy);
+
+  // distance so the object fits the free area with some breathing room
+  const o = node.__threeObj;
+  const sw = o && !node.isTypeNode ? o.scale.x : 30, sh = o && !node.isTypeNode ? o.scale.y : 30;
+  const cam = Graph.camera();
+  const tan = Math.tan((cam.fov * Math.PI / 180) / 2);
+  const aspect = window.innerWidth / window.innerHeight;
+  const needH = Math.max(sh * 1.35 / a.fy, sw * 1.35 / (a.fx * aspect));
+  const dist = Math.max(24, needH / (2 * tan));
+
+  const len = Math.hypot(node.x, node.y, node.z);
+  const dir = len ? { x: node.x / len, y: node.y / len, z: node.z / len } : { x: 0, y: 0, z: 1 };
+  Graph.cameraPosition(
+    { x: node.x + dir.x * dist, y: node.y + dir.y * dist, z: node.z + dir.z * dist },
+    node, 1600);
+}
+
+// swap the focused sprite's small thumbnail for a sharp 1024px still (media/still/), once
+function loadSharpStill(node) {
+  const o = node.__threeObj, m = o && o.material;
+  if (!m || node.isTypeNode || !node.thumb || m.userData.sharp) return;
+  m.userData.sharp = true;
+  textureLoader.load(node.thumb.replace('/thumb/', '/still/'), tex => {
+    tex.colorSpace = THREE.SRGBColorSpace;
+    const old = m.map; m.map = tex; m.needsUpdate = true;
+    if (old) old.dispose();
+  }, undefined, () => { m.userData.sharp = false; });
+}
+
+function clearFocus() {
+  if (!focusedNode) return;
+  focusedNode = null;
+  applyFocus();
+  setViewShift(0, 0);
+}
+
+// whenever the panel closes (x, background click, toggles), leave focus mode
+new MutationObserver(() => {
+  if (getComputedStyle(document.getElementById('node-expand')).display === 'none') clearFocus();
+}).observe(document.getElementById('node-expand'), { attributes: true, attributeFilter: ['style'] });
 
 const nodeExpand = document.getElementById('node-expand');
 
@@ -756,6 +860,7 @@ const clickToZoomSpan = toggleRotationLabel.children[2]; // Second span: "Click 
 
 
 selfRotateSpan.addEventListener('click', () => {
+clearFocus();
 isRotationActive = true; // Enable rotation
 toggleRotationCheckbox.checked = true; // Check the input box
 console.log('Self Rotate clicked');
@@ -880,7 +985,11 @@ animateSpan(clickToZoomSpan);
       setTimeout(hideLoader, MAX_LOADER_MS);
 
       // The original never resized the canvas; keep it filling the window.
-      window.addEventListener('resize', () => { if (window.innerWidth && window.innerHeight) Graph.width(window.innerWidth).height(window.innerHeight); });
+      window.addEventListener('resize', () => {
+        if (!window.innerWidth || !window.innerHeight) return;
+        Graph.width(window.innerWidth).height(window.innerHeight);
+        if (focusedNode) { const a = freeArea(); curOffset = { x: a.dx, y: a.dy }; Graph.camera().setViewOffset(window.innerWidth, window.innerHeight, a.dx, a.dy, window.innerWidth, window.innerHeight); }
+      });
  document.getElementById('3d-graph').style.display = 'block';
       }
     

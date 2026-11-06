@@ -91,3 +91,7 @@ git add archive/fast && git commit -m "Add fast version of the cloud gallery" &&
 Option B: replace `archive/final/` so the existing URL gets fast. Copy these files over the old ones (`index.html`, `script.js`, `vendor.min.js`, `projects.json`, `type-node-description.json`, `media/`). The old `3d-force-image.js` and `script-patched-with-type-descriptions.js` can stay; the new `index.html` no longer loads them.
 
 GitHub Pages gzips the JS/JSON automatically. The 53 MB of `media/anim/` stays well inside GitHub's limits: the largest file is 1.8 MB.
+
+## Link preview / LinkedIn (2026-11-06)
+
+`linkedin/` holds three 800×418 looping GIFs recorded from the live page (rotate, layouts, focus). `index.html`'s `og:image` / `twitter:image` point at `linkedin/june-cloud-focus.gif` and `og:url` at this folder. After changing them, paste the URL into https://www.linkedin.com/post-inspector/ to refresh LinkedIn's cached preview.

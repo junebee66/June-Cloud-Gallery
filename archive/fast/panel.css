@@ -1,0 +1,226 @@
+/* Modern description panel — loaded after image-node.css and overrides its panel rules.
+   The markup and script are unchanged; only the look is different. */
+
+:root {
+  --panel-ink: #111;
+  --panel-muted: #8a8a8a;
+  --panel-line: rgba(0, 0, 0, 0.08);
+  --panel-radius: 22px;
+  --panel-gap: 16px;
+}
+
+/* the fixed wrapper is just a positioning frame; the card is #node-expand */
+.node-info {
+  top: var(--panel-gap);
+  right: var(--panel-gap);
+  bottom: calc(10% + 72px);          /* stays clear of the bottom menu */
+  width: clamp(320px, 30vw, 460px);
+  background: transparent;
+  pointer-events: none;
+  z-index: 200;
+}
+
+#node-expand {
+  /* JS toggles display none/block — flex would be overwritten, so lay out with grid via order on children */
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  padding: 22px 24px 24px;
+  pointer-events: auto;
+  color: var(--panel-ink);
+  background: rgba(255, 255, 255, 0.84);
+  -webkit-backdrop-filter: blur(24px) saturate(1.6);
+  backdrop-filter: blur(24px) saturate(1.6);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: var(--panel-radius);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 24px 60px -20px rgba(0, 0, 0, 0.28),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.18) transparent;
+  animation: panelIn 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes panelIn {
+  from { opacity: 0; transform: translateX(24px) scale(0.98); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* children stack in this visual order: title, image, tags, Q, A, description, category grid */
+#node-expand > * { margin: 0; }
+#node-expand { display: none; }
+#node-expand[style*="block"] { display: flex !important; flex-direction: column; }
+#nodeTitleNav          { order: 1; }
+#nodeDesImg            { order: 2; }
+#techBtnsDiv           { order: 3; }
+#node-description      { order: 4; }
+#node-question-title   { order: 5; }
+#node-question         { order: 6; }
+#node-answer-title     { order: 7; }
+#node-answer           { order: 8; }
+#type-project-list     { order: 9; }
+
+/* title + open-project hint */
+.nodeTitleNav {
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding-right: 44px;              /* room for the close button */
+  margin-bottom: 16px !important;
+}
+.node-text {
+  font-size: clamp(22px, 1.9vw, 32px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+.node-text::after {
+  content: " ↗";
+  font-size: 0.6em;
+  color: var(--panel-muted);
+  vertical-align: 0.35em;
+}
+.node-text:hover { opacity: 0.65; }
+
+/* close button: a quiet round icon inside the card */
+.closeNodeInfo {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 2;
+}
+.closeNodeInfo .toggle {
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+}
+.closeNodeInfo .toggle::before { display: none; }
+.closeNodeInfo .toggle .button {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: none;
+  filter: none !important;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.closeNodeInfo .toggle:hover .button { background: rgba(0, 0, 0, 0.1); transform: rotate(90deg); }
+.closeNodeInfo .toggle .label {
+  line-height: 32px;
+  font-size: 14px;
+  color: var(--panel-ink) !important;
+}
+
+/* media */
+#nodeDesImg {
+  width: 100% !important;           /* the script sets sizes in vw; let the card decide */
+  height: auto !important;
+  max-height: 34vh;
+  object-fit: cover;
+  border-radius: 14px;
+  background: #f1f1f1;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.35);
+  margin-bottom: 16px !important;
+}
+
+/* tags as clean outline chips */
+#techBtnsDiv {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px !important;
+}
+#techBtnsDiv:empty { display: none !important; }
+#node-expand .neu-button {
+  font-size: 12px;
+  line-height: 1;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--panel-line);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: none;
+  color: #333;
+  cursor: default;
+  letter-spacing: 0.01em;
+}
+#node-expand .neu-button:hover,
+#node-expand .neu-button:focus { box-shadow: none; background: #fff; border-color: rgba(0, 0, 0, 0.18); }
+
+/* body text */
+#node-expand .node-description {
+  display: block;
+  font-size: clamp(13px, 0.95vw, 15px);
+  line-height: 1.55;
+  color: #2a2a2a;
+}
+#node-description {
+  font-size: clamp(14px, 1.05vw, 16px) !important;
+  line-height: 1.5 !important;
+  color: var(--panel-ink) !important;
+  padding-bottom: 18px !important;
+  margin-bottom: 16px !important;
+  border-bottom: 1px solid var(--panel-line);
+}
+
+/* Question / Answer become small labels */
+#node-question-title,
+#node-answer-title {
+  font-size: 11px !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--panel-muted) !important;
+  margin-bottom: 4px !important;
+}
+#node-question { margin-bottom: 16px !important; }
+
+/* category nodes: thumbnails as a tidy grid instead of a sideways strip */
+#node-expand #type-project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px;
+  overflow: visible;
+  margin-top: 4px;
+  padding: 0;
+}
+#node-expand #type-project-list[style*="block"] { display: grid !important; }
+#node-expand #type-project-list[style*="none"] { display: none !important; }
+#node-expand .type-project-thumbnail {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px -6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+#node-expand .type-project-thumbnail:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 22px -8px rgba(0, 0, 0, 0.4);
+}
+
+/* phones: the card becomes a bottom sheet */
+@media (max-width: 768px) {
+  .node-info {
+    top: auto;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: auto;
+    max-height: 62vh;
+  }
+  #node-expand { max-height: 62vh; padding: 18px; }
+  .node-text { font-size: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #node-expand { animation: none; }
+}

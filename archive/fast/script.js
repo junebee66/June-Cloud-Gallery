@@ -794,7 +794,7 @@ animateSpan(clickToZoomSpan);
       const nodeTextOutside = document.getElementById('node-text-outside');
 
       nodeTextOutside.addEventListener('click', () => {
-          expandDesActive = !expandDesActive; // Toggle the active state
+          expandDesActive = getComputedStyle(document.getElementById('node-expand')).display === 'none'; // toggle from the panel's real state (a node click opens it without updating the flag)
           
           const nodeExpand = document.getElementById('node-expand');
           
@@ -824,7 +824,7 @@ animateSpan(clickToZoomSpan);
       
       
       document.getElementById('desToggleBtn').addEventListener('click', () => {
-          expandDesActive = !expandDesActive; // Toggle the active state
+          expandDesActive = getComputedStyle(document.getElementById('node-expand')).display === 'none'; // toggle from the panel's real state (a node click opens it without updating the flag)
           
           const nodeExpand = document.getElementById('node-expand');
           
@@ -841,7 +841,7 @@ animateSpan(clickToZoomSpan);
       });
 
       document.getElementById('closeNodeInfoBtn').addEventListener('click', () => {
-          expandDesActive = !expandDesActive; // Toggle the active state
+          expandDesActive = getComputedStyle(document.getElementById('node-expand')).display === 'none'; // toggle from the panel's real state (a node click opens it without updating the flag)
           
           const nodeExpand = document.getElementById('node-expand');
           

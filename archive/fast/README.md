@@ -30,9 +30,23 @@ Smaller issues:
   - `toggleRotationCheckbox` and `animateSpan` were undefined in the Self/Stop Rotate span handlers; they are now defined.
   - The page background is pinned to white.
 
+## Description panel (2026-11-06)
+
+`panel.css` restyles the description box. It loads after `image-node.css`, so the original stylesheet is unchanged.
+- The box is now a floating frosted-glass card with rounded corners and a slide-in animation.
+- The title has a ↗ hint and opens the project, as before.
+- The preview image sits under the title.
+- Tags are outline chips.
+- The summary is bold, with small grey QUESTION / ANSWER labels below it.
+- The × is a round button inside the card.
+- Category nodes show their projects as a thumbnail grid.
+- On phones the card becomes a bottom sheet.
+
+`script.js`: the ×, ⌕ and title toggles now read the panel's real open state. Before, the first click on × after opening a node did nothing.
+
 ## Files
 
-`index.html`, `script.js` (the original script with targeted edits, each one commented), `image-node.css` and `cursor.js` (both unchanged), `vendor.min.js`, `projects.json`, `type-node-description.json`, `media/thumb/` (85 files, 0.9 MB), `media/anim/` (85 files, 53 MB).
+`index.html`, `panel.css`, `script.js` (the original script with targeted edits, each one commented), `image-node.css` and `cursor.js` (both unchanged), `vendor.min.js`, `projects.json`, `type-node-description.json`, `media/thumb/` (85 files, 0.9 MB), `media/anim/` (85 files, 53 MB).
 
 The media was made from the original Wix files with Pillow. To redo it after adding projects, regenerate a thumb and an anim for each new item's Wix id (the `565ac9_…` part of the `gif` field). Items that have no local file fall back to the Wix original automatically.
 

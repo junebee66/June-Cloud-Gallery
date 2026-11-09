@@ -95,3 +95,9 @@ GitHub Pages gzips the JS/JSON automatically. The 53 MB of `media/anim/` stays w
 ## Link preview / LinkedIn (2026-11-06)
 
 `linkedin/` holds 800×418 looping GIFs recorded from the live page (expand, rotate, layouts, focus). `index.html`'s `og:image` / `twitter:image` point at `linkedin/june-cloud-logo-800.gif` (the original cloud-logo.gif from the Wix project, cropped to 1.91:1 and scaled to 800×418 / 1.1 MB; a 1200 px version looked blurry in LinkedIn) and `og:url` at this folder. After changing them, paste the URL into https://www.linkedin.com/post-inspector/ to refresh LinkedIn's cached preview.
+
+## Phone polish (2026-11-08)
+
+- Loader: the JUNE BEE letters are 19vw on phones (about 80% of the screen width), and the "Fetching…" line is capped at two balanced lines.
+- The five layout tabs show icons on phones (→ left-right, ↓ top-down, frame zoom-out, burst radial-out, scattered dots none); the words stay in the markup for screen readers.
+- Touch screens get a one-time hint after the loader ("Drag to spin · Pinch to zoom · Tap a picture") with a small finger animation. It fades on the first touch or after 7 s (`showGestureHint` in `script.js`, styles at the end of `mobile.css`).

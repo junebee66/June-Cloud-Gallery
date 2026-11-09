@@ -55,11 +55,87 @@ html, body { overflow: hidden; overscroll-behavior: none; }
   /* the 3D library's "Left-click: rotate…" hint is mouse-only */
   .scene-nav-info { display: none; }
 
-  /* loader */
-  .cloud-subtitle { padding: 0 24px; font-size: 13px; }
+
+  /* loader: bigger name, subtitle at most two lines */
+  .logo-type span { font-size: 19vw; line-height: 1.5em; }
+  .cloud-subtitle {
+    max-width: 82vw;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.35;
+    text-wrap: balance;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  /* layout tabs become icons (the words stay in the page for screen readers) */
+  .tab_label {
+    font-size: 0;
+    background: no-repeat center / 20px 20px;
+  }
+  .tab:checked + .tab_label { opacity: 1; }
+  .tab_label[for="tab1"] { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23222' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='5' cy='12' r='2'/%3E%3Cpath d='M8 12h11M15 8l4 4-4 4'/%3E%3C/svg%3E"); }
+  .tab_label[for="tab2"] { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23222' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='5' r='2'/%3E%3Cpath d='M12 8v11M8 15l4 4 4-4'/%3E%3C/svg%3E"); }
+  .tab_label[for="tab3"] { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23222' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='6' height='6' rx='1'/%3E%3Cpath d='M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5'/%3E%3C/svg%3E"); }
+  .tab_label[for="tab4"] { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23222' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='2'/%3E%3Cpath d='M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8'/%3E%3C/svg%3E"); }
+  .tab_label[for="tab5"] { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23222' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='6' cy='7' r='2'/%3E%3Ccircle cx='17' cy='6' r='2'/%3E%3Ccircle cx='9' cy='17' r='2'/%3E%3Ccircle cx='18' cy='16' r='2'/%3E%3Cpath d='M8 8l8 7M7.5 15.5l1-6.5M16 7.5l-6 8'/%3E%3C/svg%3E"); }
 
   /* info sheet sits above the home indicator */
   .node-info { bottom: calc(10px + env(safe-area-inset-bottom)); }
   #node-expand .neu-button { font-size: 12px; }
   #node-expand #type-project-list { grid-template-columns: repeat(3, 1fr); }
 }
+
+/* touch hint: shown once after the loader on touch screens (see showGestureHint in script.js) */
+.gesture-hint {
+  position: fixed;
+  left: 50%;
+  bottom: calc(132px + env(safe-area-inset-bottom));
+  transform: translate(-50%, 8px);
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px 10px 12px;
+  border-radius: 999px;
+  background: rgba(20, 20, 20, 0.82);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  font: 13px/1.2 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.gesture-hint[hidden] { display: none; }
+.gesture-hint.is-in { opacity: 1; transform: translate(-50%, 0); }
+.gesture-hint b { font-weight: 600; }
+.gh-demo { position: relative; width: 34px; height: 22px; flex: none; }
+.gh-dot {
+  position: absolute; top: 5px; left: 12px;
+  width: 11px; height: 11px; border-radius: 50%;
+  background: #fff; box-shadow: 0 0 0 4px rgba(255,255,255,0.25);
+}
+.gh-a { animation: ghA 3.2s ease-in-out infinite; }
+.gh-b { animation: ghB 3.2s ease-in-out infinite; }
+/* first half: one finger drags left-right; second half: two fingers pinch apart */
+@keyframes ghA {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-9px); }
+  30% { transform: translateX(9px); }
+  45% { transform: translateX(0); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(-12px); }
+}
+@keyframes ghB {
+  0%, 45% { opacity: 0; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(3px); }
+  80% { opacity: 1; transform: translateX(12px); }
+  95%, 100% { opacity: 0; transform: translateX(12px); }
+}
+@media (prefers-reduced-motion: reduce) { .gh-a, .gh-b { animation: none; } }
+@media (max-width: 360px) { .gesture-hint { font-size: 12px; padding: 9px 12px 9px 10px; } }

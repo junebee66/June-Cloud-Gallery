@@ -977,6 +977,7 @@ animateSpan(clickToZoomSpan);
         const wait = Math.max(0, MIN_LOADER_MS - (performance.now() - T0));
         setTimeout(() => {
           loadingContainer.style.display = 'none';
+          showGestureHint();
           mouseCanvas.style.display = 'none';
           document.getElementById('june-logo').style.display = 'block';
         }, wait);
@@ -999,3 +1000,20 @@ animateSpan(clickToZoomSpan);
 }
 // Call initGraph when the document is ready
 document.addEventListener('DOMContentLoaded', initGraph);
+
+// ---------- touch hint ----------
+// Phones/tablets: after the loader, a small pill shows how to move around.
+// It goes away on the first touch of the cloud, or after 7 s.
+function showGestureHint() {
+  const hint = document.getElementById('gesture-hint');
+  if (!hint || !matchMedia('(pointer: coarse)').matches) return;
+  hint.hidden = false;
+  requestAnimationFrame(() => hint.classList.add('is-in'));
+  const hide = () => {
+    hint.classList.remove('is-in');
+    setTimeout(() => { hint.hidden = true; }, 400);
+    window.removeEventListener('touchstart', hide);
+  };
+  window.addEventListener('touchstart', hide, { passive: true });
+  setTimeout(hide, 7000);
+}

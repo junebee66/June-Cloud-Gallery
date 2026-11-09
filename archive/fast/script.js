@@ -433,8 +433,11 @@ if (url) {
 
                           
           //   const geometry = new THREE.SphereGeometry(10);
+            // Colour: fixed default palette per category (was a random colour each load);
+            // the ◐ button shuffles it (see shuffleTypeColors).
+            if (!typeColorIdx.has(name)) typeColorIdx.set(name, typeColorIdx.size);
             const material = new THREE.MeshLambertMaterial({
-                  color: Math.round(Math.random() * Math.pow(2, 24)),
+                  color: currentPalette[typeColorIdx.get(name) % currentPalette.length],
                   transparent: true,
                   opacity: 0.75
                   });
@@ -707,6 +710,7 @@ if (focusedNode) applyFocus();
 // leaves free (left of the card on desktop, above the bottom sheet on phones).
 let focusedNode = null;
 if (location.search.includes('debug')) window.__graph = Graph;
+graphRef = Graph;   // lets the colour buttons (end of file) reach the graph
 const FADE_OTHER = 0.1, FADE_NEIGHBOUR = 0.3;
 const baseLinkOpacity = Graph.linkOpacity();
 
@@ -1016,4 +1020,42 @@ function showGestureHint() {
   };
   window.addEventListener('touchstart', hide, { passive: true });
   setTimeout(hide, 7000);
+}
+
+
+// ---------- category colours ----------
+// Default palette, sampled from June's favourite render (green sphere, crimson, maroon,
+// olive, mint, plum, blue) plus five neighbours so all 12 categories get a colour.
+// These are the colours as they appeared on screen in that render.
+var DEFAULT_PALETTE = ['#84c172', '#b4526d', '#9bd2ab', '#807559', '#a24c50', '#693953',
+                       '#3b4fc0', '#c27a8e', '#a1ac8f', '#5f8f74', '#b67e76', '#a39260'];
+var currentPalette = DEFAULT_PALETTE.slice();
+var typeColorIdx = new Map();   // category name -> palette slot, in the order nodes are built
+var graphRef = null;           // set where the graph is created
+
+function randomPalette(n) {
+  const base = Math.random() * 360;
+  return Array.from({ length: n }, (_, i) => {
+    const h = (base + i * 137.508) % 360;                 // golden-angle steps: well spread hues
+    const sat = 35 + Math.random() * 30, light = 45 + Math.random() * 20;
+    return `hsl(${h.toFixed(0)}, ${sat.toFixed(0)}%, ${light.toFixed(0)}%)`;   // material.color.set() takes CSS colours
+  });
+}
+
+function applyTypeColors() {
+  if (!graphRef) return;
+  graphRef.graphData().nodes.forEach(n => {
+    const m = n.isTypeNode && n.__threeObj && n.__threeObj.material;
+    if (m && typeColorIdx.has(n.name)) m.color.set(currentPalette[typeColorIdx.get(n.name) % currentPalette.length]);
+  });
+}
+
+function shuffleTypeColors() { currentPalette = randomPalette(DEFAULT_PALETTE.length); applyTypeColors(); }
+function resetTypeColors() { currentPalette = DEFAULT_PALETTE.slice(); applyTypeColors(); }
+
+const colorBtn = document.getElementById('colorBtn');
+if (colorBtn) {
+  // tap: new random colours; double-tap / double-click: back to the default palette
+  colorBtn.addEventListener('change', shuffleTypeColors);
+  colorBtn.parentElement.addEventListener('dblclick', e => { e.preventDefault(); resetTypeColors(); });
 }

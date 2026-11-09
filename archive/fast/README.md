@@ -101,3 +101,8 @@ GitHub Pages gzips the JS/JSON automatically. The 53 MB of `media/anim/` stays w
 - Loader: the JUNE BEE letters are 19vw on phones (about 80% of the screen width), and the "Fetching…" line is capped at two balanced lines.
 - The five layout tabs show icons on phones (→ left-right, ↓ top-down, frame zoom-out, burst radial-out, scattered dots none); the words stay in the markup for screen readers.
 - Touch screens get a one-time hint after the loader ("Drag to spin · Pinch to zoom · Tap a picture") with a small finger animation. It fades on the first touch or after 7 s (`showGestureHint` in `script.js`, styles at the end of `mobile.css`).
+
+## Category colours (2026-11-09)
+
+The 12 category shapes used to get a random colour on every load. They now use a fixed default palette, `DEFAULT_PALETTE` at the end of `script.js`, sampled from a render June liked: green, crimson, mint, olive, maroon, plum, blue and five neighbouring tones. The shapes themselves are still random.
+The new ◐ button in the bottom menu picks a fresh, evenly spread random palette (`shuffleTypeColors`). Double-click it to go back to the default (`resetTypeColors`).

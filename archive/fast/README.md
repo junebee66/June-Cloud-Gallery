@@ -94,7 +94,7 @@ GitHub Pages gzips the JS/JSON automatically. The 53 MB of `media/anim/` stays w
 
 ## Link preview / LinkedIn (2026-11-06)
 
-`linkedin/` holds 800×418 looping GIFs recorded from the live page (expand, rotate, layouts, focus). `index.html`'s `og:image` / `twitter:image` point at `linkedin/june-cloud-rotate-v2.gif` (2026-11-09, recorded with the default palette; before that `linkedin/june-cloud-logo-800.gif` (the original cloud-logo.gif from the Wix project, cropped to 1.91:1 and scaled to 800×418 / 1.1 MB; a 1200 px version looked blurry in LinkedIn) and `og:url` at this folder. After changing them, paste the URL into https://www.linkedin.com/post-inspector/ to refresh LinkedIn's cached preview.
+`linkedin/` holds 800×418 looping GIFs recorded from the live page (expand, rotate, layouts, focus). `index.html`'s `og:image` / `twitter:image` point at `linkedin/june-cloud-rotate-v3.gif` (2026-11-09, recorded at native 1200×628 with the calibrated palette; before that `linkedin/june-cloud-logo-800.gif` (the original cloud-logo.gif from the Wix project, cropped to 1.91:1 and scaled to 800×418 / 1.1 MB; a 1200 px version looked blurry in LinkedIn) and `og:url` at this folder. After changing them, paste the URL into https://www.linkedin.com/post-inspector/ to refresh LinkedIn's cached preview.
 
 ## Phone polish (2026-11-08)
 
@@ -104,5 +104,5 @@ GitHub Pages gzips the JS/JSON automatically. The 53 MB of `media/anim/` stays w
 
 ## Category colours (2026-11-09)
 
-The 12 category shapes used to get a random colour on every load. They now use a fixed default palette, `DEFAULT_PALETTE` at the end of `script.js`, sampled from a render June liked: green, crimson, mint, olive, maroon, plum, blue and five neighbouring tones. The shapes themselves are still random.
+The 12 category shapes used to get a random colour on every load. They now use a fixed default palette, `DEFAULT_PALETTE` at the end of `script.js`, calibrated (on a test sphere, headless Chrome) so each shape shows on screen as the colour in a render June liked: green, pink, mint, olive, red, plum, blue and five neighbouring tones. The material colours are darker/more saturated than what you see, because lighting and the 75% opacity lighten them. The shapes themselves are still random.
 The new ◐ button in the bottom menu picks a fresh, evenly spread random palette (`shuffleTypeColors`). Double-click it to go back to the default (`resetTypeColors`).

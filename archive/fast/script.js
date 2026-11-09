@@ -1026,9 +1026,12 @@ function showGestureHint() {
 // ---------- category colours ----------
 // Default palette, sampled from June's favourite render (green sphere, crimson, maroon,
 // olive, mint, plum, blue) plus five neighbours so all 12 categories get a colour.
-// These are the colours as they appeared on screen in that render.
-var DEFAULT_PALETTE = ['#84c172', '#b4526d', '#9bd2ab', '#807559', '#a24c50', '#693953',
-                       '#3b4fc0', '#c27a8e', '#a1ac8f', '#5f8f74', '#b67e76', '#a39260'];
+// Material colours, calibrated so that after lighting + 75% opacity each shape shows on screen as
+// the colour in June's reference render: green #84c172, pink #b4526d, mint #9bd2ab, olive #807559,
+// red #a24c50, plum #693953, blue #384cb4, then rose #c27a8e, sage #a1ac8f, deep green #5f8f74,
+// terracotta #b67e76, mustard #a39260.
+var DEFAULT_PALETTE = ['#68c34d', '#b01d45', '#8adda3', '#615227', '#94141a', '#3f001e',
+                       '#0014b0', '#c55977', '#94a479', '#307950', '#b35f53', '#967d32'];
 var currentPalette = DEFAULT_PALETTE.slice();
 var typeColorIdx = new Map();   // category name -> palette slot, in the order nodes are built
 var graphRef = null;           // set where the graph is created
@@ -1037,7 +1040,7 @@ function randomPalette(n) {
   const base = Math.random() * 360;
   return Array.from({ length: n }, (_, i) => {
     const h = (base + i * 137.508) % 360;                 // golden-angle steps: well spread hues
-    const sat = 35 + Math.random() * 30, light = 45 + Math.random() * 20;
+    const sat = 50 + Math.random() * 40, light = 28 + Math.random() * 24;   // vivid enough to survive the lighting
     return `hsl(${h.toFixed(0)}, ${sat.toFixed(0)}%, ${light.toFixed(0)}%)`;   // material.color.set() takes CSS colours
   });
 }

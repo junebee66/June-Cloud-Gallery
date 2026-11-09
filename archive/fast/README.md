@@ -94,7 +94,7 @@ GitHub Pages gzips the JS/JSON automatically. The 53 MB of `media/anim/` stays w
 
 ## Link preview / LinkedIn (2026-11-06)
 
-`linkedin/` holds 800×418 looping GIFs recorded from the live page (expand, rotate, layouts, focus). `index.html`'s `og:image` / `twitter:image` point at `linkedin/june-cloud-rotate.gif` (2026-11-09; before that `linkedin/june-cloud-logo-800.gif` (the original cloud-logo.gif from the Wix project, cropped to 1.91:1 and scaled to 800×418 / 1.1 MB; a 1200 px version looked blurry in LinkedIn) and `og:url` at this folder. After changing them, paste the URL into https://www.linkedin.com/post-inspector/ to refresh LinkedIn's cached preview.
+`linkedin/` holds 800×418 looping GIFs recorded from the live page (expand, rotate, layouts, focus). `index.html`'s `og:image` / `twitter:image` point at `linkedin/june-cloud-rotate-v2.gif` (2026-11-09, recorded with the default palette; before that `linkedin/june-cloud-logo-800.gif` (the original cloud-logo.gif from the Wix project, cropped to 1.91:1 and scaled to 800×418 / 1.1 MB; a 1200 px version looked blurry in LinkedIn) and `og:url` at this folder. After changing them, paste the URL into https://www.linkedin.com/post-inspector/ to refresh LinkedIn's cached preview.
 
 ## Phone polish (2026-11-08)
 
